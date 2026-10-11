@@ -2,13 +2,27 @@
 
 ## environment
 
-Install the Pixi environment:
+Clone the repository and set up the [Pixi](https://pixi.sh) environment:
 
 ```sh
+git clone https://github.com/UW-MLGEO/soil-moisture-au26.git
+cd soil-moisture-au26
 pixi install
+pixi shell
 ```
 
-Activate it with `pixi shell`, or run Python directly with `pixi run python`.
+To run notebooks in `notebooks/`, point the Jupyter kernel to `.pixi/envs/default/bin/python`. 
+
+## earth science topics
+
+Megan
+- Satellite remote sensing of soil moisture.
+- Spatiotemporal fusion of satellite and in situ obervations.
+- Uncertainty propagation and calibration in environmental models.
+
+## license
+
+This repository is licenced under the [MIT License](LICENSE) to make this code easy to reuse, modify and share.
 
 ## literature review
 
