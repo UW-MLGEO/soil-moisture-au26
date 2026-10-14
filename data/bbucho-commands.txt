@@ -1,0 +1,68 @@
+(base) bbucho@clyde soil-moisture-au26 % git status
+On branch main
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+(base) bbucho@clyde soil-moisture-au26 % git pull
+Updating 9e6ee7e..3deee0b
+Fast-forward
+ .gitignore                                  |   3 +++
+ README.md                                   |  18 ++++++++++++++++--
+ data/mfris-commands.txt                     |  87 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ notebooks/figures/UW.OD2_HHZ_2026-10-08.png | Bin 0 -> 170958 bytes
+ notebooks/figures/sine_wave.png             | Bin 0 -> 44694 bytes
+ notebooks/mfris.ipynb                       | 116 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ pixi.lock                                   | Bin 43728 -> 129534 bytes
+ pixi.toml                                   |   5 +++++
+ 8 files changed, 227 insertions(+), 2 deletions(-)
+ create mode 100644 data/mfris-commands.txt
+ create mode 100644 notebooks/figures/UW.OD2_HHZ_2026-10-08.png
+ create mode 100644 notebooks/figures/sine_wave.png
+ create mode 100644 notebooks/mfris.ipynb
+(base) bbucho@clyde soil-moisture-au26 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   pixi.lock
+        modified:   pixi.toml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        notebooks/bbucho.ipynb
+        notebooks/figures/gaussian_pdf.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) bbucho@clyde soil-moisture-au26 % git add notebooks/bbucho.ipynb notebooks/figures/gaussian_pdf.png           
+(base) bbucho@clyde soil-moisture-au26 % git add README.md pixi.lock pixi.toml
+(base) bbucho@clyde soil-moisture-au26 % git status                           
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   notebooks/bbucho.ipynb
+        new file:   notebooks/figures/gaussian_pdf.png
+        modified:   pixi.lock
+        modified:   pixi.toml
+
+(base) bbucho@clyde soil-moisture-au26 % git commit -m "Ben's HW1"                       
+[main b503415] Ben's HW1
+ 5 files changed, 142 insertions(+)
+ create mode 100644 notebooks/bbucho.ipynb
+ create mode 100644 notebooks/figures/gaussian_pdf.png
+(base) bbucho@clyde soil-moisture-au26 % git push                 
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 14 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 88.64 KiB | 22.16 MiB/s, done.
+Total 9 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To github.com:UW-MLGEO/soil-moisture-au26.git
+   3deee0b..b503415  main -> main
