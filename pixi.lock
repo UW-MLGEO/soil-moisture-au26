@@ -134,6 +134,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/webcolors-25.10.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/webencodings-0.5.1-pyhd8ed1ab_3.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/websocket-client-1.9.2-pyh5ded981_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/xarray-2026.9.0-pyh5ded981_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/xyzservices-2026.9.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.1-pyh5ded981_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/_openmp_mutex-4.5-8_kmp_llvm.conda
@@ -1784,6 +1785,43 @@ packages:
   run_exports: {}
   size: 78254
   timestamp: 1788531123810
+- conda: https://conda.anaconda.org/conda-forge/noarch/xarray-2026.9.0-pyh5ded981_0.conda
+  sha256: 17a75f06958d76439ae87435d594f6bc466b739ae6b9242c3c9e611b0643ddbe
+  md5: 5d0c655c6018bef6774fedb867cdc172
+  depends:
+  - python >=3.11
+  - numpy >=1.26
+  - packaging >=24.2
+  - pandas >=2.2
+  - python
+  constrains:
+  - bottleneck >=1.4
+  - cartopy >=0.24
+  - cftime >=1.6
+  - dask-core >=2024.6
+  - distributed >=2024.6
+  - flox >=0.10
+  - h5netcdf >=1.8.0
+  - h5py >=3.11
+  - hdf5 >=1.14
+  - iris >=3.9
+  - matplotlib-base >=3.10
+  - nc-time-axis >=1.4
+  - netcdf4 >=1.6.0
+  - numba >=0.62
+  - numbagg >=0.9,!=0.9.5
+  - pint >=0.24
+  - pydap >=3.5.0
+  - scipy >=1.15
+  - seaborn-base >=0.13
+  - sparse >=0.15
+  - toolz >=0.12
+  - zarr >=3.0
+  license: Apache-2.0
+  license_family: APACHE
+  run_exports: {}
+  size: 1043188
+  timestamp: 1790768564750
 - conda: https://conda.anaconda.org/conda-forge/noarch/xyzservices-2026.9.1-pyhd8ed1ab_0.conda
   sha256: b9439f1716ff580ce56e9b4a4df7ea92e5ed2bdc9567d25cdff223d62c3183a8
   md5: 5d7c149ba9c728d4951f3fe6d3ce0f84

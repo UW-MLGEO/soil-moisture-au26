@@ -20,6 +20,11 @@ Megan
 - Spatiotemporal fusion of satellite and in situ obervations.
 - Uncertainty propagation and calibration in environmental models.
 
+Ben
+- The role of plants and land-atmosphere feedbacks in terrestrial hydroclimate.
+- Characterizing uncertainty in Earth system models.
+- Global carbon cycle dynamics.
+
 ## license
 
 This repository is licenced under the [MIT License](LICENSE) to make this code easy to reuse, modify and share.
