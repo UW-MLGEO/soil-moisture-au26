@@ -13,6 +13,12 @@ pixi shell
 
 To run notebooks in `notebooks/`, point the Jupyter kernel to `.pixi/envs/default/bin/python`. 
 
+Run an environment smoke test from the repository root:
+
+```sh
+pixi run smoke
+```
+
 ## earth science topics
 
 Megan
