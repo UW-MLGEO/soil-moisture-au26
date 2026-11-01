@@ -32,6 +32,8 @@ MANIFEST
 *.manifest
 *.spec
 
+.DS_Store
+
 # pixi
 #   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
 # pixi.lock
@@ -41,4 +43,5 @@ MANIFEST
 !.pixi/config.toml
 
 notebooks/data/
+output/
 .vscode/
