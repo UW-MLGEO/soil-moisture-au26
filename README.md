@@ -19,6 +19,18 @@ Run an environment smoke test from the repository root:
 pixi run smoke
 ```
 
+## running jobs
+
+Clone [skypilot-hyak](https://github.com/gaia-hazlab/skypilot-hyak) separately and follow its setup. Keep job YAMLs there, configured to run this project's scripts with a Linux-compatible experiment environment:
+
+```sh
+cd /path/to/skypilot-hyak
+pixi run sky launch /path/to/job.yaml \
+  --workdir /path/to/soil-moisture-au26 --cluster sm-drydown
+```
+
+Kopah Project storage: `s3://gaia/ml4geo_sm_drydown/` and `s3://gaia/scratch/ml4geo_sm_drydown/`. Follow the [Kopah setup instructions](https://github.com/gaia-hazlab/skypilot-hyak/blob/main/docs/kopah.md) to configure access to these locations.
+
 ## earth science topics
 
 Megan
