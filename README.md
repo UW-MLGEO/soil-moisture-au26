@@ -5,8 +5,9 @@
 Clone the repository and set up the [Pixi](https://pixi.sh) environment:
 
 ```sh
-git clone https://github.com/UW-MLGEO/soil-moisture-au26.git
+git clone --recurse-submodules https://github.com/UW-MLGEO/soil-moisture-au26.git
 cd soil-moisture-au26
+git submodule update --init --recursive
 pixi install
 pixi shell
 ```
@@ -19,17 +20,22 @@ Run an environment smoke test from the repository root:
 pixi run smoke
 ```
 
-## running jobs
+## uploading data to kopah
 
-Clone [skypilot-hyak](https://github.com/gaia-hazlab/skypilot-hyak) separately and follow its setup. Keep job YAMLs there, configured to run this project's scripts with a Linux-compatible experiment environment:
+Clone [skypilot-hyak](https://github.com/gaia-hazlab/skypilot-hyak) separately and follow its setup.
+
+Kopah Project storage is under `s3://gaia/ml4geo_sm_drydown/` and `s3://gaia/scratch/ml4geo_sm_drydown/`. Follow the [Kopah setup instructions](https://github.com/gaia-hazlab/skypilot-hyak/blob/main/docs/kopah.md) to configure access to these locations.
+
+[scripts/upload_to_kopah.sh](scripts/upload_to_kopah.sh) is a minimal example for fetching HTTPS files into Kopah through Hyak. 
+If you need to configure provider-specific authentication, use provider API calls or want a more robust pipeline (e.g. checksum validation, resuming partial downloads), you will probably want to write your own Python script instead.
 
 ```sh
 cd /path/to/skypilot-hyak
-pixi run sky launch /path/to/job.yaml \
-  --workdir /path/to/soil-moisture-au26 --cluster sm-drydown
+ssh klone-login
+pixi run ssh klone-login \
+  'bash -s -- "https://provider.example/file.nc" "s3://gaia/scratch/ml4geo_sm_drydown/dataset/version/file.nc" "/tmp/provider-cache/file.nc"' \
+  < /path/to/soil-moisture-au26/scripts/upload_to_kopah.sh
 ```
-
-Kopah Project storage: `s3://gaia/ml4geo_sm_drydown/` and `s3://gaia/scratch/ml4geo_sm_drydown/`. Follow the [Kopah setup instructions](https://github.com/gaia-hazlab/skypilot-hyak/blob/main/docs/kopah.md) to configure access to these locations.
 
 ## earth science topics
 
