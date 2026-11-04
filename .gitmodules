@@ -1,0 +1,6 @@
+[submodule "external/drydowns"]
+	path = external/drydowns
+	url = https://github.com/ecohydro/drydowns.git
+[submodule "external/ecflux"]
+	path = external/ecflux
+	url = https://github.com/brynemorgan/ecflux.git

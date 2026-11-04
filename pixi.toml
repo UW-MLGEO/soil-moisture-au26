@@ -19,3 +19,20 @@ pooch = ">=1.9.0,<2"
 obspy = ">=1.5.1,<2"
 jupyterlab = ">=4.6.4,<5"
 xarray = ">=2026.9.0,<2027"
+requests = ">=2.34.2,<3"
+boto3 = ">=1.43.120,<2"
+urllib3 = ">=2.8.0,<3"
+scipy = ">=1.18.1,<2"
+seaborn = ">=0.13.2,<0.14"
+cartopy = ">=0.26.0,<0.27"
+h5py = ">=3.16.0,<4"
+pyarrow = ">=26.0.0,<27"
+earthengine-api = ">=1.7.51,<2"
+
+[pypi-dependencies]
+drydowns = { path = "external/drydowns", editable = true }
+ecflux = { path = "external/ecflux", editable = true }
+
+# Same ecflux v0.0.1 source requested upstream; editable to retain CSV assets.
+[pypi-options.dependency-overrides]
+ecflux = { path = "external/ecflux", editable = true }
