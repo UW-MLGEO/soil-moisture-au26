@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "record_role": "current_dataset_source_and_rights_supplement",
+  "verified_at": "2026-11-05T06:07:08.374616+00:00",
+  "catalog": "config/ai_ready_dataset.json",
+  "synthetic_measurements": false,
+  "augmentation_applied": false,
+  "rights_scope": "Records provider declarations, policy defaults and explicitly labeled scope inferences; it does not replace upstream terms or apply the repository MIT license to datasets.",
+  "ismn_network_index": {
+    "path": "config/ismn_network_provenance.json",
+    "sha256": "7346a413a2571cb7a13cd047cff0725e7e6776e3b48a8d5495169651d99190b5",
+    "uri": "s3://gaia/ml4geo_sm_drydown/provenance/7346a413a2571cb7a13cd047cff0725e7e6776e3b48a8d5495169651d99190b5/ismn_network_provenance.json"
+  },
+  "ismn_network_bibliography": {
+    "path": "config/ismn_network_references.bib",
+    "sha256": "b8d8e773c816e6e30da426ddfbfa7d78ed7f5a395676235bd06094c59e51fd53",
+    "uri": "s3://gaia/ml4geo_sm_drydown/provenance/b8d8e773c816e6e30da426ddfbfa7d78ed7f5a395676235bd06094c59e51fd53/ismn_network_references.bib"
+  },
+  "sources": {
+    "ismn": {
+      "provider": "ISMN / ICWRGC / BfG and the 14 contributing networks",
+      "product": "CONUS soil moisture, soil temperature and separately retained provider precipitation",
+      "version": "2026-11-04 provider export; no provider semantic version is declared",
+      "selection": {
+        "path": "config/ismn_conus_sm_temperature.json",
+        "sha256": "15b45472f15f63fd45a565fd646fa7c464dcd4f7c46c36e5b01856ce2faac032"
+      },
+      "citation": {
+        "doi": "10.5194/hess-25-5749-2021",
+        "authors": "Dorigo et al.",
+        "year": 2021
+      },
+      "network_citations": "config/ismn_network_provenance.json",
+      "rights": {
+        "declaration": "ISMN Terms and Conditions",
+        "terms": {
+          "url": "https://ismn.earth/terms-and-conditions",
+          "retrieved_at": "2026-11-05T05:59:00.544941+00:00",
+          "sha256": "efedd3ca214b4cd289d73b1ef1062449ce25e258d3709cdf2f30feaa8db6a561"
+        },
+        "scope": "Registered user and associated organisation; scientific use only; original-data onward transfer prohibited; acknowledge ISMN and all contributing networks; original-owner rights retained."
+      }
+    },
+    "chirps": {
+      "provider": "UCSB Climate Hazards Center / USGS",
+      "product": "CHIRPS v2.0 daily, native 0.05 degree cells",
+      "version": "2.0; Earth Engine UCSB-CHG/CHIRPS/DAILY",
+      "selection": {
+        "path": "config/chirps_earthengine_conus.json",
+        "sha256": "04c7a2be4be68816185aa56be5b3f0c90b8988f5001a76a4fa1cfec7463fc6fc"
+      },
+      "retrieval": {
+        "extract_created_at_min": "2026-11-04T05:58:52.831803+00:00",
+        "extract_created_at_max": "2026-11-04T06:13:19.955965+00:00",
+        "collection_id": "chirps_v2_ee_2002-07-04_2025-12-31_89924028c20f"
+      },
+      "citation": {
+        "doi": "10.1038/sdata.2015.66",
+        "authors": "Funk et al.",
+        "year": 2015
+      },
+      "rights": {
+        "declaration": "Public domain; provider waives copyright and related rights to the extent possible under law",
+        "source": {
+          "url": "https://www.chc.ucsb.edu/data/chirps",
+          "retrieved_at": "2026-11-05T05:59:01.216886+00:00",
+          "sha256": "94a7673d9ef35a8fe7b5c0a845bb0aa350804e8b10124c51a88952dcdc30c4fc"
+        },
+        "spdx_id": null,
+        "note": "Provider wording is recorded without inventing a file-level SPDX identifier."
+      },
+      "historical_selection_note": "The approved specification retains config/ismn_conus.json as the historical SM-only selection origin; that file is not a runtime dependency because stations and dates are embedded in the frozen specification, and the current expanded SM/temperature selection uses the same station IDs and date window.",
+      "historical_selection_reference": {
+        "collection_id": "2002-07-04_2025-12-31_dd688518cd8a",
+        "sha256": "89924028c20fcdbc86ab07011fad7866619a3be6149d1f50db1ca62b950c8d90",
+        "source_file": "config/ismn_conus.json"
+      }
+    },
+    "gldas": {
+      "provider": "NASA GSFC LDAS",
+      "product": "Native 0.25 degree static soil parameter maps",
+      "version": "p4 fractions (file created 2019-03-14); p5 texture (2020-11-06) and porosity (2020-10-07)",
+      "selection": {
+        "path": "config/gldas_soils_conus.json",
+        "sha256": "a86757871df3bd6d8e016996f79c0e970a33d464a5953abc25907802f7676283"
+      },
+      "source_lineage": {
+        "url": "https://ldas.gsfc.nasa.gov/gldas/soils",
+        "retrieved_at": "2026-11-05T05:59:01.028031+00:00",
+        "sha256": "83e40a32988a731162f92ee8c6eb757233d00af2d2fdfe7eb560298c7273a5da"
+      },
+      "assets": [
+        {
+          "filename": "GLDASp5_soiltexture_025d.nc4",
+          "fields": [
+            "soil_texture"
+          ],
+          "sha256": "c19bc626c0ed29df1056e013f2b76b0d4e2435fb835fd8dad9bdb1f34d9ffb50",
+          "retrieved_at": "2026-11-04T05:11:57.750831+00:00",
+          "url": "https://ldas.gsfc.nasa.gov/sites/default/files/ldas/gldas/SOILS/GLDASp5_soiltexture_025d.nc4",
+          "global_attributes": {
+            "title": "GLDAS p5 data",
+            "institution": "NASA GSFC",
+            "history": "created on date: Fri Nov  6 15:43:37 2020",
+            "references": "Rodell_etal_BAMS_2004,Kumar_etal_EMS_2006,Peters-Lidard_etal_ISSE_2007",
+            "conventions": "CF-1.6"
+          },
+          "lineage": "GLDAS2/Noah FAO16: STATSGO 30 arcseconds over CONUS, FAO 5 arcminutes elsewhere; top layer used for model layers"
+        },
+        {
+          "filename": "GLDASp4_soilfraction_025d.nc4",
+          "fields": [
+            "sand_fraction",
+            "silt_fraction",
+            "clay_fraction"
+          ],
+          "sha256": "9ed43bb3ea6818183e2c8e64b276dd9c5dbf2c84ba356e653e814a785715f042",
+          "retrieved_at": "2026-11-04T18:58:53.309515+00:00",
+          "url": "https://ldas.gsfc.nasa.gov/sites/default/files/ldas/gldas/SOILS/GLDASp4_soilfraction_025d.nc4",
+          "global_attributes": {
+            "title": "GLDAS p4 data",
+            "institution": "NASA GSFC",
+            "history": "created on date: Thu Mar 14 15:56:19 2019",
+            "references": "Rodell_etal_BAMS_2004, Kumar_etal_EMS_2006,Peters-Lidard_etal_ISSE_2007",
+            "conventions": "CF-1.6"
+          },
+          "lineage": "Reynolds/Jackson/Rawls 2000; FAO Soil Map of the World and global pedon records, resampled from 5 arcminutes; top source layer 0-30 cm"
+        },
+        {
+          "filename": "GLDASp5_porosity_025d.nc4",
+          "fields": [
+            "porosity"
+          ],
+          "sha256": "eb5da666f518eae2595de983143166df790c9ba2789c7c8192666b7231de6658",
+          "retrieved_at": "2026-11-04T18:58:54.866130+00:00",
+          "url": "https://ldas.gsfc.nasa.gov/sites/default/files/ldas/gldas/SOILS/GLDASp5_porosity_025d.nc4",
+          "global_attributes": {
+            "title": "GLDAS p5 data",
+            "institution": "NASA GSFC",
+            "history": "created on date: Wed Oct  7 01:20:44 2020",
+            "references": "Rodell_etal_BAMS_2004,Kumar_etal_EMS_2006,Peters-Lidard_etal_ISSE_2007",
+            "conventions": "CF-1.6"
+          },
+          "lineage": "NASA provider identifies this as GLDAS2/Catchment-LSM porosity; no more specific file-level ancestry citation is asserted"
+        }
+      ],
+      "citations": [
+        {
+          "doi": "10.1175/bams-85-3-381",
+          "title": "The Global Land Data Assimilation System",
+          "year": 2004
+        },
+        {
+          "doi": "10.1016/j.envsoft.2005.07.004",
+          "title": "Land information system: An interoperable framework for high resolution land surface modeling",
+          "year": 2006
+        },
+        {
+          "doi": "10.1007/s11334-007-0028-x",
+          "title": "High-performance Earth system modeling with NASA/GSFC’s Land Information System",
+          "year": 2007
+        },
+        {
+          "doi": "10.1029/2000wr900130",
+          "title": "Estimating soil water‐holding capacities by linking the Food and Agriculture Organization Soil map of the world with global pedon databases and continuous pedotransfer functions",
+          "year": 2000
+        }
+      ],
+      "rights": {
+        "declaration": "NASA scientific-data distribution policy; no separate license field is present in the downloaded static parameter files",
+        "policy": {
+          "url": "https://science.data.nasa.gov/about/license",
+          "retrieved_at": "2026-11-05T06:04:09.560013+00:00",
+          "sha256": "e68b7aab89b73225ca839ec027d3ca1b11c7059779a873081ad14f1c719a367b"
+        },
+        "spdx_id": null,
+        "scope": "These non-mission parameter maps are not assigned the NASA-led-mission CC0 default; NASA category 3 states no warranty or representation of usage rights, so the identified upstream source terms must be respected."
+      },
+      "historical_selection_note": "The approved specification retains config/ismn_conus.json as the historical SM-only selection origin; that file is not a runtime dependency because stations and dates are embedded in the frozen specification, and the current expanded SM/temperature selection uses the same station IDs and date window.",
+      "historical_selection_reference": {
+        "collection_id": "2002-07-04_2025-12-31_dd688518cd8a",
+        "sha256": "89924028c20fcdbc86ab07011fad7866619a3be6149d1f50db1ca62b950c8d90",
+        "source_file": "config/ismn_conus.json"
+      }
+    },
+    "modis_land_cover": {
+      "provider": "NASA LP DAAC; NASA Terra/Aqua MODIS",
+      "product": "MODIS/Terra+Aqua Land Cover Type Yearly L3 Global 500m SIN Grid V061",
+      "version": "Collection 6.1 / 061",
+      "selection": {
+        "path": "config/modis_land_cover_conus.json",
+        "sha256": "6b8ac875092e89a9e1e02d8eb17c38a400f719daea1cd38b8f3cb9d269f0290b"
+      },
+      "retrieval": {
+        "extract_created_at_min": "2026-11-04T22:52:45.506182+00:00",
+        "extract_created_at_max": "2026-11-04T23:02:33.479374+00:00",
+        "collection_id": "modis_land_cover_061_lpdaac_hdf4_2002-07-04_2025-12-31_89924028c20f"
+      },
+      "citation": {
+        "doi": "10.5067/modis/mcd12q1.061",
+        "authors": [
+          "Friedl,  Mark",
+          "Sulla-Menashe,  Damien"
+        ],
+        "year": 2022
+      },
+      "doi_metadata": {
+        "url": "https://api.datacite.org/dois/10.5067/MODIS/MCD12Q1.061",
+        "retrieved_at": "2026-11-05T05:58:58.553548+00:00",
+        "sha256": "0f588fb7c7a51d115e967d730cb05bfd0071e13a4d348c764583c14a3a12a6fa"
+      },
+      "cmr_collection_concept_id": "C2484079608-LPCLOUD",
+      "rights": {
+        "declaration": "NASA-led-mission default CC0 absent a product-specific restriction",
+        "spdx_id": "CC0-1.0",
+        "basis": "NASA mission-data policy default; DataCite rights list is empty, not an independent CC0 registration",
+        "policy": {
+          "url": "https://science.data.nasa.gov/about/license",
+          "retrieved_at": "2026-11-05T06:04:09.560013+00:00",
+          "sha256": "e68b7aab89b73225ca839ec027d3ca1b11c7059779a873081ad14f1c719a367b"
+        },
+        "datacite_rights_list": [],
+        "cmr_use_constraints": null,
+        "status": "policy_default; no additional restriction found in the checked collection metadata"
+      }
+    },
+    "modis_lai": {
+      "provider": "NASA LP DAAC; NASA Terra/Aqua MODIS",
+      "product": "MODIS/Terra+Aqua Leaf Area Index/FPAR 4-Day L4 Global 500m SIN Grid V061",
+      "version": "Collection 6.1 / 061",
+      "selection": {
+        "path": "config/modis_lai_conus.json",
+        "sha256": "aed8aede1f6fc3bacbcc0f7ed7a06e41f9a3de99224b2a4c342f3eb7708e7d0d"
+      },
+      "retrieval": {
+        "extract_created_at_min": "2026-11-04T18:59:00.842235+00:00",
+        "extract_created_at_max": "2026-11-04T19:06:34.786242+00:00",
+        "collection_id": "modis_lai_061_2002-07-04_2025-12-31_89924028c20f"
+      },
+      "citation": {
+        "doi": "10.5067/modis/mcd15a3h.061",
+        "authors": [
+          "Myneni,  Ranga",
+          "Knyazikhin,  Yuri",
+          "Park,  Taejin"
+        ],
+        "year": 2021
+      },
+      "doi_metadata": {
+        "url": "https://api.datacite.org/dois/10.5067/MODIS/MCD15A3H.061",
+        "retrieved_at": "2026-11-05T05:58:58.738504+00:00",
+        "sha256": "c125991fe43dc325b15e43169d897abfa63bb87e9b8b5a7e5468b3497cb48dd0"
+      },
+      "cmr_collection_concept_id": "C2343110937-LPCLOUD",
+      "rights": {
+        "declaration": "NASA-led-mission default CC0 absent a product-specific restriction",
+        "spdx_id": "CC0-1.0",
+        "basis": "NASA mission-data policy default; DataCite rights list is empty, not an independent CC0 registration",
+        "policy": {
+          "url": "https://science.data.nasa.gov/about/license",
+          "retrieved_at": "2026-11-05T06:04:09.560013+00:00",
+          "sha256": "e68b7aab89b73225ca839ec027d3ca1b11c7059779a873081ad14f1c719a367b"
+        },
+        "datacite_rights_list": [],
+        "cmr_use_constraints": {
+          "LicenseURL": {
+            "Linkage": "https://earthdata.nasa.gov/earth-observation-data/data-use-policy",
+            "Name": "Data Use Policy",
+            "Description": "License URL for data use policy",
+            "MimeType": "text/html"
+          }
+        },
+        "status": "policy_default; no additional restriction found in the checked collection metadata"
+      }
+    },
+    "morgan_2025": {
+      "provider": "Morgan, Araki, Trugman and Caylor / ecohydro",
+      "product": "Published unfiltered drydown event results and companion metadata",
+      "version": "ece5bbc5d741526e7440aef21a903d94d7ffc2e8",
+      "selection": {
+        "path": "config/published_drydowns_morgan_2025.json",
+        "sha256": "0b51fea6a95f26fd0ba55f896efa6fba985804cca770ee1802198dd692af712b"
+      },
+      "source_repository": "https://github.com/ecohydro/ismn-drydowns",
+      "source_archive": {
+        "path": "data/ismn_results_star_th0_04may.csv.zip",
+        "sha256": "f1c0a07cc8a608685f1c04ff9e555a4711299f8dd76fcedf607d5ba5ed1d91b3",
+        "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/data/ismn_results_star_th0_04may.csv.zip"
+      },
+      "csv_member": "ismn_results_star_th0_04may.csv",
+      "csv_sha256": "c7619122846948c7f52c9d3c5411c696915c0832bc740fa4797996ea13818bd0",
+      "homogenize": false,
+      "citation": {
+        "doi": "10.1038/s41559-025-02810-8",
+        "authors": "Morgan et al.",
+        "year": 2025
+      },
+      "rights": {
+        "declaration": "GNU GPL v3 repository-level notice; default coverage of the contributed archive is an evidence-based scope inference",
+        "scope_status": "repository_default_inferred; no CSV-specific override found",
+        "repository_license_sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "license_present_at_archive_addition": {
+          "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/8632aa388986db4da3f6a7e56516b5f702acc1f8/LICENSE",
+          "retrieved_at": "2026-11-05T05:57:10.503037+00:00",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+        },
+        "license_added_commit": {
+          "sha": "d10a194bb42ef9a1fe403565ef0f9c9fa399e380",
+          "date": "2024-11-08T17:47:02Z"
+        },
+        "archive_added_commit": {
+          "sha": "8632aa388986db4da3f6a7e56516b5f702acc1f8",
+          "date": "2024-11-08T21:49:21Z"
+        },
+        "historical_github_terms": {
+          "url": "https://raw.githubusercontent.com/github/site-policy/673c01e2bed86d4e1f62f10f1d4d00a4c4cdd867/Policies/github-terms/github-terms-of-service.md",
+          "retrieved_at": "2026-11-05T05:58:57.753803+00:00",
+          "sha256": "e4d08f1c68dc8722b423f307dfefc61d696662fb39979a74def4869f4280b515"
+        },
+        "basis": "The unchanged root GPL notice was present before the archive was added; historical GitHub terms D.6 license contributed Content under the repository notice, and A defines Content to include data.",
+        "limits": "No claim that the article text-and-data-mining license licenses the CSV, or that repository licensing removes third-party ISMN/source restrictions; retain source notices and restricted scientific access where applicable."
+      },
+      "retrieved_at": "2026-11-04T23:32:13.639198+00:00"
+    }
+  }
+}

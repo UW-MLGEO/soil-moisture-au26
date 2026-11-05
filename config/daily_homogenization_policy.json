@@ -1,0 +1,44 @@
+{
+  "decision_notes": {
+    "ismn_missing_codes": "Native missing values NaN are always decoded; non-G records are masked. Do not invent undocumented numeric sentinels.",
+    "lai": "User selected main-algorithm SCF_QC0or1, including saturation; bits5-7 of FparLai_QC. Preserve both QC bands.",
+    "land_cover": "User selected IGBP and no additional QC exclusion beyond declared fill/valid-range decoding; retain QC words."
+  },
+  "ismn_missing_codes": {
+    "soil_moisture": [],
+    "soil_temperature": []
+  },
+  "lai_band": "Lai",
+  "lai_qc_bands": [
+    "FparLai_QC",
+    "FparExtra_QC"
+  ],
+  "lai_quality": {
+    "mode": "bit_rules",
+    "rules": [
+      {
+        "allowed": [
+          0,
+          1
+        ],
+        "column": "qc_FparLai_QC",
+        "mask": 7,
+        "offset": 5
+      }
+    ]
+  },
+  "land_cover_qc_bands": [
+    "QC",
+    "LW"
+  ],
+  "land_cover_quality": {
+    "mode": "retain_flagged"
+  },
+  "land_cover_scheme": "LC_Type1",
+  "source_decoding_references": [
+    "https://ismn.earth/data/harmonization/",
+    "https://ismn.earth/data/header-value-files/",
+    "https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD15A3H"
+  ],
+  "temperature_quality": "G_only"
+}

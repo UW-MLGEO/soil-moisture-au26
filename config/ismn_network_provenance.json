@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "dataset": "ISMN CONUS SM and soil temperature",
+  "selection": "config/ismn_conus_sm_temperature.json",
+  "selection_sha256": "15b45472f15f63fd45a565fd646fa7c464dcd4f7c46c36e5b01856ce2faac032",
+  "verified_at": "2026-11-05T06:04:42.978326+00:00",
+  "reference_bibliography": "config/ismn_network_references.bib",
+  "reference_bibliography_sha256": "b8d8e773c816e6e30da426ddfbfa7d78ed7f5a395676235bd06094c59e51fd53",
+  "rights": "ISMN terms: registered-user/associated-organisation scientific use; no onward transfer of original data; original-owner rights retained; cite ISMN and every contributing network.",
+  "terms_url": "https://ismn.earth/terms-and-conditions",
+  "networks": [
+    {
+      "network": "ARM",
+      "station_count": 35,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/ARM.zip",
+      "archive_sha256": "f8c52a90e4ea29812956658fadfe495b23f43fda0eb14d8d8df51e9086ee96ff",
+      "archive_retrieved_at": "2026-11-04T19:09:58.885549+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "ed5d1b57559b7a3381b8ba64b2bca73542cc9b606c6817dca866e815d19a2bfb",
+      "network_references": [
+        {
+          "bibtex_key": "ARM_Cook_2016c",
+          "title": "Soil temperature and moisture proﬁle (stamp) system handbook, Technical report, DOE Oﬃce of Science Atmospheric Radiation Measurement (ARM) Program",
+          "year": "2016",
+          "doi": null
+        },
+        {
+          "bibtex_key": "ARM_Cook_2016d",
+          "title": "Soil water and temperature system (swats) instrument handbook, Technical report, DOE Oﬃce of Science Atmospheric Radiation Measurement (ARM) Program",
+          "year": "2016",
+          "doi": null
+        },
+        {
+          "bibtex_key": "ARM_Cook_2018b",
+          "title": "Surface energy balance system (sebs) instrument handbook, Technical report, DOE Office of Science Atmospheric Radiation Measurement (ARM) Program",
+          "year": "2018",
+          "doi": null
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "AWDN",
+      "station_count": 50,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/AWDN.zip",
+      "archive_sha256": "22dde2b4a9f39fdfb109d8ec051ef7621bfc1f0ce8323685064bcd78f8b48815",
+      "archive_retrieved_at": "2026-11-04T19:00:31.019970+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "cc137e65c534b03782b9b069f958db3859bac98c607b6e174657334412baadc0",
+      "network_references": [],
+      "acknowledgement_member": "ismn_acknowledgement.txt",
+      "acknowledgement": "We gratefully acknowledge the following networks and their operators for contributing data to the International Soil Moisture Network (ISMN): Automated Weather Data Network (AWDN). Their continued support and commitment to open data sharing make this resource possible, and we thank them for their valuable contribution to the global soil moisture monitoring community.",
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "COSMOS",
+      "station_count": 67,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/COSMOS.zip",
+      "archive_sha256": "33cdc501a2be2e6fe41ed358c73244b2330987e8fdb4a01e0098a6453df01d75",
+      "archive_retrieved_at": "2026-11-04T19:01:35.539334+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "76b5b85bbcadf28a1bb47214f7df21e368b78313bca12c6ca06abd6e29dddf6d",
+      "network_references": [
+        {
+          "bibtex_key": "COSMOS_Zreda_2008b",
+          "title": "Measuring soil moisture content non-invasively at intermediate spatial scale using cosmic-ray neutrons",
+          "year": "2008",
+          "doi": "10.1029/2008GL035655"
+        },
+        {
+          "bibtex_key": "COSMOS_Zreda_2012b",
+          "title": "COSMOS: the COsmic-ray Soil Moisture Observing System",
+          "year": "2012",
+          "doi": "10.5194/hess-16-4079-2012"
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "CW3E",
+      "station_count": 24,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/CW3E.zip",
+      "archive_sha256": "e6d14b1e371e491bcbe19a1bf6e2bc3dbd6bfd2d917c0e6f66142c405457965b",
+      "archive_retrieved_at": "2026-11-04T19:03:45.853691+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "94bde072624593688bc6294314e76a0abe98d8775e813cc22a518d33efdd231d",
+      "network_references": [
+        {
+          "bibtex_key": "CW3E_Ralph_2022b",
+          "title": "Center for Western Weather and Water Extremes (CW3E) Surface Meteorological Observational Dataset.",
+          "year": "2022",
+          "doi": "https://doi.org/10.6075/J0SX6DDH"
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "FLUXNET-AMERIFLUX",
+      "station_count": 8,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/FLUXNET-AMERIFLUX.zip",
+      "archive_sha256": "fb19df5a36a1ba6021266229108b7a5f2b00bd0e3cd41a3eec8a6d7232dd8214",
+      "archive_retrieved_at": "2026-11-04T19:03:51.633758+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "cc137e65c534b03782b9b069f958db3859bac98c607b6e174657334412baadc0",
+      "network_references": [],
+      "acknowledgement_member": "ismn_acknowledgement.txt",
+      "acknowledgement": "We gratefully acknowledge the following networks and their operators for contributing data to the International Soil Moisture Network (ISMN): FLUXNET-AMERIFLUX. Their continued support and commitment to open data sharing make this resource possible, and we thank them for their valuable contribution to the global soil moisture monitoring community.",
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "ICN",
+      "station_count": 18,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/ICN.zip",
+      "archive_sha256": "9540c954bfc0b42bcfa5c288715969f1589e723a59ecfe76142761b16e3ab0af",
+      "archive_retrieved_at": "2026-11-04T19:04:56.163893+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "a32fadc338c5382f9a0e3adf20f7cc6e1e11e21241f70c9b83bf052798841865",
+      "network_references": [
+        {
+          "bibtex_key": "ICN_Hollinger_1994b",
+          "title": "A Soil Moisture Climatology of Illinois",
+          "year": "1994",
+          "doi": "10.1175/1520-0442(1994)007<0822:ASMCOI>2.0.CO;2"
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "PBO_H2O",
+      "station_count": 143,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/PBO_H2O.zip",
+      "archive_sha256": "3c2d0be2e7832f005ff4d27976a3d2a2d8a0d5ed9da3e9204eb266164bf92364",
+      "archive_retrieved_at": "2026-11-04T19:05:59.812995+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "5ec0cc827238a13bdf83f5fe30fc89a9b58285a1bb4086d9cbf8e8c47feb1e2e",
+      "network_references": [
+        {
+          "bibtex_key": "PBO_H2O_Larson_2008b",
+          "title": "Use of GPS receivers as a soil moisture network for water cycle studies",
+          "year": "2008",
+          "doi": "10.1029/2008GL036013"
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "SCAN",
+      "station_count": 196,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/SCAN.zip",
+      "archive_sha256": "0329fadaed6b91230dde424f12a1df6802a59084dc559f77518f796771893f20",
+      "archive_retrieved_at": "2026-11-04T19:57:07.091858+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "6cb62b025b0febf945f3dce9adbceb86b378f5747fd4876c3ad13bdf66d73bac",
+      "network_references": [
+        {
+          "bibtex_key": "SCAN_Schaefer_2007b",
+          "title": "The usda natural resources conservation service soil climate analysis network (scan)",
+          "year": "2007",
+          "doi": null
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "SNOTEL",
+      "station_count": 466,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/SNOTEL.zip",
+      "archive_sha256": "5f58c6210f8acfb52ded3a340b8df8e75f99ebf826394c523c76ccb668620892",
+      "archive_retrieved_at": "2026-11-04T20:01:40.937665+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "1290e1f57e99f78efbff3e2faefd426d0465424735c44724fc48e3df577253a2",
+      "network_references": [
+        {
+          "bibtex_key": "SNOTEL_Leavesley_2008b",
+          "title": "A Modeling Framework for Improved Agricultural Water Supply Forecasting",
+          "year": "2008",
+          "doi": null
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "SOILSCAPE",
+      "station_count": 203,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/SOILSCAPE.zip",
+      "archive_sha256": "6005bf4b74593af20d065e4b0eb0af7ee6308487747ce2060b8c07fdeb957fe0",
+      "archive_retrieved_at": "2026-11-04T19:11:34.404047+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "fc79d233712e6ba08b3cf088cb53ec64f8cd57bd76a61cf3cc27419d6ac9e3e8",
+      "network_references": [
+        {
+          "bibtex_key": "SOILSCAPE_Shuman_2010b",
+          "title": "Measurement scheduling for soil moisture sensing: From physical models to optimal control",
+          "year": "2010",
+          "doi": "https://doi.org/10.1109/JPROC.2010.2052532"
+        },
+        {
+          "bibtex_key": "SOILSCAPE_Moghaddam_2011b",
+          "title": "A Wireless Soil Moisture Smart Sensor Web Using Physics-Based Optimal Control: Concept and Initial Demonstrations",
+          "year": "2011",
+          "doi": "10.1109/JSTARS.2010.2052918"
+        },
+        {
+          "bibtex_key": "SOILSCAPE_MahtaMoghaddam_2016b",
+          "title": "Soil Moisture Profiles and Temperature Data from SoilSCAPE Sites, USA",
+          "year": "2016",
+          "doi": "10.1109/JSTARS.2010.2052918"
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "TxSON",
+      "station_count": 40,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/TxSON.zip",
+      "archive_sha256": "57d90d69d893373e1fd60eddea18c8a6750995dff928c5f1b9d21f507207db01",
+      "archive_retrieved_at": "2026-11-04T19:11:43.362489+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "efdf08bc5a3dfd7d8be9faf8345eac21a01f82b7897d2b631b75c610990369d8",
+      "network_references": [
+        {
+          "bibtex_key": "TxSON_Caldwell_2019b",
+          "title": "The Texas Soil Observation Network: A comprehensive soil moisture dataset for remote sensing and land surface model validation",
+          "year": "2019",
+          "doi": "https://doi.org/10.2136/vzj2019.04.0034"
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "USCRN",
+      "station_count": 127,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/USCRN.zip",
+      "archive_sha256": "2458b9ea74c1839cc54b6366195c11337ae18fe3c6b40d020b0ab3cc3a002a5c",
+      "archive_retrieved_at": "2026-11-04T19:37:47.701346+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "61c84ecd510f29e87b790999650fda7998f216955c372a7b09d6639198665150",
+      "network_references": [
+        {
+          "bibtex_key": "USCRN_Bell_2013b",
+          "title": "U.S. Climate Reference Network Soil Moisture and Temperature Observations",
+          "year": "2013",
+          "doi": "10.1175/JHM-D-12-0146.1"
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "USDA-ARS",
+      "station_count": 4,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/USDA-ARS.zip",
+      "archive_sha256": "26246794eeeb90b601712c3851a236ff9f6e8bfc27c44a5ace6e9458ecbc0d08",
+      "archive_retrieved_at": "2026-11-04T19:12:51.999350+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "51ef9203028d0ee191e800fa7603bd8c2feeee224bb51c96257a9e5666d776fd",
+      "network_references": [
+        {
+          "bibtex_key": "USDA-ARS_Jackson_2011b",
+          "title": "Validation of Advanced Microwave Scanning Radiometer Soil Moisture Products",
+          "year": "2011",
+          "doi": "10.1109/TGRS.2010.2051035"
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    },
+    {
+      "network": "iRON",
+      "station_count": 7,
+      "archive_cache_path": "output/ismn/2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature/archives/iRON.zip",
+      "archive_sha256": "f9e9115ff7cca0fa5603e045966a3b5037763ee0e379fe7f18cc0d319fcf797b",
+      "archive_retrieved_at": "2026-11-04T19:12:54.981303+00:00",
+      "bibtex_member": "ismn_reference.bibtex",
+      "bibtex_member_sha256": "2d6e14c8315f3ee2de568035093620549079584912463d5433f16b09ea521228",
+      "network_references": [
+        {
+          "bibtex_key": "iRON_Osenga_2019b",
+          "title": "Bioclimatic and Soil Moisture Monitoring Across Elevation in a Mountain Watershed: Opportunities for Research and Resource Management",
+          "year": "2019",
+          "doi": "10.1029/2018WR023653"
+        },
+        {
+          "bibtex_key": "iRON_Osenga_2021b",
+          "title": "A community-supported weather and soil moisture monitoring database of the Roaring Fork catchment of the Colorado River Headwaters",
+          "year": "2021",
+          "doi": "https://doi.org/10.1002/hyp.14081"
+        }
+      ],
+      "acknowledgement_member": null,
+      "acknowledgement": null,
+      "rights_reference": "https://ismn.earth/terms-and-conditions"
+    }
+  ],
+  "reference_bibliography_uri": "s3://gaia/ml4geo_sm_drydown/provenance/b8d8e773c816e6e30da426ddfbfa7d78ed7f5a395676235bd06094c59e51fd53/ismn_network_references.bib"
+}

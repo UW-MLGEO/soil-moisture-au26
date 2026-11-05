@@ -1,0 +1,179 @@
+{
+  "archive": "data/ismn_results_star_th0_04may.csv.zip",
+  "commit": "ece5bbc5d741526e7440aef21a903d94d7ffc2e8",
+  "csv_member": "ismn_results_star_th0_04may.csv",
+  "csv_sha256": "c7619122846948c7f52c9d3c5411c696915c0832bc740fa4797996ea13818bd0",
+  "dataset_id": "morgan_2025",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "sha256": "04fd88a940c23573b8dbff329498573b931ca506198aa598a73f49cfec0b87df",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/README.md"
+    },
+    {
+      "path": "code/drydown.py",
+      "sha256": "78480f83fd812e8d468eda0bdfc9e12237c21d11930226eeb26f1a89c79e0a4b",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/code/drydown.py"
+    },
+    {
+      "path": "code/figs.py",
+      "sha256": "10605b31a07ad25c0ba3c09f38f1d00283010c5be676da80a1fbd40c89a60a1e",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/code/figs.py"
+    },
+    {
+      "path": "code/ismn_ancillary.py",
+      "sha256": "2523a4b10cc7013ecfde7bb17aaad0c38fb45b1789fd6ebc57b1e96576c59a14",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/code/ismn_ancillary.py"
+    },
+    {
+      "path": "code/run_ismn.py",
+      "sha256": "a368de1803dbcf4eb87298c426742a5f7b22f92035efcd22e41b0546a6d0b784",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/code/run_ismn.py"
+    },
+    {
+      "path": "code/soil/config.ini",
+      "sha256": "a9c940eae1dd84934d09d213946e7d3395eb7b85274817aee8e469e43deefd1f",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/code/soil/config.ini"
+    },
+    {
+      "path": "code/soil/station.py",
+      "sha256": "5944252a9547feaa750afbba094ee70bc2ddcb612ddbc0997d7a113f4f9d779a",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/code/soil/station.py"
+    },
+    {
+      "path": "code/utils.py",
+      "sha256": "9bb76d254b7032babb9bf9e2689206638c694be125f8d237608bc9999917dbc4",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/code/utils.py"
+    },
+    {
+      "path": "code/utils_figs.py",
+      "sha256": "da2f72beaaeaed63e988f483d03aeb4c0a44cb40a834bae58e361c557b521d44",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/code/utils_figs.py"
+    },
+    {
+      "path": "code/utils_read.py",
+      "sha256": "cd45e58f7065ac327f5355a521db0f772c1cfd38d792c7c06702fd74521aaa1f",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/code/utils_read.py"
+    },
+    {
+      "path": "data/IGBP.csv",
+      "sha256": "d6c8f2c13b6eb1a64008bfdcec54954334b742af834cf0e10242b32151f6731d",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/data/IGBP.csv"
+    },
+    {
+      "path": "data/ISMN/ancillary/LC/ismn_MCD12Q1_061_LC.csv",
+      "sha256": "0c24770fb8fdaa5083ce3202cdc8f5d73c836baa83421849da668a339898911a",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/data/ISMN/ancillary/LC/ismn_MCD12Q1_061_LC.csv"
+    },
+    {
+      "path": "data/ISMN/ancillary/VCF/ismn_MOD44B_061_VCF.csv",
+      "sha256": "36537c8c7c05b0021cacb915d79cc86f2b2133ddc79b9ed17740bef882568945",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/data/ISMN/ancillary/VCF/ismn_MOD44B_061_VCF.csv"
+    },
+    {
+      "path": "data/ISMN/ismn_ancillary.csv",
+      "sha256": "8112b3c8729276bbff761307bc7acf23d38dbdaa0e7470854c8a8409b0d7d7e9",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/data/ISMN/ismn_ancillary.csv"
+    },
+    {
+      "path": "data/ISMN/metadata.csv",
+      "sha256": "bb4062745643de7fd76ccf4cbea54d378bbf25e76b75771b36d3f56fa6cc5932",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/data/ISMN/metadata.csv"
+    },
+    {
+      "path": "data/cci_landcover.csv",
+      "sha256": "635c146ed086ad82ad16056968da1c48627e80ff0f7b7798a6bae7851ecd9e17",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/data/cci_landcover.csv"
+    },
+    {
+      "path": "data/ismn_results_star_th0_04may.csv.zip",
+      "sha256": "f1c0a07cc8a608685f1c04ff9e555a4711299f8dd76fcedf607d5ba5ed1d91b3",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/data/ismn_results_star_th0_04may.csv.zip"
+    },
+    {
+      "path": "environment.yml",
+      "sha256": "a913c5f9a37c56bf8300148d8a02033735fa54cc2d632dc130f95263ac2abd59",
+      "url": "https://raw.githubusercontent.com/ecohydro/ismn-drydowns/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/environment.yml"
+    }
+  ],
+  "github_repository": "ecohydro/ismn-drydowns",
+  "homogenize": false,
+  "role": "alternate_drydown_events_and_labels",
+  "schema_version": 1,
+  "source_repository": "https://github.com/ecohydro/ismn-drydowns",
+  "storage": {
+    "destination": "s3://gaia/ml4geo_sm_drydown/",
+    "endpoint": "https://s3.kopah.uw.edu",
+    "profile": "kopah"
+  },
+  "table_description": {
+    "columns": [
+      "SITE_ID",
+      "Sensor_ID",
+      "z_m",
+      "dz",
+      "event_start",
+      "event_end",
+      "duration",
+      "time",
+      "theta",
+      "end_dsdt_mm",
+      "min_sm",
+      "max_sm",
+      "theta_fc",
+      "porosity",
+      "pet",
+      "et",
+      "total_et",
+      "precip",
+      "GPP",
+      "precip_total60d",
+      "precip_total_month",
+      "pet_total60d",
+      "pet_total_month",
+      "LAI",
+      "AI_month",
+      "AI_60d",
+      "exp_theta_w",
+      "exp_tau",
+      "exp_theta_0",
+      "exp_r_squared",
+      "exp_theta_opt",
+      "exp_delta_theta",
+      "exp_k",
+      "exp_ET_max",
+      "q_k",
+      "q_q",
+      "q_theta_star",
+      "q_theta_0",
+      "q_theta_w",
+      "q_r_squared",
+      "q_theta_opt",
+      "q_delta_theta",
+      "q_ET_max",
+      "LC",
+      "LAT",
+      "LON",
+      "depth",
+      "texture"
+    ],
+    "event_end_max": "2024-04-03",
+    "event_start_min": "2001-01-01",
+    "label_column": "q_q",
+    "networks": 70,
+    "notes": [
+      "Published pre-analysis-filter event results; no new filtering or label generation applied.",
+      "Original CSV missing values, fit failures, nonfinite R-squared values and PET defaults are retained.",
+      "LC is CCI; annual MODIS IGBP is provided separately in companion metadata.",
+      "Repository LICENSE is GPL-3.0; no separate dataset-specific license was found."
+    ],
+    "rows": 228012,
+    "source_filtered": false,
+    "station_network_pairs": 2255
+  }
+}

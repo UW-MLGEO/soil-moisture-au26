@@ -1,0 +1,78 @@
+{
+  "components": [
+    {
+      "audit_counts": {
+        "chirps_missing_station_days": 34328,
+        "chirps_unavailable_stations": 4,
+        "gldas_clay_fraction_unavailable_stations": 7,
+        "gldas_porosity_unavailable_stations": 7,
+        "gldas_sand_fraction_unavailable_stations": 7,
+        "gldas_silt_fraction_unavailable_stations": 7,
+        "gldas_soil_texture_class_unavailable_stations": 6,
+        "lai_missing_station_days": 2179140,
+        "quality_masked_observations": 152886015,
+        "rows": 11911816
+      },
+      "days_per_station": 8582,
+      "end_inclusive": "2025-12-31",
+      "id": "daily_station_tables",
+      "manifest_uri": "s3://gaia/ml4geo_sm_drydown/daily/manifests/fb7a97cfa547d36ae143443c64aa69df6e0170a12e684c5fbc7c0d7bd9f61eee.json",
+      "object_prefix": "s3://gaia/ml4geo_sm_drydown/daily/",
+      "policy": "config/daily_homogenization_policy.json",
+      "preprocessing_inputs": [
+        "ismn",
+        "chirps",
+        "gldas",
+        "modis_land_cover",
+        "modis_lai"
+      ],
+      "role": "daily_features_before_drydown_extraction",
+      "rows": 11911816,
+      "sensor_streams": {
+        "soil_moisture": 10825,
+        "soil_temperature": 8632
+      },
+      "start": "2002-07-04",
+      "stations": 1388,
+      "status": "complete_and_verified",
+      "stored_bytes": 9293111615,
+      "stored_objects": 2777,
+      "verified_at": "2026-11-05T00:33:16.849041+00:00",
+      "workflow": "scripts/homogenize_data.py"
+    },
+    {
+      "event_end_max": "2024-04-03",
+      "event_start_min": "2001-01-01",
+      "events": 228012,
+      "homogenize": false,
+      "id": "morgan_2025_published_drydowns",
+      "label_column": "q_q",
+      "manifest_uri": "s3://gaia/ml4geo_sm_drydown/published_drydowns/morgan_2025/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/manifests/993d82bcf62686fe037ed6c6680e7f3ad69d81524dddba5c75638c0d397c7c4c.json",
+      "object_prefix": "s3://gaia/ml4geo_sm_drydown/published_drydowns/morgan_2025/ece5bbc5d741526e7440aef21a903d94d7ffc2e8/",
+      "role": "alternate_drydown_events_and_labels",
+      "specification": "config/published_drydowns_morgan_2025.json",
+      "specification_sha256": "0b51fea6a95f26fd0ba55f896efa6fba985804cca770ee1802198dd692af712b",
+      "status": "complete_and_verified",
+      "stored_bytes": 418135515,
+      "stored_objects": 41
+    }
+  ],
+  "destination": "s3://gaia/ml4geo_sm_drydown/",
+  "project": "ml4geo_sm_drydown",
+  "schema_version": 1,
+  "source_provenance": {
+    "network_bibliography": {
+      "path": "config/ismn_network_references.bib",
+      "sha256": "b8d8e773c816e6e30da426ddfbfa7d78ed7f5a395676235bd06094c59e51fd53",
+      "uri": "s3://gaia/ml4geo_sm_drydown/provenance/b8d8e773c816e6e30da426ddfbfa7d78ed7f5a395676235bd06094c59e51fd53/ismn_network_references.bib"
+    },
+    "network_index": {
+      "path": "config/ismn_network_provenance.json",
+      "sha256": "7346a413a2571cb7a13cd047cff0725e7e6776e3b48a8d5495169651d99190b5",
+      "uri": "s3://gaia/ml4geo_sm_drydown/provenance/7346a413a2571cb7a13cd047cff0725e7e6776e3b48a8d5495169651d99190b5/ismn_network_provenance.json"
+    },
+    "path": "config/source_provenance.json",
+    "sha256": "d9bc0ebdf4870f0ad4feae86a1b69a0bea1b2d91b17460fbba63b866d4f41e2f",
+    "uri": "s3://gaia/ml4geo_sm_drydown/provenance/d9bc0ebdf4870f0ad4feae86a1b69a0bea1b2d91b17460fbba63b866d4f41e2f/source_provenance.json"
+  }
+}
