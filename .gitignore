@@ -43,5 +43,11 @@ MANIFEST
 !.pixi/config.toml
 
 notebooks/data/
+<<<<<<< Updated upstream
 output/
 .vscode/
+=======
+.vscode/
+
+test/
+>>>>>>> Stashed changes
