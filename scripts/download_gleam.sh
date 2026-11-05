@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-# Download GLEAM v4.3a and v4.3b monthly and yearly data (0.1 deg) from the GLEAM SFTP server.
+# Download GLEAM v4.3a and v4.3b data (0.1 deg) from the GLEAM SFTP server.
 #   https://www.gleam.eu
 #
 # Remote layout:  /data/<version>/<resolution>/<variable>/<variable>_<year>_GLEAM_<version>_<MO|YR>.nc
 # Local layout:   $OUTPUT_ROOT/<version>/<resolution>/<variable>/...
-# v4.3a covers 1980-2025 and v4.3b 2003-2025. Monthly files are ~90 MB per variable-year and
-# yearly ~6 MB, so all 15 variables come to roughly 100 GB.
+# v4.3a covers 1980-2025 and v4.3b 2003-2025
 #
 # Each directory is mirrored with lftp, which skips files that are already complete locally and
 # resumes partial ones, so re-running is safe.
@@ -26,9 +25,9 @@ PARALLEL=${PARALLEL:-4}  # files transferred at once within each mirror
 LFTP=${LFTP:-lftp}
 
 VERSIONS=${VERSIONS:-"v4.3a v4.3b"}
-RESOLUTIONS=${RESOLUTIONS:-"monthly yearly"}
+RESOLUTIONS=${RESOLUTIONS:-"daily monthly yearly"}
 # VARIABLES=${VARIABLES:-"E Et Ec Es Ei Eb Ew Ep Ep_aero Ep_rad H S SMrz SMs"}
-VARIABLES=${VARIABLES:-"E Et Ec Es Ei Eb Ew Ep"}
+VARIABLES=${VARIABLES:-"Ep"}
 
 command -v "$LFTP" > /dev/null || {
     echo "lftp not found. Install it (e.g. conda create -n lftp -c conda-forge lftp)" \
