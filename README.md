@@ -10,7 +10,8 @@ one section per source or stage, with a unit and a reason on every key
 (rendered as a table in [docs/decisions.md](docs/decisions.md)). The scripts in
 `scripts/` read as the methods: each numbered block states the rule it applies
 and logs the values used. [docs/workflow.md](docs/workflow.md) explains the
-design, provider quirks and the Kopah layout.
+design, provider quirks and the Kopah layout; [docs/refactor.md](docs/refactor.md) explains what changed
+from the earlier workflow and why.
 
 ## quick start
 
