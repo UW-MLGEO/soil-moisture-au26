@@ -74,6 +74,28 @@ Every config or code change gives a stage a new key folder under `output/cache/`
 (`output/runs/<run>/manifest.json`, `inspection_summary.json`) names, except folders written after the newest
 record (a run may be in progress). Raw caches, run records, exports and Kopah are not touched.
 
+### the output folder
+
+Everything under `output/` is a local cache of Kopah objects or is rebuilt by a script, so any of it can be
+deleted. Locations are set in `config/paths.yml` (defaults in [paths.example.yml](config/paths.example.yml)).
+
+| Subdirectory | Written by | Holds | Rebuild with |
+| --- | --- | --- | --- |
+| `selection/inventory/`, `selection/boundaries/` | `select` | ISMN station-inventory snapshots (named by SHA-256) and the Census state boundary, each with a provenance sidecar | `pixi run select` (downloads a fresh inventory unless `selection.inventory_snapshot` is set) |
+| `ismn/<collection_id>/` | `acquire ismn`, `restore` | `archives/<network>.zip`: one unmodified ISMN export per network, with a `.provenance.json` checksum sidecar; `provenance/` export request records; `restore.json` | `pixi run restore` (~3 GB) |
+| `ancillary/<source>_<window>_<hash>/` | `acquire <source>`, `restore` | `extracts/<asset>.{npz,json}`: raw, still-encoded values of each station's native cell for CHIRPS, GLDAS, MODIS LAI and land cover (one asset per year, or per GLDAS property), with masks and a record of the source images and hashes; `restore.json` | `pixi run restore` |
+| `reference/ismn-drydowns/` | `acquire morgan_2025` | the 19 pinned Morgan et al. (2025) files, SHA-256 checked | `pixi run acquire morgan_2025` |
+| `cache/features/<group>/<key>/` | `homogenize` (steps 1–5) | one long parquet table per feature, per network (e.g. `theta_m3m3/ARM.parquet`), and `_complete/<network>.json` markers with input and file hashes | `pixi run homogenize` |
+| `cache/assemble/<key>/` | `homogenize` (step 6) | `sensor_day/`, `stations/`, `sensors/`: the ML-ready tables, per network | `pixi run homogenize` |
+| `cache/inspect/<key>/` | `inspect` | candidate-problem CSVs (`ismn_flatlines.csv`, `chirps_extremes.csv`, `gldas_checks.csv`, …) and `summary.json` | `pixi run inspect` |
+| `runs/<run>/` | `homogenize`, `inspect` | `config.resolved.yml` (settings used), `homogenize.log` (methods log with counts), `manifest.json` (locks, stage keys, file hashes; what `publish` uploads), `inspection_summary.json` (includes the inspect key) | `pixi run homogenize <run>`, then `pixi run inspect <run>` |
+| `drydown_q/<run>/` | `export-drydown-q` | drydown-q's `sensors.parquet`, `station_day.parquet` and `export_manifest.json` (NaN columns, product differences) | `pixi run export-drydown-q` |
+
+The `<collection_id>` and `<hash>` in raw-cache names come from the plan locks and match the Kopah scratch
+prefixes. Only one key folder per stage is current for a run: the one its `runs/<run>/` records name.
+A `legacy_daily_<network>/` folder, if present, holds pre-refactor tables built for
+[scripts/check_equivalence.py](scripts/check_equivalence.py) and can be deleted.
+
 ### output tables
 
 All dates are UTC calendar days; units are in column names; schemas are checked on write ([schemas.py](src/sm_drydown/schemas.py)).
