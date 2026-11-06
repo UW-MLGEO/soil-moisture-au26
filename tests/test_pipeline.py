@@ -1,14 +1,17 @@
 """Stage cache, assembly and extensibility on small in-memory tables."""
+import json
+import os
 import tempfile
 import unittest
 from dataclasses import replace
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
 from sm_drydown import features as registry
 from sm_drydown.assemble import sensor_day
-from sm_drydown.cache import Stage, stage_key
+from sm_drydown.cache import Stage, cache_usage, stage_key
 from sm_drydown.config import load_config
 from sm_drydown.schemas import SCHEMAS
 
@@ -91,6 +94,65 @@ class StageTests(unittest.TestCase):
             stage = Stage(folder, 'features/test', 'k')
             with self.assertRaisesRegex(ValueError, 'missing column'):
                 stage.write('NET', {'lai_m2m2': station_days('lai_m2m2', [1.] * 6)})
+
+
+class CleanCacheTests(unittest.TestCase):
+    """Which cache/<stage>/<key>/ folders clean-cache may remove."""
+
+    def setUp(self):
+        self.out = Path(self.enterContext(tempfile.TemporaryDirectory()))
+        self.past = 1_000_000_000  # not-science: a file time long before the run records
+
+    def key_folder(self, stage, letter, old=True):
+        folder = self.out / 'cache' / stage / (letter * 64)
+        (folder / '_complete').mkdir(parents=True)
+        (folder / '_complete' / 'NET.json').write_text('{}')
+        if old:
+            for path in (folder / '_complete' / 'NET.json', folder / '_complete', folder):
+                os.utime(path, (self.past, self.past))
+        return f'cache/{stage}/{letter * 64}'
+
+    def record(self, used, inspect_key=None, summary=True):
+        run = self.out / 'runs' / 'r'
+        run.mkdir(parents=True)
+        (run / 'manifest.json').write_text(json.dumps({'stages': {f: {'folder': f} for f in used}}))
+        if summary:
+            stage = {'stage': {'folder': inspect_key}} if inspect_key else {}
+            (run / 'inspection_summary.json').write_text(json.dumps(stage))
+
+    def statuses(self):
+        return {e[0].relative_to(self.out).as_posix(): e[2] for e in cache_usage(self.out)}
+
+    def test_only_folders_no_run_names_are_unused(self):
+        current, stale = self.key_folder('features/ismn', 'a'), self.key_folder('features/ismn', 'b')
+        inspected, old_inspect = self.key_folder('inspect', 'c'), self.key_folder('inspect', 'd')
+        self.record([current], inspected)
+        self.assertEqual(self.statuses(), {current: 'in_use', stale: 'unused', inspected: 'in_use',
+                                           old_inspect: 'unused'})
+
+    def test_folder_written_after_the_newest_run_record_is_kept(self):
+        """A run in progress writes feature keys before its manifest exists."""
+        current = self.key_folder('assemble', 'a')
+        self.record([current])
+        in_progress = self.key_folder('assemble', 'b', old=False)
+        future = Path(self.out / in_progress / '_complete' / 'NET.json')
+        os.utime(future, (future.stat().st_mtime + 60, future.stat().st_mtime + 60))  # not-science: 1 min later
+        self.assertEqual(self.statuses()[in_progress], 'kept')
+
+    def test_nothing_is_unused_without_run_records(self):
+        self.key_folder('assemble', 'a')
+        self.assertEqual(set(self.statuses().values()), {'kept'})
+
+    def test_inspect_keys_kept_while_a_summary_lacks_its_key(self):
+        """Summaries written before inspect recorded its key cannot say which inspect folder is theirs."""
+        current, inspected = self.key_folder('assemble', 'a'), self.key_folder('inspect', 'c')
+        self.record([current], summary=True)
+        self.assertEqual(self.statuses()[inspected], 'kept')
+
+    def test_non_key_folders_are_ignored(self):
+        (self.out / 'cache' / 'features' / 'ismn' / 'notes').mkdir(parents=True)
+        self.record([])
+        self.assertEqual(self.statuses(), {})
 
 
 if __name__ == '__main__':

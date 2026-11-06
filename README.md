@@ -69,6 +69,11 @@ ISMN exports are asynchronous: `pixi run python scripts/acquire.py ismn --action
 | [records/](records/) | published catalog, rights and citation evidence, spatial partitions | by hand, rarely |
 | `output/` (git-ignored) | caches, stage outputs, run manifests | the scripts |
 
+Every config or code change gives a stage a new key folder under `output/cache/`, and old ones are never reused.
+`pixi run clean-cache` lists them; `pixi run clean-cache --delete` removes every key folder that no run record
+(`output/runs/<run>/manifest.json`, `inspection_summary.json`) names, except folders written after the newest
+record (a run may be in progress). Raw caches, run records, exports and Kopah are not touched.
+
 ### output tables
 
 All dates are UTC calendar days; units are in column names; schemas are checked on write ([schemas.py](src/sm_drydown/schemas.py)).

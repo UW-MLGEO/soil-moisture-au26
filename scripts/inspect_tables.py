@@ -6,7 +6,7 @@
 Reads the feature and assembled tables listed in <outputs_dir>/runs/<run>/manifest.json
 (run `pixi run homogenize` first). Thresholds: config/pipeline.yml `inspection:`.
 Writes CSVs and summary.json to <outputs_dir>/cache/inspect/<key>/ (and a copy of
-summary.json to the run folder) and the two report figures to paths.figure_dir
+summary.json, with this stage's key, to the run folder) and the two report figures to paths.figure_dir
 (docs/figures by default, so the report can commit them). Offline.
 """
 
@@ -45,6 +45,7 @@ figures = args.figure_dir or Path(cfg.paths.figure_dir)
 summary = inspect(cfg, lambda table, network: stages[owner[table]].read(table, [network]), networks, by_network,
                   stage.folder, figures)
 summary['inputs'] = {'run_manifest': manifest['stages'], 'figure_dir': str(figures)}
+summary['stage'] = {'stage': 'inspect', 'key': key, 'folder': f'cache/inspect/{key}'}
 write_json(stage.folder / 'summary.json', summary)
 shutil.copy2(stage.folder / 'summary.json', run_dir / 'inspection_summary.json')
 print(f"Inspected {summary['stations']} stations: {summary['flatline_candidate_runs']} flatline runs, "

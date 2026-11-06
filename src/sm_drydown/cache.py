@@ -7,9 +7,14 @@ changes; anything else is reused. ``_complete/<partition>.json`` is written last
 and records the partition's input hashes (e.g. the network's ISMN archive) and
 the SHA-256 of every file it wrote; a partition without a matching marker is
 rebuilt, so an interrupted run resumes where it stopped.
+
+Every config or code change creates a new key, so old key folders accumulate.
+``cache_usage`` sorts them into those a run record still names and those it does
+not (``scripts/clean_cache.py`` removes the latter).
 """
 
 import json
+import re
 from pathlib import Path
 from urllib.parse import quote
 
@@ -81,3 +86,62 @@ class Stage:
             return None
         return pa.concat_tables([pq.read_table(f, columns=columns) for f in files],
                                 promote_options='default').to_pandas()
+
+
+KEY_NAME = re.compile(r'[0-9a-f]{64}')
+
+
+def _newest_mtime(folder):
+    return max([folder.stat().st_mtime, *(p.stat().st_mtime for p in folder.rglob('*'))])
+
+
+def run_records(outputs_dir):
+    """{cache folder relative to outputs_dir: [runs]} named by run records, newest record time, runs lacking an inspect key.
+
+    Run records are ``runs/<run>/manifest.json`` (homogenize: feature and assemble
+    keys) and ``runs/<run>/inspection_summary.json`` (inspect key, under ``stage``).
+    """
+    used, times, unrecorded = {}, [], []
+    for manifest in sorted((Path(outputs_dir) / 'runs').glob('*/manifest.json')):
+        run, summary = manifest.parent.name, manifest.parent / 'inspection_summary.json'
+        folders = [s['folder'] for s in json.loads(manifest.read_text())['stages'].values()]
+        times.append(manifest.stat().st_mtime)
+        if summary.exists():
+            times.append(summary.stat().st_mtime)
+            stage = json.loads(summary.read_text()).get('stage')
+            if stage:
+                folders.append(stage['folder'])
+            else:
+                unrecorded.append(run)
+        for folder in folders:
+            used.setdefault(folder, []).append(run)
+    return used, max(times, default=None), unrecorded
+
+
+def cache_usage(outputs_dir):
+    """One entry per ``cache/<stage>/<key>/`` folder: (path, stage, status, reason, bytes).
+
+    status is ``in_use`` (a run record names it), ``kept`` (not named, but written
+    after the newest run record, so it may belong to a run in progress; or an inspect
+    key while some run's inspection summary predates key recording) or ``unused``.
+    With no run records at all, every folder is ``kept``.
+    """
+    outputs = Path(outputs_dir)
+    used, newest, unrecorded = run_records(outputs)
+    entries = []
+    for folder in sorted(p for p in (outputs / 'cache').rglob('*') if p.is_dir() and KEY_NAME.fullmatch(p.name)):
+        relative = folder.relative_to(outputs).as_posix()
+        stage = folder.parent.relative_to(outputs / 'cache').as_posix()
+        size = sum(p.stat().st_size for p in folder.rglob('*') if p.is_file())
+        if relative in used:
+            status, reason = 'in_use', 'named by run ' + ', '.join(used[relative])
+        elif newest is None:
+            status, reason = 'kept', 'no run records to compare against'
+        elif _newest_mtime(folder) > newest:
+            status, reason = 'kept', 'written after the newest run record (may be a run in progress)'
+        elif stage == 'inspect' and unrecorded:
+            status, reason = 'kept', 'inspection summary without a key: rerun inspect for ' + ', '.join(unrecorded)
+        else:
+            status, reason = 'unused', 'no run record names it'
+        entries.append((folder, stage, status, reason, size))
+    return entries

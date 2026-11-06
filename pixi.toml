@@ -15,6 +15,8 @@ homogenize = { cmd = "python scripts/homogenize.py --run {{ run }}", args = [{ a
 inspect = { cmd = "python scripts/inspect_tables.py --run {{ run }}", args = [{ arg = "run", default = "baseline" }] }
 publish = { cmd = "python scripts/publish.py --run {{ run }}", args = [{ arg = "run", default = "baseline" }] }
 export-drydown-q = { cmd = "python scripts/export_drydown_q.py --run {{ run }}", args = [{ arg = "run", default = "baseline" }] }
+# Housekeeping: list (or, with --delete, remove) stage cache folders no run record names.
+clean-cache = "python scripts/clean_cache.py"
 # Verification (offline, synthetic data, no credentials).
 test = "pytest -q"
 smoke = "python tests/smoke.py"

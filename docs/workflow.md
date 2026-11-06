@@ -37,7 +37,8 @@ carries a measurement.
 5. **Content-addressed outputs.** Every stage writes `output/cache/<stage>/<key>/<table>/<network>.parquet`.
    The key covers the stage's config sections, inputs and own code; a per-network completion marker records
    input hashes (e.g. the network's ISMN archive) and file hashes. Changing an inspection threshold reruns
-   only inspection; adding a feature reruns only that feature group and the join.
+   only inspection; adding a feature reruns only that feature group and the join. Superseded keys are
+   removed with `pixi run clean-cache --delete` (only keys no run record names).
 6. **Missing stays missing, with a reason.** Every value column has a `missing_reason`
    ([features/common.py](../src/sm_drydown/features/common.py) lists the vocabulary).
 7. **Scripts read as methods.** `scripts/homogenize.py` has one numbered block per source; each logs the

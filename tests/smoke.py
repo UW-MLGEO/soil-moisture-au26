@@ -4,11 +4,12 @@
 
 Builds synthetic caches (tests/smoke_fixture.py) in a temporary folder, then runs
 the real scripts exactly as documented: homogenize -> inspect -> export to
-drydown-q (twice for homogenize, to check that every stage is reused), and checks
+drydown-q (twice for homogenize, to check that every stage is reused) -> clean-cache, and checks
 a few numbers the fixture fixes. Prints one summary line.
 """
 
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -47,6 +48,14 @@ with tempfile.TemporaryDirectory() as folder:
     found = (summary['flatline_candidate_runs'], summary['chirps_extreme_station_days'])
     assert found == (4, 1), found
     exported = pd.read_parquet(output / 'drydown_q/smoke/station_day.parquet')
+    # clean-cache removes a stale key folder (older than the run records) and keeps every key the run uses.
+    stale = output / 'cache/features/ismn' / ('0' * 64) / '_complete'
+    stale.mkdir(parents=True)
+    for path in (stale, stale.parent):
+        os.utime(path, (0, 0))
+    run(REPO / 'scripts/clean_cache.py', '--paths', paths, '--delete')
+    assert not stale.parent.exists() and (output / summary['stage']['folder'] / 'summary.json').exists()
+    assert run(REPO / 'scripts/homogenize.py', *common, '--locks-dir', locks).count('reused') == 5
     assert len(exported) == len(sensor_day) and exported.igbp_class.isin(['GRA', '']).all()
 print(f'Smoke test passed: {len(sensor_day)} sensor-days from 2 stations; missing reasons {reasons}; '
-      f'stages reused on rerun; inspection and drydown-q export written.')
+      f'stages reused on rerun; inspection and drydown-q export written; stale cache removed.')
