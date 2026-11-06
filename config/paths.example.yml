@@ -1,0 +1,9 @@
+# Machine-specific paths. Copy to config/paths.yml (git-ignored) and edit.
+# Relative paths are resolved against the repository root; ~ is expanded.
+ismn_cache: output/ismn                 # ISMN acquisition caches, one folder per collection_id
+ancillary_cache: output/ancillary       # CHIRPS/GLDAS/MODIS acquisition caches, one folder per collection_id
+morgan_cache: output/reference/ismn-drydowns   # pinned Morgan et al. (2025) files
+selection_cache: output/selection       # station inventory and boundary snapshots used by scripts/select_stations.py
+outputs_dir: output                     # cache/ (stage outputs) and runs/ (manifests, logs) are written here
+figure_dir: docs/figures                # inspection figures (committed with the report)
+drydown_q_prepared_dir: null            # export_drydown_q.py target; null = <outputs_dir>/drydown_q/<run>

@@ -1,0 +1,115 @@
+# GLDAS static soil texture, sand/silt/clay fractions and porosity
+#
+# Provider facts and provenance for `gldas` (no scientific choices: those are in
+# config/pipeline.yml). `request:` holds the provider wording and fixed facts that
+# are copied verbatim into locks/gldas.json by scripts/plan.py; the stations,
+# dates, bands and storage are added from the selection and pipeline.yml.
+# Full rights evidence: records/source_provenance.json (sources.gldas).
+provenance:
+  provider: NASA GSFC LDAS
+  product: Native 0.25 degree static soil parameter maps
+  version: p4 fractions (file created 2019-03-14); p5 texture (2020-11-06) and porosity (2020-10-07)
+  citations:
+  - doi: 10.1175/bams-85-3-381
+    title: The Global Land Data Assimilation System
+    year: 2004
+  - doi: 10.1016/j.envsoft.2005.07.004
+    title: 'Land information system: An interoperable framework for high resolution land surface modeling'
+    year: 2006
+  - doi: 10.1007/s11334-007-0028-x
+    title: High-performance Earth system modeling with NASA/GSFC’s Land Information System
+    year: 2007
+  - doi: 10.1029/2000wr900130
+    title: Estimating soil water‐holding capacities by linking the Food and Agriculture Organization Soil
+      map of the world with global pedon databases and continuous pedotransfer functions
+    year: 2000
+  rights:
+    declaration: NASA scientific-data distribution policy; no separate license field is present in the
+      downloaded static parameter files
+    scope: These non-mission parameter maps are not assigned the NASA-led-mission CC0 default; NASA category
+      3 states no warranty or representation of usage rights, so the identified upstream source terms
+      must be respected.
+collection_prefix: gldas_soils
+coverage:
+  latitude:
+  - -60
+  - 90
+  longitude:
+  - -180
+  - 180
+request:
+  assets:
+  - asset_id: texture_025d
+    field: soil_texture
+    filename: GLDASp5_soiltexture_025d.nc4
+    format: netcdf
+    source_id: texture_025d
+    url: https://ldas.gsfc.nasa.gov/sites/default/files/ldas/gldas/SOILS/GLDASp5_soiltexture_025d.nc4
+    variables:
+      latitude: lat
+      longitude: lon
+      time: time
+      value: GLDAS_soiltex
+  - asset_id: sand_025d
+    field: sand_fraction
+    filename: GLDASp4_soilfraction_025d.nc4
+    format: netcdf
+    source_id: fractions_025d
+    url: https://ldas.gsfc.nasa.gov/sites/default/files/ldas/gldas/SOILS/GLDASp4_soilfraction_025d.nc4
+    variables:
+      latitude: lat
+      longitude: lon
+      time: time
+      value: GLDAS_soilfraction_sand
+  - asset_id: silt_025d
+    field: silt_fraction
+    filename: GLDASp4_soilfraction_025d.nc4
+    format: netcdf
+    source_id: fractions_025d
+    url: https://ldas.gsfc.nasa.gov/sites/default/files/ldas/gldas/SOILS/GLDASp4_soilfraction_025d.nc4
+    variables:
+      latitude: lat
+      longitude: lon
+      time: time
+      value: GLDAS_soilfraction_silt
+  - asset_id: clay_025d
+    field: clay_fraction
+    filename: GLDASp4_soilfraction_025d.nc4
+    format: netcdf
+    source_id: fractions_025d
+    url: https://ldas.gsfc.nasa.gov/sites/default/files/ldas/gldas/SOILS/GLDASp4_soilfraction_025d.nc4
+    variables:
+      latitude: lat
+      longitude: lon
+      time: time
+      value: GLDAS_soilfraction_clay
+  - asset_id: porosity_025d
+    field: porosity
+    filename: GLDASp5_porosity_025d.nc4
+    format: netcdf
+    source_id: porosity_025d
+    url: https://ldas.gsfc.nasa.gov/sites/default/files/ldas/gldas/SOILS/GLDASp5_porosity_025d.nc4
+    variables:
+      latitude: lat
+      longitude: lon
+      time: time
+      value: GLDAS_porosity
+  coordinate_reference: ISMN longitude/latitude used as EPSG:4326; no coordinate transformation
+  dataset: gldas
+  field_capacity_derivation: Not part of raw acquisition
+  processing: No quality filtering, gap filling, interpolation, or missing-value substitution
+  product: GLDAS native 0.25 degree static soil texture, fractions and porosity
+  schema_version: 1
+  source_depth_coverage: Top-layer texture only; NASA uses top-layer information for all GLDAS model layers
+  source_depth_note: Native top-layer source fields repeated daily. Fractions follow Reynolds/FAO-derived
+    maps; texture GLDAS2/Noah FAO16, porosity GLDAS2/Catchment. Preserve distinct parameterization provenance.
+  source_urls:
+  - https://ldas.gsfc.nasa.gov/gldas/soils
+  static: true
+  strategy: http_files
+  units: FAO 16-category soil texture class
+  variables:
+    latitude: lat
+    longitude: lon
+    time: time
+    value: GLDAS_soiltex

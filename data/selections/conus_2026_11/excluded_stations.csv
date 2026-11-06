@@ -1,0 +1,8 @@
+station_id,network,station_name,available_variables,reason
+2871,PBO_H2O,DUECECLUBS,air temperature<br>precipitation<br>snow depth<br>,No soil-moisture sensor interval in requested window
+2888,PBO_H2O,LRRNCHJRDN,air temperature<br>precipitation<br>snow depth<br>,No soil-moisture sensor interval in requested window
+2897,PBO_H2O,LITTLEMTST,air temperature<br>precipitation<br>snow depth<br>,No soil-moisture sensor interval in requested window
+2466,SOILSCAPE,node100,soil temperature<br>,No soil-moisture sensor interval in requested window
+2518,SOILSCAPE,node500,soil temperature<br>,No soil-moisture sensor interval in requested window
+2560,SOILSCAPE,node700,soil temperature<br>,No soil-moisture sensor interval in requested window
+2575,SOILSCAPE,node800,soil temperature<br>,No soil-moisture sensor interval in requested window

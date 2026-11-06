@@ -1,0 +1,12 @@
+# Written by scripts/plan.py; commit to approve. Do not edit.
+source: gldas
+request_sha256: a86757871df3bd6d8e016996f79c0e970a33d464a5953abc25907802f7676283
+selection: conus_2026_11
+pipeline_section_sha256: 749481a98ef2f32e74f0aa7eb70474e8baa30f6f0781fea358c52cd071cd2757
+planned_at: '2026-11-06T00:27:14.736000+00:00'
+stations: 1388
+start: '2002-07-04'
+end: '2025-12-31'
+collection_id: gldas_soils_2002-07-04_2025-12-31_89924028c20f
+assets: 5
+approval: Review this summary and locks/gldas.json, then commit both to approve acquisition.

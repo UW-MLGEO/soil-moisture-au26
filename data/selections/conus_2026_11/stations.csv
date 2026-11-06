@@ -1,0 +1,1389 @@
+station_id,network,station_name,latitude,longitude,available_variables
+908,ARM,Ashton,37.133,-97.266,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+909,ARM,Larned,38.202,-99.316,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+910,ARM,Tyro,37.068,-95.788,precipitation<br>soil moisture<br>soil temperature<br>
+911,ARM,Byron,36.881,-98.285,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+912,ARM,Pawhuska,36.841,-96.427,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+913,ARM,Ringwood,36.431,-98.284,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+914,ARM,Vici,36.061,-99.134,precipitation<br>soil moisture<br>soil temperature<br>
+915,ARM,Morris,35.688,-95.856,precipitation<br>soil moisture<br>soil temperature<br>
+916,ARM,El Reno,35.557,-98.017,precipitation<br>soil moisture<br>soil temperature<br>
+917,ARM,Hillsboro,38.306,-97.301,precipitation<br>soil moisture<br>soil temperature<br>
+918,ARM,Meeker,35.564,-96.988,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+919,ARM,Cordell,35.354,-98.977,precipitation<br>soil moisture<br>soil temperature<br>
+920,ARM,Cyril,34.883,-98.205,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+921,ARM,Earlsboro,35.269,-96.74,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+922,ARM,LeRoy,38.201,-95.597,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+923,ARM,Plevna,37.953,-98.329,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+924,ARM,Halstead,38.114,-97.513,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+925,ARM,Towanda,37.842,-97.02,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+926,ARM,Elk Falls,37.383,-96.18,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+927,ARM,Coldwater,37.333,-99.309,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+928,ARM,Lamont_CF1,36.605,-97.485,precipitation<br>soil moisture<br>soil temperature<br>
+930,ARM,Valley Floor,40.4622,-106.817,soil moisture<br>soil temperature<br>
+931,ARM,Lamont_CF2,36.607,-97.488,soil moisture<br>soil temperature<br>
+932,ARM,Okmulgee,35.615,-96.065,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+2977,ARM,Anthony,37.2134,-98.0969,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+2978,ARM,Newkirk,36.926,-97.082,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+2979,ARM,Waukomis,36.311,-97.928,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+2981,ARM,Omega,35.88,-98.173,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4478,ARM,Medford,36.819,-97.8199,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4479,ARM,Maple City,37.0694,-97.7606,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4480,ARM,Tryon,35.8615,-97.0695,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4481,ARM,Marshall,36.1166,-97.5112,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4482,ARM,Morrison,36.37354,-97.06905,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4483,ARM,Pawnee,36.31937,-96.76203,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6365,ARM,Peckham,36.879561,-97.086452,precipitation<br>soil moisture<br>soil temperature<br>
+2171,AWDN,Ainsworth,42.33,-99.49,soil moisture<br>
+2172,AWDN,Alliance West,42.01,-103.08,soil moisture<br>
+2173,AWDN,Arthur,41.39,-101.31,soil moisture<br>
+2174,AWDN,Barta,42.14,-99.39,soil moisture<br>
+2175,AWDN,Beatrice,40.18,-96.56,soil moisture<br>
+2176,AWDN,Brule North Table,41.09,-101.59,soil moisture<br>
+2177,AWDN,Brunswick,42.21,-97.55,soil moisture<br>
+2178,AWDN,Cedar Point,41.12,-101.38,soil moisture<br>
+2179,AWDN,Central City,41.09,-97.58,soil moisture<br>
+2180,AWDN,Champion,40.24,-101.43,soil moisture<br>
+2181,AWDN,Cozad,40.58,-99.57,soil moisture<br>
+2182,AWDN,Curtisunsta,40.38,-100.3,soil moisture<br>
+2183,AWDN,Dickens,40.57,-100.59,soil moisture<br>
+2184,AWDN,Elgin,41.56,-98.11,soil moisture<br>
+2185,AWDN,Gordon,42.44,-102.1,soil moisture<br>
+2186,AWDN,Gothenburg,40.57,-100.11,soil moisture<br>
+2187,AWDN,Grand Island,40.53,-98.3,soil moisture<br>
+2188,AWDN,Gudmundsens,42.04,-101.26,soil moisture<br>
+2189,AWDN,Halsey,41.54,-100.09,soil moisture<br>
+2190,AWDN,Higgins Ranch,42.5,-99.15,soil moisture<br>
+2191,AWDN,Holdrege,40.2,-99.22,soil moisture<br>
+2192,AWDN,Holdrege 4N,40.3,-99.21,soil moisture<br>
+2193,AWDN,Indian Cave St Park,40.17,-95.37,soil moisture<br>
+2194,AWDN,Kearney,40.43,-99.01,soil moisture<br>
+2195,AWDN,Lexington,40.46,-99.44,soil moisture<br>
+2197,AWDN,McCook,40.14,-100.35,soil moisture<br>
+2198,AWDN,Mead Agrofarm,41.09,-96.24,soil moisture<br>
+2199,AWDN,Mead,41.09,-96.29,soil moisture<br>
+2200,AWDN,Merna,41.27,-99.46,soil moisture<br>
+2201,AWDN,Merritt,42.27,-100.54,soil moisture<br>
+2202,AWDN,Minden,40.31,-99.03,soil moisture<br>
+2203,AWDN,Mitchell Farms,41.56,-103.42,soil moisture<br>
+2204,AWDN,Monroe,41.23,-97.31,soil moisture<br>
+2205,AWDN,Nebraska City,40.32,-95.48,soil moisture<br>
+2206,AWDN,Nebraska City 2N,40.42,-95.53,soil moisture<br>
+2207,AWDN,Newport,42.35,-99.23,soil moisture<br>
+2208,AWDN,Concord (NE),42.23,-96.57,soil moisture<br>
+2209,AWDN,North Platte,41.05,-100.46,soil moisture<br>
+2210,AWDN,O Neill,42.28,-98.45,soil moisture<br>
+2211,AWDN,Ord,41.37,-98.56,soil moisture<br>
+2212,AWDN,Red Cloud,40.05,-98.17,soil moisture<br>
+2213,AWDN,Scottsbluff,41.53,-103.4,soil moisture<br>
+2214,AWDN,Shelton,40.44,-98.45,soil moisture<br>
+2215,AWDN,Sidney,41.13,-103.01,soil moisture<br>
+2216,AWDN,Clay Center (SC),40.34,-98.08,soil moisture<br>
+2217,AWDN,Sparks,42.59,-100.12,soil moisture<br>
+2218,AWDN,Smithfield,40.35,-99.4,soil moisture<br>
+2219,AWDN,West Point,41.51,-96.44,soil moisture<br>
+2220,AWDN,York,40.52,-97.37,soil moisture<br>
+2221,AWDN,Lincoln 82E 20S,40.47,-96.36,soil moisture<br>
+1313,COSMOS,Santa Rita Criosote,31.9085,-110.8394,soil moisture<br>
+1314,COSMOS,Mount Lemmon,32.4418,-110.7822,soil moisture<br>
+1315,COSMOS,Biosphere,32.5795,-110.851,soil moisture<br>
+1316,COSMOS,Manitou Forest Tower,39.101,-105.102,soil moisture<br>
+1317,COSMOS,Santa Fe Watershed-SF,35.683,-105.8225,soil moisture<br>
+1318,COSMOS,Marshall Colorado,39.9495,-105.1955,soil moisture<br>
+1319,COSMOS,Manitou Forest Ground,39.1006,-105.1025,soil moisture<br>
+1320,COSMOS,Santa Fe Watershed-SF1,35.6792,-105.8269,soil moisture<br>
+1321,COSMOS,Rancho No Tengo,31.7438,-110.0219,soil moisture<br>
+1322,COSMOS,Kendall,31.7368,-109.9418,soil moisture<br>
+1325,COSMOS,SMAP-OK,36.0635,-97.217,soil moisture<br>
+1326,COSMOS,ARM-1,36.6054,-97.4878,soil moisture<br>
+1327,COSMOS,Iowa Validation Site,41.9832,-93.6837,soil moisture<br>
+1328,COSMOS,Sterling,38.9739,-77.4852,soil moisture<br>
+1330,COSMOS,VCNP CZO,35.8896,-106.5328,soil moisture<br>
+1331,COSMOS,San Pedro,31.5615,-110.1404,soil moisture<br>
+1334,COSMOS,Desert Chaparral UCI,33.6094,-116.4506,soil moisture<br>
+1335,COSMOS,Coastal Sage UCI,33.7342,-117.6961,soil moisture<br>
+1336,COSMOS,Chestnut Ridge NOAA,35.9311,-84.3324,soil moisture<br>
+1337,COSMOS,Bondville,40.0062,-88.2904,soil moisture<br>
+1338,COSMOS,Morgan Monroe,39.3232,-86.4131,soil moisture<br>
+1339,COSMOS,Mozark,38.7441,-92.2,soil moisture<br>
+1340,COSMOS,Neb Field 3,41.1649,-96.4701,soil moisture<br>
+1341,COSMOS,Harvard Forest,42.5378,-72.1715,soil moisture<br>
+1342,COSMOS,Howland,45.2041,-68.7402,soil moisture<br>
+1343,COSMOS,Tonzi Ranch,38.4316,-120.9659,soil moisture<br>
+1344,COSMOS,Soaproot,37.031,-119.2564,soil moisture<br>
+1345,COSMOS,P301,37.0678,-119.1944,soil moisture<br>
+1346,COSMOS,Wind River,45.8205,-121.9519,soil moisture<br>
+1347,COSMOS,Hauser Farm North,34.5798,-111.8627,soil moisture<br>
+1348,COSMOS,Hauser Farm South,34.5766,-111.8585,soil moisture<br>
+1349,COSMOS,Metolius,44.4523,-121.5574,soil moisture<br>
+1350,COSMOS,Shale Hills,40.6646,-77.9067,soil moisture<br>
+1351,COSMOS,Brookings,44.3453,-96.8362,soil moisture<br>
+1352,COSMOS,Rosemount,44.7143,-93.0898,soil moisture<br>
+1353,COSMOS,Park Falls,45.9459,-90.2723,soil moisture<br>
+1354,COSMOS,UMBS,45.5598,-84.7138,soil moisture<br>
+1356,COSMOS,Reynolds Creek,43.1208,-116.7226,soil moisture<br>
+1357,COSMOS,Daniel Forest,41.86,-111.5,soil moisture<br>
+1358,COSMOS,Tenderfoot Creek,46.9514,-110.8871,soil moisture<br>
+1359,COSMOS,Fort Peck,48.3077,-105.1019,soil moisture<br>
+1360,COSMOS,GLEES,41.3644,-106.2394,soil moisture<br>
+1362,COSMOS,Austin Cary,29.7381,-82.2188,soil moisture<br>
+1363,COSMOS,JERC,31.2364,-84.4617,soil moisture<br>
+1364,COSMOS,Savannah River,33.3828,-81.566,soil moisture<br>
+1365,COSMOS,UVA,37.9229,-78.2739,soil moisture<br>
+1367,COSMOS,Coweeta,35.0662,-83.437,soil moisture<br>
+1368,COSMOS,Freeman Ranch,29.9492,-97.9966,soil moisture<br>
+1875,COSMOS,Sevilleta New Grass,34.399952,-106.67425,soil moisture<br>
+1877,COSMOS,Lucky Hills,31.7442,-110.0518,soil moisture<br>
+1878,COSMOS,Flag Wildfire,35.4455,-111.7719,soil moisture<br>
+1879,COSMOS,Flag Ponderosa Pine,35.4386,-111.8036,soil moisture<br>
+1880,COSMOS,Jonesboro,35.7522,-90.764,soil moisture<br>
+1881,COSMOS,Bushland,35.1882,-102.0955,soil moisture<br>
+1882,COSMOS,Beltsville,39.0295,-76.8462,soil moisture<br>
+1883,COSMOS,Caribou Bog,44.9167,-68.7359,soil moisture<br>
+1885,COSMOS,Goodwin Creek,34.255,-89.8735,soil moisture<br>
+2816,COSMOS,Tower Ruin,38.116806,-109.718361,soil moisture<br>
+2817,COSMOS,Lower Salt Creek,38.129427,-109.734501,soil moisture<br>
+2818,COSMOS,Santa Rita Mesquite,31.82,-110.84,soil moisture<br>
+2819,COSMOS,Jornada Mixed Shrubland,32.58,-106.6,soil moisture<br>
+2837,COSMOS,York Irrigated Maize,40.94822,-97.48745,soil moisture<br>
+2846,COSMOS,York Irrigated Soybean,40.93379,-97.4587,soil moisture<br>
+2847,COSMOS,York Rainfed,40.8899,-97.4586,soil moisture<br>
+2849,COSMOS,CC Pasture,41.2688,-97.947,soil moisture<br>
+3077,COSMOS,Fox,40.6703,-98.9823,soil moisture<br>
+3078,COSMOS,NJ Meadowlands,40.7691,-74.0853,soil moisture<br>
+4966,CW3E,Heart K Ranch,40.067822,-120.693752,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4967,CW3E,Portola,39.8175,-120.4969,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4969,CW3E,Yucaipa Valley,34.0074,-117.0916,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4970,CW3E,Santa Lucia Conservatory,36.486134,-121.79388,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4971,CW3E,Stagecoach Ski East,40.221716,-106.86308,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4972,CW3E,Howe Ranch,40.652787,-107.261716,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4973,CW3E,Lower Elk,40.571387,-106.916297,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4957,CW3E,Boyes Creek Canyon,39.34053,-123.16349,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4958,CW3E,Deerwood,39.197574,-123.15985,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4963,CW3E,Redwood Valley Pineview,39.285172,-123.30475,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4964,CW3E,Browns Valley School,39.23586,-121.40621,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4974,CW3E,Etiwanda Downstream,34.1585,-117.5138,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4975,CW3E,Beaumont Cherry Valley,34.012778,-116.96,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4976,CW3E,Downieville,39.5634,-120.8242,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4959,CW3E,Hells Delight Canyon,39.267621,-123.14721,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4960,CW3E,North Cow Mountain,39.179667,-123.08009,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4961,CW3E,Potter Valley North,39.36141,-123.11312,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4962,CW3E,Windy Gap,39.234289,-123.00498,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4965,CW3E,Feather River College,39.945966,-120.96972,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4968,CW3E,Skyline Harvest,39.470952,-121.09175,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4956,CW3E,Potter Valley Central,39.320914,-123.10282,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5011,CW3E,Carpenter Ranch,40.50224,-107.1727,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5012,CW3E,Knott Ranch,40.24779,-107.10279,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5013,CW3E,Ingram,38.88623,-123.15132,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+3,FLUXNET-AMERIFLUX,Bouldin Island Alfalfa,38.099154,-121.49933,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+4,FLUXNET-AMERIFLUX,Bouldin Island corn,38.109017,-121.535019,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6,FLUXNET-AMERIFLUX,Sherman Barn,38.039995,-121.727151,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5,FLUXNET-AMERIFLUX,Sherman Island,38.0373,-121.7537,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+901,FLUXNET-AMERIFLUX,Tonzi Ranch,38.4316,-120.966,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+8,FLUXNET-AMERIFLUX,Twitchell Alfalfa,38.1159,-121.6467,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+7,FLUXNET-AMERIFLUX,Twitchell Corn,38.1047,-121.6433,air temperature<br>soil moisture<br>soil temperature<br>
+902,FLUXNET-AMERIFLUX,Vaira Ranch,38.41329956,-120.9507294,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+64,ICN,Bondville,40.05,-88.22,soil moisture<br>
+65,ICN,Dixon Springs-Bare,37.45,-88.67,soil moisture<br>
+66,ICN,Brownstown,38.95,-88.95,soil moisture<br>
+67,ICN,Orr Center (Perry),39.8,-90.83,precipitation<br>soil moisture<br>soil temperature<br>
+68,ICN,De Kalb,41.85,-88.85,soil moisture<br>
+69,ICN,Monmouth,40.92,-90.73,soil moisture<br>
+70,ICN,Peoria,40.7,-89.52,soil moisture<br>
+71,ICN,Springfield,39.52,-89.62,soil moisture<br>
+72,ICN,Belleville,38.52,-89.88,soil moisture<br>
+73,ICN,Carbondale,37.72,-89.23,soil moisture<br>
+74,ICN,Olney,38.73,-88.1,soil moisture<br>
+75,ICN,Freeport,42.28,-89.67,soil moisture<br>
+76,ICN,Rend Lake (Ina),38.13,-88.92,soil moisture<br>
+77,ICN,Stelle,40.95,-88.17,soil moisture<br>
+78,ICN,Topeka,40.3,-89.9,soil moisture<br>
+80,ICN,Fairfield,38.38,-88.38,soil moisture<br>
+81,ICN,Champaign,40.08,-88.23,soil moisture<br>
+82,ICN,Dixon Springs-Grass,37.45,-88.67,soil moisture<br>
+6326,iRON,Brush Creek,39.233529,-106.908153,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6327,iRON,Glenwood Springs,39.544177,-107.341327,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6328,iRON,Northstar Aspen Grove,39.170667,-106.799444,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6329,iRON,Northstar Transition Zone,39.171142,-106.799167,air temperature<br>soil moisture<br>soil temperature<br>
+6324,iRON,Sky Mountain,39.220981,-106.913133,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6325,iRON,Smuggler Mountain,39.20015,-106.800833,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6330,iRON,Spring Valley,39.472167,-107.222222,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+3315,PBO_H2O,Okla2,36.485,-96.9642,soil moisture<br>
+2855,PBO_H2O,BKAP_SCGN,35.287048,-116.080424,soil moisture<br>
+2856,PBO_H2O,CRRS_SCGN,33.069807,-115.73504,soil moisture<br>
+3183,PBO_H2O,CSCI_SCGN,34.168402,-119.038979,soil moisture<br>
+2857,PBO_H2O,CTDM_SCGN,34.516549,-118.613209,soil moisture<br>
+2858,PBO_H2O,FGST_SCGN,34.733009,-120.00938,soil moisture<br>
+2859,PBO_H2O,GLRS_SCGN,33.274813,-115.521371,soil moisture<br>
+3182,PBO_H2O,GNPS_SCGN,34.308556,-114.18945,soil moisture<br>
+3009,PBO_H2O,SEVILLETA #2,34.358114,-106.679594,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2861,PBO_H2O,HUNT_SCGN,35.880811,-120.402383,soil moisture<br>
+2862,PBO_H2O,HVYS_SCGN,34.44123,-119.18754,soil moisture<br>
+3184,PBO_H2O,IMPS_SCGN,34.157563,-115.1451,soil moisture<br>
+2863,PBO_H2O,MASW_SCGN,35.832596,-120.443058,soil moisture<br>
+3120,PBO_H2O,MARSHALL2,39.9476,-105.1944,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+3029,PBO_H2O,NDAP_SCGN,34.767688,-114.618629,soil moisture<br>
+2866,PBO_H2O,SMAPSITEA2,36.063431,-97.217009,soil moisture<br>
+2867,PBO_H2O,SMAPSITEC,36.063511,-97.217773,soil moisture<br>
+3030,PBO_H2O,SMAPSITED,36.065225,-97.21511,soil moisture<br>
+2868,PBO_H2O,VIGUSBUTTE,39.521139,-117.186531,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2984,PBO_H2O,SALMONFALL,41.724196,-114.819698,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+3143,PBO_H2O,TUBA_CITY,36.1428,-111.13,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+3031,PBO_H2O,AUBREYPEAK,34.66726,-113.73133,air temperature<br>precipitation<br>soil moisture<br>
+3032,PBO_H2O,SPIDERROCK,36.149828,-109.519227,air temperature<br>precipitation<br>soil moisture<br>
+2869,PBO_H2O,MONTICELLO,38.097433,-109.333835,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2870,PBO_H2O,SPRINGCREK,41.428737,-117.329979,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2872,PBO_H2O,VERNONHILL,40.078122,-112.361402,snow depth<br>soil moisture<br>
+2873,PBO_H2O,HAYSPEAK,41.2757,-119.9359,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2874,PBO_H2O,KEMMERERLF,41.749815,-110.51281,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2875,PBO_H2O,RIFLE_GCL,39.515497,-107.908671,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2876,PBO_H2O,RAWLINSWWT,41.741673,-107.255923,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2877,PBO_H2O,TENSLEEPTR,43.952899,-107.387547,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2878,PBO_H2O,VAUGHNPTRL,34.601393,-105.183602,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2879,PBO_H2O,ANGELFIRE,36.420275,-105.293653,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2880,PBO_H2O,FREEMONTAP,38.421754,-105.104683,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2881,PBO_H2O,PORTALESAP,34.147255,-103.407338,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2882,PBO_H2O,CLAYTONARP,36.448113,-103.153954,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2883,PBO_H2O,LAMARARPT,38.071499,-102.686979,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2864,PBO_H2O,MARSHALL,39.949492,-105.194266,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2884,PBO_H2O,WHEATLAND,42.051506,-104.910594,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2985,PBO_H2O,AKRONARPT,40.171791,-103.222484,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2886,PBO_H2O,ARMINGTON,47.349964,-110.906232,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2887,PBO_H2O,BILLINGSAP,45.806601,-108.546144,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2889,PBO_H2O,WHITEWATER,48.726074,-107.725405,snow depth<br>soil moisture<br>
+2890,PBO_H2O,HILL72,41.756571,-112.623139,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2891,PBO_H2O,SILVERLAKE,43.112383,-121.090698,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2892,PBO_H2O,SHANIKO,44.922722,-120.946153,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+3144,PBO_H2O,MIDDLEGATE,39.3056,-117.9848,snow depth<br>soil moisture<br>
+2893,PBO_H2O,INDIANPEAK,39.287941,-117.604895,snow depth<br>soil moisture<br>
+2894,PBO_H2O,WAGONMOUND,36.04478,-104.69799,snow depth<br>soil moisture<br>
+2895,PBO_H2O,DRYMOUNTAI,39.53606,-115.51258,snow depth<br>soil moisture<br>
+2896,PBO_H2O,SLAVENCYN,40.495457,-116.736198,snow depth<br>soil moisture<br>
+3033,PBO_H2O,DRI_RENO,39.572799,-119.799838,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+3185,PBO_H2O,LASTCHANCE,37.200832,-117.70418,soil moisture<br>
+2898,PBO_H2O,RANDOLPHLL,41.692274,-111.236016,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2899,PBO_H2O,LITTLEBALD,39.924917,-115.555993,soil moisture<br>
+2900,PBO_H2O,REDKNOLLS,39.345141,-113.042077,snow depth<br>soil moisture<br>
+3034,PBO_H2O,BLACKROCK,39.186083,-112.71712,snow depth<br>soil moisture<br>
+2901,PBO_H2O,DELTAMUNI,39.387544,-112.504088,snow depth<br>soil moisture<br>
+2902,PBO_H2O,GRANTS,35.132181,-107.88002,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+3035,PBO_H2O,SAGEVALLEY,39.588879,-111.944551,snow depth<br>soil moisture<br>
+3186,PBO_H2O,FOUNTGREEN,39.59748,-111.65082,snow depth<br>soil moisture<br>
+3135,PBO_H2O,SANPETEVAL,39.7152,-111.5711,snow depth<br>soil moisture<br>
+3036,PBO_H2O,KNOLLSWEST,40.671305,-113.278033,snow depth<br>soil moisture<br>
+3037,PBO_H2O,KAMASLLOYD,40.635489,-111.349868,snow depth<br>soil moisture<br>
+2903,PBO_H2O,HNSLVALLY,41.803388,-112.69829,snow depth<br>soil moisture<br>
+2904,PBO_H2O,TRESPIEDRA,36.635172,-105.910846,snow depth<br>soil moisture<br>
+2906,PBO_H2O,BUCKLEYFLT,38.7246,-118.4602,snow depth<br>soil moisture<br>
+3118,PBO_H2O,GRANITEPK,40.7798,-119.4768,snow depth<br>soil moisture<br>
+2986,PBO_H2O,SIERRAARMY,40.288902,-120.077264,soil moisture<br>
+3187,PBO_H2O,ROSASCYN,36.425902,-121.134856,soil moisture<br>
+2907,PBO_H2O,REIDHILLVW,37.336775,-121.825585,soil moisture<br>
+2908,PBO_H2O,DELVALLE,37.601836,-121.686936,soil moisture<br>
+3038,PBO_H2O,SPARLINRCH,36.950031,-121.268423,soil moisture<br>
+2909,PBO_H2O,ARKANSACRK,37.581885,-121.324852,soil moisture<br>
+2910,PBO_H2O,AVILARANCH,35.933259,-120.906843,soil moisture<br>
+2911,PBO_H2O,MOONEYCYN,36.140206,-120.8789,soil moisture<br>
+2912,PBO_H2O,CALAVERAS,38.08999,-120.951237,air temperature<br>precipitation<br>soil moisture<br>
+2913,PBO_H2O,VINAHELITK,39.929119,-122.027956,air temperature<br>precipitation<br>soil moisture<br>
+3039,PBO_H2O,BUZZARDRST,39.7947,-120.86745,snow depth<br>soil moisture<br>
+2914,PBO_H2O,HLFISLPARK,44.317852,-111.450677,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2987,PBO_H2O,BANDONARPT,43.090323,-124.409274,soil moisture<br>
+2915,PBO_H2O,ALKALILAKE,43.001772,-119.951788,snow depth<br>soil moisture<br>
+2916,PBO_H2O,SISTERSHSL,44.296752,-121.574461,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2917,PBO_H2O,BROTHERSDT,43.811988,-120.603345,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+2918,PBO_H2O,JACKASSBUT,43.034,-118.92847,snow depth<br>soil moisture<br>
+2919,PBO_H2O,BUCKSKINMT,42.254629,-118.412473,snow depth<br>soil moisture<br>
+2920,PBO_H2O,WRIGHTSPT,43.446754,-119.000985,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+3040,PBO_H2O,BAKERCITY,44.834876,-117.799622,snow depth<br>soil moisture<br>
+2921,PBO_H2O,QUILLAYUT,47.937188,-124.557019,air temperature<br>precipitation<br>soil moisture<br>
+2922,PBO_H2O,MORROWAIR,45.452816,-119.690108,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+3188,PBO_H2O,HORSHEAVEN,45.910579,-120.0052,snow depth<br>soil moisture<br>
+2923,PBO_H2O,WILBURLEVA,47.759133,-118.745456,snow depth<br>soil moisture<br>
+2924,PBO_H2O,HLFSTORYRN,45.35425,-110.758683,snow depth<br>soil moisture<br>
+2925,PBO_H2O,CAMPELLIOT,32.889208,-117.104693,soil moisture<br>
+2926,PBO_H2O,FALLBROOK,33.355192,-117.24869,soil moisture<br>
+2927,PBO_H2O,POINT_LOMA,32.66639,-117.243919,air temperature<br>precipitation<br>soil moisture<br>
+3189,PBO_H2O,LAKHENSHAW,33.240178,-116.671411,soil moisture<br>
+3145,PBO_H2O,SPRECKLESS,32.8984,-115.5696,soil moisture<br>
+2988,PBO_H2O,IMPERIALSP,33.423874,-115.686999,soil moisture<br>
+2929,PBO_H2O,ANGUS_PROP,33.247781,-115.428704,soil moisture<br>
+3190,PBO_H2O,COXCOMBMTN,33.886935,-115.2961,soil moisture<br>
+3041,PBO_H2O,NIPOMO,35.010714,-120.409748,soil moisture<br>
+3042,PBO_H2O,TEPUSQUET,34.870553,-120.239849,soil moisture<br>
+2930,PBO_H2O,MT_GLEASON,34.37637,-118.17757,snow depth<br>soil moisture<br>
+2931,PBO_H2O,MORROCREEK,35.425761,-120.808125,soil moisture<br>
+3043,PBO_H2O,HILLMRANCHM,35.6248,-120.480432,soil moisture<br>
+3044,PBO_H2O,WICKSRANCH,35.633811,-120.267025,soil moisture<br>
+2932,PBO_H2O,CARRIZORAN,35.279767,-120.025019,soil moisture<br>
+2989,PBO_H2O,CALIVALLEY,35.316795,-119.935339,soil moisture<br>
+3045,PBO_H2O,BITTERWATR,35.534168,-120.112484,soil moisture<br>
+3136,PBO_H2O,GRAPEVINE,34.8351,-118.879,snow depth<br>soil moisture<br>
+2933,PBO_H2O,DELANO_AIR,35.743893,-119.236652,air temperature<br>precipitation<br>soil moisture<br>
+3146,PBO_H2O,ANTIMONYFL,35.2543,-118.1265,soil moisture<br>
+3147,PBO_H2O,BUTTERBRED,35.378,-118.1238,soil moisture<br>
+3119,PBO_H2O,CHILEOFLAT,34.332,-118.0313,snow depth<br>soil moisture<br>
+3046,PBO_H2O,MCDNLDWELL,35.116777,-117.36475,soil moisture<br>
+2934,PBO_H2O,CALCITYAPT,35.152424,-118.016474,soil moisture<br>
+2935,PBO_H2O,VIDALJUNCT,34.188934,-114.599404,air temperature<br>precipitation<br>soil moisture<br>
+3047,PBO_H2O,OWENSGORGE,37.541274,-118.593456,snow depth<br>soil moisture<br>
+3048,PBO_H2O,GRANITEMTN,37.903452,-118.736215,snow depth<br>soil moisture<br>
+3148,PBO_H2O,BLINDSPRIN,37.7375,-118.4716,snow depth<br>soil moisture<br>
+3049,PBO_H2O,WOODLANDFM,42.878919,-113.868302,snow depth<br>soil moisture<br>
+2936,PBO_H2O,ATOMICCITY,43.448964,-112.80455,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+3050,PBO_H2O,LITTLELOST,44.039822,-113.306481,snow depth<br>soil moisture<br>
+2937,PBO_H2O,MEDICINELG,44.399776,-112.636473,snow depth<br>soil moisture<br>
+2938,PBO_H2O,PARKINSONF,43.919149,-111.450486,snow depth<br>soil moisture<br>
+2939,PBO_H2O,MATADORRCH,45.04347,-112.524089,snow depth<br>soil moisture<br>
+2940,PBO_H2O,SHOSHONERV,44.485406,-109.897291,snow depth<br>soil moisture<br>
+2941,PBO_H2O,ENNISFISH,45.217757,-111.789024,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+3051,PBO_H2O,BIRCHIMCYN,37.439477,-118.561069,soil moisture<br>
+2942,PBO_H2O,HARTMTNNWR,42.54669,-119.65839,snow depth<br>soil moisture<br>
+2943,PBO_H2O,MCDERMITT,42.02013,-117.72562,snow depth<br>soil moisture<br>
+2944,PBO_H2O,FORDRA087G,33.495542,-116.602571,soil moisture<br>
+2990,PBO_H2O,NOMODESTO,37.69898,-121.07155,soil moisture<br>
+2946,PBO_H2O,WANSHIP2,40.80757,-111.41471,snow depth<br>soil moisture<br>
+2947,PBO_H2O,EcRockStPkTX2012,30.49464,-98.822029,soil moisture<br>
+3053,PBO_H2O,CALCITYPLR,35.152431,-118.016607,soil moisture<br>
+2948,PBO_H2O,QCY2_BARD,36.161065,-121.137346,soil moisture<br>
+3314,PBO_H2O,SCIA_SCGN,34.607446,-117.3883,soil moisture<br>
+2949,PBO_H2O,SDHL_SCGN,34.255011,-116.278897,soil moisture<br>
+2860,PBO_H2O,SEVILLETA #1,34.334805,-106.744104,snow depth<br>soil moisture<br>
+2950,PBO_H2O,VIMT_SCGN,34.126447,-118.514412,soil moisture<br>
+2885,PBO_H2O,NEWCASTLE_1,43.881146,-104.185702,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>
+5020,SCAN,Rogers Farm #1,40.85,-96.46667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5021,SCAN,Crescent Lake #1,45.41667,-93.95,air temperature<br>precipitation<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5022,SCAN,Wabeno #1,45.46667,-88.58333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5023,SCAN,Mason #1,40.31667,-89.9,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5024,SCAN,Princeton #1,37.1,-87.83333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5025,SCAN,Bushland #1,35.16667,-102.1,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5026,SCAN,Tidewater #1,35.86667,-76.65,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5027,SCAN,Wakulla #1,30.3,-84.41667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5028,SCAN,Geneva #1,42.88333,-77.03333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5029,SCAN,Sellers Lake #1,29.1,-81.63333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5030,SCAN,Watkinsville #1,33.88333,-83.43333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5031,SCAN,Molly Caren #1,39.95,-83.45,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5032,SCAN,Prairie View #1,30.08333,-95.98333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5033,SCAN,Nunn #1,40.85989,-104.74033,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5034,SCAN,Torrington #1,42.06667,-104.13333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5035,SCAN,Fort Assiniboine #1,48.48333,-109.8,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5036,SCAN,Mandan #1,46.76667,-100.91667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5037,SCAN,Lind #1,47.0,-118.56667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5038,SCAN,Fort Reno #1,35.55,-98.01667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5039,SCAN,Goodwin Ck Pasture,34.25,-89.86667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5040,SCAN,Goodwin Ck Timber,34.23333,-89.9,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5041,SCAN,Walnut Gulch #1,31.73333,-110.05,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5042,SCAN,Little River,31.5,-83.55,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5043,SCAN,Mahantango Ck,40.66667,-76.66667,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5044,SCAN,Uapb-Lonoke Farm,34.85,-91.88333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5045,SCAN,Ames,42.01667,-93.73333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5046,SCAN,Beasley Lake,33.38333,-90.65,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5047,SCAN,Onward,32.75358,-90.94208,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5048,SCAN,Tunica,34.6764,-90.41142,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5049,SCAN,Vance,34.06301,-90.35843,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5050,SCAN,Rock Springs Pa,40.71667,-77.93333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5051,SCAN,Pee Dee,34.3,-79.73333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5052,SCAN,Youmans Farm,32.66667,-81.2,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5053,SCAN,N Piedmont Arec,38.23333,-78.11667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5054,SCAN,Tidewater Arec,36.68333,-76.76667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5055,SCAN,Mount Mansfield,44.53509,-72.83451,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5056,SCAN,Lye Brook,43.05753,-73.03834,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5057,SCAN,Mascoma River,43.7756,-72.02593,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5059,SCAN,Perthshire,33.9737,-90.90496,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5060,SCAN,Spickard,40.25,-93.71667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5061,SCAN,Dexter,36.78333,-89.93333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5062,SCAN,Powder Mill,39.01667,-76.85,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5063,SCAN,Glacial Ridge,47.71667,-96.26667,air temperature<br>precipitation<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5064,SCAN,Everglades ARS,25.5,-80.55,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5066,SCAN,Wtars,34.9,-86.53333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5067,SCAN,Hodges,34.4448,-86.16557,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5068,SCAN,Stanley Farm,34.43333,-86.68333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5069,SCAN,Mt Vernon,37.06667,-93.88333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5070,SCAN,Powell Gardens,38.86667,-94.03333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5073,SCAN,Starkville,33.47094,-88.78051,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5075,SCAN,Shagbark Hills,42.43333,-95.76667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5076,SCAN,Hubbard Brook,43.94843,-71.72644,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5077,SCAN,Scott,33.61962,-91.10184,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5078,SCAN,Eros Data Center,43.73835,-96.61455,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5079,SCAN,Sunleaf Nursery,41.79618,-81.07653,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5080,SCAN,McAllister Farm,35.06445,-86.59137,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5081,SCAN,Allen Farms,35.0747,-86.8938,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5082,SCAN,Eastview Farm,35.13905,-86.19113,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5083,SCAN,Bragg Farm,34.89375,-86.60236,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5084,SCAN,Mammoth Cave,37.1864,-86.04093,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5085,SCAN,Tnc Fort Bayou,30.4712,-88.74162,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5086,SCAN,Uapb Campus-PB,34.25188,-92.02632,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5087,SCAN,Uapb-Marianna,34.7849,-90.81769,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5088,SCAN,Uapb-Earle,35.27732,-90.45031,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5089,SCAN,Silver City,33.0875,-90.51151,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5090,SCAN,North Issaquena,32.9972,-91.05993,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5091,SCAN,Shenandoah,37.91667,-79.2,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5092,SCAN,Reynolds Homestead,36.63333,-80.13333,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5093,SCAN,Uapb Point Remove,35.20842,-92.92462,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5094,SCAN,Uapb Dewitt,34.27788,-91.35017,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5095,SCAN,Phillipsburg,39.78638,-99.32953,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5096,SCAN,Centralia Lake,39.70045,-96.1629,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5104,SCAN,Reese Center,33.61536,-102.03869,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5105,SCAN,Levelland,33.55125,-102.37392,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5106,SCAN,Lehman,33.62647,-102.7453,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5107,SCAN,Crossroads,33.53513,-103.242,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5108,SCAN,Willow Wells,33.53382,-103.63097,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5109,SCAN,Sandy Ridge,33.65911,-90.57297,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5110,SCAN,Mayday,32.86153,-90.51989,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5111,SCAN,Johnson Farm,40.37042,-101.7201,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5112,SCAN,Cullman-NAHRC,34.19492,-86.79897,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5113,SCAN,Livingston-UWA,32.608,-88.19743,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5114,SCAN,Tuskegee,32.43455,-85.74802,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5115,SCAN,Lovelock NNR,40.09247,-118.49345,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5116,SCAN,Conrad Ag Rc,48.30453,-111.92363,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5117,SCAN,Violett,48.43578,-111.18423,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5118,SCAN,Moccasin,47.05818,-109.95082,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5119,SCAN,Sidney,47.77102,-104.247,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5120,SCAN,Jordan,47.522,-107.12731,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5123,SCAN,Circleville,38.15133,-112.25122,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5124,SCAN,Ephraim,39.36798,-111.57803,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5125,SCAN,Holden,39.19216,-112.40155,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5126,SCAN,Enterprise,37.63343,-113.64324,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5127,SCAN,Milford,38.34196,-113.01053,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5128,SCAN,Eastland,37.77853,-109.17193,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5129,SCAN,Green River,39.01825,-110.16264,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5130,SCAN,Price,39.53288,-110.80604,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5131,SCAN,Morgan,40.9999,-111.68555,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5132,SCAN,Mountain Home,40.37263,-110.40602,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5133,SCAN,Blue Creek,41.93531,-112.4336,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5134,SCAN,Cache Junction,41.81568,-111.98043,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5135,SCAN,Nephi,39.64554,-111.87044,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5136,SCAN,Alkali Mesa,37.67455,-109.36429,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5137,SCAN,West Summit,38.01394,-109.12745,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5138,SCAN,Mccracken Mesa,37.44671,-109.33776,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5139,SCAN,Kyle Canyon,36.26527,-115.60852,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5140,SCAN,Trough Springs,36.37355,-115.78127,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5141,SCAN,Pine Nut,36.57285,-115.20422,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5142,SCAN,Charkiln,36.36651,-115.82047,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5143,SCAN,Lovell Summit,36.16555,-115.61195,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5144,SCAN,Ku-Nesa,39.05141,-95.19128,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5145,SCAN,Jordan Valley Cwma,42.94863,-117.0106,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5146,SCAN,Marble Creek,37.77767,-118.4209,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5147,SCAN,Chicken Ridge,41.33136,-111.3036,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5148,SCAN,Buffalo Jump,41.34363,-111.18798,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5149,SCAN,Grantsville,40.59089,-112.39258,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5150,SCAN,Park Valley,41.77318,-113.28596,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5151,SCAN,Split Mountain,40.39136,-109.35326,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5152,SCAN,Little Red Fox,40.17957,-110.30464,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5153,SCAN,Manderfield,38.36649,-112.64291,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5154,SCAN,Panguitch,37.86975,-112.43437,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5155,SCAN,Spooky,37.51468,-111.26189,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5156,SCAN,Sand Hollow,37.10516,-113.35615,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5157,SCAN,Grouse Creek,41.77846,-113.82048,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5158,SCAN,Cave Valley,37.35524,-113.12341,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5159,SCAN,Vermillion,37.19061,-112.19252,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5160,SCAN,Tule Valley,39.23724,-113.45866,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5161,SCAN,Hals Canyon,38.59445,-113.75102,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5162,SCAN,Goshute,39.99003,-114.00025,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5163,SCAN,Harms Way,38.31347,-109.23998,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5164,SCAN,Jornada Exp Range,32.5566,-106.69997,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5165,SCAN,Los Lunas PMC,34.7715,-106.76288,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5166,SCAN,Sevilleta,34.35813,-106.69127,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5167,SCAN,Alcalde,36.0908,-106.05668,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5168,SCAN,Isbell Farms,34.81982,-87.98685,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5169,SCAN,Dee River Ranch,33.10768,-88.31003,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5170,SCAN,Wedowee,33.33168,-85.51818,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5171,SCAN,Selma,32.40392,-86.89137,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5172,SCAN,Broad Acres,32.28393,-86.05253,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5173,SCAN,Morris Farms,32.41222,-85.91028,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5174,SCAN,Sudduth Farms,34.17973,-87.45618,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5175,SCAN,Koptis Farms,30.5238,-87.69797,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5176,SCAN,Perdido Riv Farms,31.10923,-87.55277,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5177,SCAN,River Road Farms,31.01912,-85.03693,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5178,SCAN,Desert Center,33.80208,-115.30505,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5179,SCAN,Ford Dry Lake,33.6547,-115.09763,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5180,SCAN,Essex,34.67235,-115.16693,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5181,SCAN,Shadow Mtns,35.46607,-115.7151,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5182,SCAN,Deep Springs,37.37222,-117.97383,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5184,SCAN,Cochora Ranch,35.11807,-119.59608,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5185,SCAN,Death Valley Jct,36.32502,-116.35132,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5186,SCAN,Doe Ridge,37.63423,-118.82643,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5187,SCAN,Eagle Lake,40.6175,-120.72472,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5188,SCAN,Schell-Osage,37.9872,-94.0364,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5189,SCAN,Journagan Ranch,36.9973,-92.2594,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5190,SCAN,CMRB LTAR-MO,39.2285,-92.11942,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5191,SCAN,UW Platteville,42.70785,-90.3899,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5192,SCAN,CPER,40.8228,-104.71068,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5193,SCAN,Cook Farm Field D,46.78373,-117.08008,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5194,SCAN,Riesel,31.47907,-96.88162,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5195,SCAN,San Angelo,31.5496,-100.50748,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5196,SCAN,Knox City,33.44635,-99.86657,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5197,SCAN,Vernon,34.01635,-99.2464,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5198,SCAN,Stephenville,32.24535,-98.19563,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5199,SCAN,Uvalde,29.21578,-99.75517,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5200,SCAN,Weslaco,26.15553,-97.95927,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5201,SCAN,Kingsville,27.54945,-97.88223,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5202,SCAN,Beaumont,30.06845,-94.29283,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5207,SCAN,Ash Valley,41.05204,-120.6872,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5208,SCAN,Bodie Hills,38.26477,-119.12645,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5209,SCAN,Buckhorn,40.87959,-119.9534,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5210,SCAN,Monocline Ridge,36.54417,-120.55463,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5211,SCAN,French Gulch,40.79361,-122.55083,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5212,SCAN,Stubblefield,34.97018,-119.47831,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5213,SCAN,Elsberry PMC,39.15306,-90.78278,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5215,SCAN,Carver Farm,38.52557,-92.13475,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5216,SCAN,Busby Farm,38.50472,-92.24667,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5217,SCAN,Mark Twain HS,39.51311,-91.51401,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5218,SCAN,Twin Pines Conservation Area,36.99024,-91.30943,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5219,SCAN,Shaw Nature Reserve,38.47889,-90.80639,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5220,SCAN,Nacogdoches,31.504,-94.75994,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5221,SCAN,Ruby,40.63697,-115.2212,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5222,SCAN,LTSP,37.18167,-91.11778,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5223,SCAN,Sinkin Forest,37.50138,-91.2594,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5225,SCAN,Thoreau,35.40455,-108.1783,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5226,SCAN,Vallecitos,36.45976,-120.70601,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5227,SCAN,Adobe,37.97787,-118.68626,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5228,SCAN,Rancheria,38.07666,-119.11417,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5229,SCAN,Alabama Hills,36.56295,-118.13562,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5231,SCAN,Lindsay,47.21415,-105.18702,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5232,SCAN,Orchard Range Site,43.32268,-115.99643,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5233,SCAN,Table Mountain,45.80272,-111.58655,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5234,SCAN,Adams Ranch #1,32.25296,-105.41975,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5235,SCAN,AAMU-JTG,34.78534,-86.55906,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5236,SCAN,Abrams,37.1313,-97.0859,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+5237,SCAN,Chimney Creek,35.83799,-118.03377,air temperature<br>precipitation<br>snow depth<br>soil moisture<br>soil temperature<br>
+5842,SNOTEL,Shuree,36.78765,-105.2392,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5843,SNOTEL,Palo,36.40869,-105.33038,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5844,SNOTEL,Garita Peak,36.00469,-106.54805,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5848,SNOTEL,Gooseberry RS Up,38.7882,-111.68892,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5849,SNOTEL,Black Mesa,37.78968,-108.18376,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5850,SNOTEL,High Lonesome,40.0359,-105.75472,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5853,SNOTEL,Buck Pasture,40.84456,-110.66068,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5854,SNOTEL,Summit Lk,41.48953,-118.99663,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5855,SNOTEL,Golconda,40.88358,-117.58812,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5856,SNOTEL,Med Bow,41.37833,-106.34697,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5857,SNOTEL,Yankee Reservoir,37.74797,-112.77495,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5858,SNOTEL,Tent Mtn Lower,40.97852,-115.17215,air temperature<br>snow depth<br>soil moisture<br>soil temperature<br>
+5859,SNOTEL,Stag Mountain,41.408,-115.4464,air temperature<br>snow depth<br>soil moisture<br>soil temperature<br>
+5860,SNOTEL,Columbia Basin,41.67167,-116.07033,air temperature<br>snow depth<br>soil moisture<br>soil temperature<br>
+5861,SNOTEL,Silver Creek Nv,39.23305,-114.2429,air temperature<br>snow depth<br>soil moisture<br>soil temperature<br>
+5862,SNOTEL,Midas,41.26873,-116.80332,air temperature<br>snow depth<br>soil moisture<br>soil temperature<br>
+5863,SNOTEL,Merritt Mountain,41.8927,-115.858,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5864,SNOTEL,Snowstorm Mtn,41.33981,-116.98044,air temperature<br>snow depth<br>soil moisture<br>soil temperature<br>
+5865,SNOTEL,Corduroy Flat,38.99651,-115.42478,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5866,SNOTEL,Defiance Mines,39.08527,-114.89977,air temperature<br>snow depth<br>soil moisture<br>soil temperature<br>
+5867,SNOTEL,Jakes Creek,41.5687,-115.03243,air temperature<br>snow depth<br>soil moisture<br>soil temperature<br>
+5868,SNOTEL,Bar M,34.86142,-111.60497,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5869,SNOTEL,White River Nv,38.94557,-115.37922,air temperature<br>snow depth<br>soil moisture<br>soil temperature<br>
+5870,SNOTEL,Bevans Cabin,40.46182,-112.25233,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5871,SNOTEL,Lasal Mountain-Lower,38.48167,-109.29164,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5872,SNOTEL,Huntington Horse,39.61774,-111.30576,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5873,SNOTEL,Rees Flat,39.49667,-111.72508,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5874,SNOTEL,GBRC HQ,39.32019,-111.48827,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5875,SNOTEL,GBRC Meadows,39.30229,-111.45383,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5876,SNOTEL,Hobble Creek,40.18538,-111.35971,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5877,SNOTEL,Mt Baldy,39.13648,-111.50527,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5878,SNOTEL,Redden Mine Lwr,40.67505,-111.21765,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5879,SNOTEL,Thistle Flat,39.23803,-111.51998,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5880,SNOTEL,Upper Joes Valley,39.4155,-111.2491,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5881,SNOTEL,Wrigley Creek,39.13233,-111.35685,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5882,SNOTEL,Corral,39.65795,-110.37906,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5883,SNOTEL,Little Valley,39.25259,-119.8771,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5884,SNOTEL,Dry Creek,40.8638,-115.22014,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5885,SNOTEL,Pole Canyon,40.86293,-115.12067,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5886,SNOTEL,Takka Wiiya,39.74104,-113.98262,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5887,SNOTEL,Suu Ranch,37.59711,-112.92949,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5888,SNOTEL,Sunflower Flat,38.048,-111.33981,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5889,SNOTEL,Sawtooth,40.13632,-105.58486,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5890,SNOTEL,Rio Santa Barbara,36.07196,-105.62949,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5891,SNOTEL,State Line,41.98609,-120.71574,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5892,SNOTEL,Lonesome Beaver,38.07,-110.77241,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5893,SNOTEL,Fry Canyon,41.58008,-115.9364,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5896,SNOTEL,Mt Pennell,37.97793,-110.7933,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5897,SNOTEL,Hawley Lake,33.97121,-109.76531,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5898,SNOTEL,ONeil Creek,41.86411,-115.08251,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5900,SNOTEL,Fredonyer Peak,40.68799,-120.60805,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5901,SNOTEL,Bobs Hollow,38.94569,-112.15349,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5902,SNOTEL,Santaquin Meadows,39.92076,-111.71802,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5903,SNOTEL,Pebble Creek,42.7674,-112.10648,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5904,SNOTEL,Powder Mountain,41.37428,-111.76673,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5905,SNOTEL,Gold Basin,38.46516,-109.26332,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5906,SNOTEL,Couch Summit,43.51762,-114.80214,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5907,SNOTEL,Taos Pueblo,36.54099,-105.35944,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5908,SNOTEL,Atwater,40.59124,-111.63775,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5909,SNOTEL,Rockwood GS,38.67101,-112.3305,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5910,SNOTEL,Lamoille Upper,40.59965,-115.37902,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5911,SNOTEL,Fifteenmile,45.35265,-121.53,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5912,SNOTEL,Willow Flat CA,38.27203,-119.45124,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5914,SNOTEL,Mill Creek Canyon,40.69656,-111.67712,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5915,SNOTEL,Elk Ridge,37.82308,-109.77156,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5916,SNOTEL,Rat Creek,37.93571,-106.98192,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5917,SNOTEL,Elwood Pass,37.40563,-106.64136,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5918,SNOTEL,Castle Peak,39.00074,-106.83912,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5921,SNOTEL,Lost Lakes,38.64745,-119.95141,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5922,SNOTEL,Reynolds Creek,43.28863,-116.8431,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5927,SNOTEL,Porter Canyon,39.46544,-117.62069,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5929,SNOTEL,Atlanta Summit,43.7569,-115.23907,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5930,SNOTEL,Baker Butte,34.45654,-111.40651,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5931,SNOTEL,Baldy,33.97845,-109.50357,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5932,SNOTEL,Banner Summit,44.30342,-115.23447,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5933,SNOTEL,Bear Canyon,43.74367,-113.93797,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5934,SNOTEL,Bear Creek,41.83391,-115.45278,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5935,SNOTEL,Beaver Dams,39.13683,-111.55813,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5936,SNOTEL,Beaver Divide,40.61233,-111.09782,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5937,SNOTEL,Ben Lomond Peak,41.37603,-111.94405,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5938,SNOTEL,Ben Lomond Trail,41.38291,-111.92103,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5939,SNOTEL,Berry Creek,39.31917,-114.62278,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5940,SNOTEL,Berthoud Summit,39.80364,-105.77786,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5941,SNOTEL,Big Bend,41.76168,-115.6931,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5942,SNOTEL,Big Creek Sum,39.29148,-117.11506,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5943,SNOTEL,Big Flat,38.30183,-112.35672,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5944,SNOTEL,Big Meadow,39.455,-119.9422,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5945,SNOTEL,Big Sandy Opening,42.6458,-109.25965,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5946,SNOTEL,Billie Creek Divide,42.40717,-122.26617,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5947,SNOTEL,Black Bear,44.50832,-111.12803,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5948,SNOTEL,Black Flat-U.M. Ck,38.6799,-111.59765,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5949,SNOTEL,Black Pine,46.414,-113.43095,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5950,SNOTEL,Blazed Alder,45.4287,-121.85605,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5951,SNOTEL,Blue Lakes,38.60801,-119.92455,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5952,SNOTEL,Bone Springs Div,44.67881,-107.5811,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5953,SNOTEL,Bostetter R.S.,42.16442,-114.19272,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5954,SNOTEL,Bourne,44.83052,-118.18787,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5955,SNOTEL,Box Creek,38.50809,-112.01856,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5956,SNOTEL,Brackett Creek,45.89107,-110.93851,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5957,SNOTEL,Brighton,40.59936,-111.58167,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5958,SNOTEL,Brooklyn Lake,41.36038,-106.23038,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5959,SNOTEL,Brown Duck,40.58102,-110.58587,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5960,SNOTEL,Brumley,39.08758,-106.54231,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5961,SNOTEL,Buck Flat,39.134,-111.43722,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5962,SNOTEL,Buckskin Lower,41.75067,-117.53182,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5963,SNOTEL,Bug Lake,41.68541,-111.41987,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5964,SNOTEL,Burgess Junction,44.78765,-107.52917,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5965,SNOTEL,Burro Mountain,39.87504,-107.59902,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5966,SNOTEL,Butte,38.89435,-106.95327,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5967,SNOTEL,Camp Jackson,37.81333,-109.48723,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5968,SNOTEL,Cascade #2,37.65751,-107.80287,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5969,SNOTEL,Castle Valley,37.66098,-112.74093,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5970,SNOTEL,Chalk Creek #1,40.85464,-111.04765,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5971,SNOTEL,Chalk Creek #2,40.88529,-111.06954,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5972,SNOTEL,Chemult Alternate,43.22625,-121.80662,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5973,SNOTEL,Chepeta,40.77458,-110.0105,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5974,SNOTEL,Clackamas Lake,45.09658,-121.75443,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5975,SNOTEL,Clear Creek #1,39.86671,-111.28363,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5976,SNOTEL,Clear Creek #2,39.89275,-111.25154,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5977,SNOTEL,Clear Lake,45.18832,-121.6916,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5978,SNOTEL,Clover Meadow,45.01788,-111.8456,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5979,SNOTEL,Copper Mountain,39.48917,-106.17154,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5980,SNOTEL,Corral Canyon,40.27551,-115.54017,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5981,SNOTEL,Crab Creek,44.437,-111.99384,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5982,SNOTEL,Crater Meadows,46.56394,-115.28903,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5983,SNOTEL,Css Lab,39.32565,-120.36807,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5985,SNOTEL,Culebra #2,37.20939,-105.19988,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5986,SNOTEL,Currant Creek,40.35747,-111.08993,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5987,SNOTEL,Daniels-Strawberry,40.2953,-111.25677,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5988,SNOTEL,Derr.,44.4465,-119.93012,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5989,SNOTEL,Diamond Peak,39.56361,-115.84421,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5990,SNOTEL,Dills Camp,39.04554,-111.46875,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5991,SNOTEL,Disaster Peak,41.96737,-118.18934,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5992,SNOTEL,Divide,44.79317,-112.05645,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5993,SNOTEL,Dollarhide Summit,43.6025,-114.67417,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5994,SNOTEL,Dome Lake,44.57462,-107.29537,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5995,SNOTEL,Donkey Reservoir,38.2084,-111.47412,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5996,SNOTEL,Dorsey Basin,40.89343,-115.21104,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5997,SNOTEL,Draw Creek,41.661,-115.3234,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5998,SNOTEL,Dry Bread Pond,41.41289,-111.5377,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5999,SNOTEL,Dry Lake,40.5337,-106.7814,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6000,SNOTEL,East Rim Divide,43.13097,-110.2023,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6001,SNOTEL,East Willow Creek,39.31213,-109.53179,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6002,SNOTEL,Ebbetts Pass,38.5497,-119.80468,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6003,SNOTEL,Echo Peak,38.849,-120.0795,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6004,SNOTEL,Elk Butte,46.83998,-116.12233,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6005,SNOTEL,Fallen Leaf,38.93403,-120.0545,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6006,SNOTEL,Farmington,40.97462,-111.80975,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6007,SNOTEL,Farnsworth Lake,38.77246,-111.67662,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6008,SNOTEL,Fawn Creek,41.82098,-116.10153,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6009,SNOTEL,Fisher Creek,45.06235,-109.94488,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6010,SNOTEL,Five Points Lake,40.71785,-110.46721,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6011,SNOTEL,Flattop Mtn.,48.80225,-113.85713,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6012,SNOTEL,Franklin Basin,42.0505,-111.6012,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6013,SNOTEL,Fremont Pass,39.38014,-106.19784,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6014,SNOTEL,Galena Summit,43.87497,-114.71363,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6015,SNOTEL,Gallegos Peak,36.19418,-105.55742,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6016,SNOTEL,Giveout,42.4132,-111.1663,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6017,SNOTEL,Gooseberry RS,38.80034,-111.68333,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6018,SNOTEL,Granite Creek,43.34298,-110.43495,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6019,SNOTEL,Granite Peak,41.67032,-117.56668,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6020,SNOTEL,Green Mountain,40.3848,-115.52757,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6021,SNOTEL,Grizzly Peak,39.64646,-105.8694,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6022,SNOTEL,Grouse Camp,47.28107,-120.48771,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5748,SNOTEL,Annie Springs,42.87007,-122.16518,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5749,SNOTEL,Lewis Peak,40.3572,-116.8647,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5750,SNOTEL,MF Nooksack,48.82441,-121.92947,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5751,SNOTEL,Temple Fork,41.793,-111.54605,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5752,SNOTEL,Middle Fork Camp,39.79565,-106.02802,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5753,SNOTEL,Sage Creek Basin,41.40107,-107.2574,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5754,SNOTEL,Long Valley,44.78835,-116.08878,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5755,SNOTEL,Vacas Locas,36.02653,-106.81361,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5756,SNOTEL,Arapaho Ridge,40.35098,-106.38141,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5757,SNOTEL,Zirkel,40.79492,-106.59544,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5759,SNOTEL,Cascade Mountain,40.283,-111.60992,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5760,SNOTEL,Wild Basin,40.201,-105.6025,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5761,SNOTEL,Sentinel Butte,48.86133,-118.39843,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5762,SNOTEL,Crow Creek,41.22824,-105.38571,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5763,SNOTEL,Cinnabar Park,41.23843,-106.23101,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5764,SNOTEL,Little Snake River,41.07051,-106.94284,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5765,SNOTEL,Forestdale Creek,38.68245,-119.9597,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5766,SNOTEL,Horse Meadow,38.83652,-119.88732,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5767,SNOTEL,Burnside Lake,38.71943,-119.8942,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5768,SNOTEL,Summit Meadow,38.39747,-119.53522,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5769,SNOTEL,Myrtle Creek,48.72263,-116.46312,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5770,SNOTEL,Farmington Lower,40.992,-111.81702,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5772,SNOTEL,Lightning Ridge,41.35891,-111.48749,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5773,SNOTEL,Cochetopa Pass,38.16273,-106.5988,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5774,SNOTEL,Sharkstooth,37.50356,-108.11405,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5776,SNOTEL,Gutz Peak,37.49617,-113.94235,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5777,SNOTEL,Gardner Peak,37.40083,-113.45988,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5778,SNOTEL,Carson Pass,38.6927,-120.0022,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5779,SNOTEL,Brown Top,48.92753,-121.19717,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5780,SNOTEL,Ragged Mountain,47.85583,-117.03667,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5781,SNOTEL,Grand Targhee,43.77933,-110.92783,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5782,SNOTEL,Tres Ritos,36.1279,-105.52706,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5783,SNOTEL,Miller Woods,45.24755,-123.27563,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5784,SNOTEL,Cayuse Pass,46.86956,-121.53434,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5791,SNOTEL,Timberline,39.67712,-110.43395,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5792,SNOTEL,Usu Doc Daniel,41.86425,-111.50603,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5793,SNOTEL,Jones Corral,38.07125,-112.16788,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5794,SNOTEL,Chapman Tunnel,39.2621,-106.62944,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5795,SNOTEL,Elk Peak,46.4845,-110.7125,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5796,SNOTEL,Buckinghorse,47.7086,-123.45747,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5797,SNOTEL,Rainbow Canyon,36.2493,-115.62972,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5798,SNOTEL,Bristlecone Trail,36.31575,-115.69543,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5799,SNOTEL,Lee Canyon,36.30537,-115.67508,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5800,SNOTEL,Tony Grove RS,41.88573,-111.56918,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5801,SNOTEL,Garden City Summit,41.9215,-111.4693,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5802,SNOTEL,Klondike Narrows,41.96769,-111.59713,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5803,SNOTEL,Lakefork #3,40.5502,-110.3529,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5804,SNOTEL,Spirit Lk,40.83868,-110.00527,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5805,SNOTEL,Lost Creek Resv,41.22155,-111.35947,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5806,SNOTEL,Blackhall Mtn,41.05623,-106.714,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5807,SNOTEL,Fort Valley,35.26773,-111.74479,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5808,SNOTEL,Long Draw Resv,40.51154,-105.7654,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5809,SNOTEL,Mormon Mtn Summit,34.96942,-111.50868,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5810,SNOTEL,Indian Rock,45.99077,-120.80768,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5811,SNOTEL,Castle Creek,43.6748,-109.3774,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5812,SNOTEL,Little Goose,44.54315,-107.17865,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5813,SNOTEL,Soldier Park,44.34847,-107.0136,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5814,SNOTEL,Pocket Creek,42.7121,-109.4112,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5815,SNOTEL,Larsen Creek,42.58019,-109.08829,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5816,SNOTEL,Burts Miller Ranch,40.98492,-110.85075,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5817,SNOTEL,Toe Jam,41.3187,-116.3408,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5818,SNOTEL,Vacarro Springs,39.4495,-115.9834,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5819,SNOTEL,Navajo Whiskey Ck,36.17716,-108.94556,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5820,SNOTEL,Chalender,35.26238,-112.06221,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5821,SNOTEL,Baker Butte Smt,34.45552,-111.38262,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5822,SNOTEL,Upper Taylor,38.99071,-106.74504,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5823,SNOTEL,Pierce R.S.,46.49597,-115.7957,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5824,SNOTEL,Blacktail Mtn,47.98317,-114.35443,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5825,SNOTEL,Kilfoil Creek,41.24764,-111.41249,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5826,SNOTEL,Oak Creek,39.3485,-112.192,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5827,SNOTEL,Wheeler Peak,39.00995,-114.31021,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5828,SNOTEL,Panguitch Lake RS,37.70463,-112.65037,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5829,SNOTEL,Fish Lake Utah,38.50455,-111.76693,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5830,SNOTEL,Kalamazoo,39.5579,-114.62762,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5831,SNOTEL,George Creek,41.91562,-113.41154,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5832,SNOTEL,Cave Mountain,39.16337,-114.6133,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5833,SNOTEL,Buckboard Flat,37.86943,-109.44717,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5834,SNOTEL,Brian Head,37.67994,-112.85674,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5835,SNOTEL,Bird Creek,39.46138,-114.64863,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5836,SNOTEL,Box Springs,38.49746,-112.00779,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5837,SNOTEL,Gold Axe Camp,48.9516,-118.9864,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5838,SNOTEL,Blacks Fork Jct,40.95814,-110.5828,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5839,SNOTEL,EF Blacks Fork GS,40.88472,-110.54056,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5840,SNOTEL,Wolf Creek Peak,40.47733,-111.04469,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+5841,SNOTEL,Taos Powderhorn,36.58195,-105.45617,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6023,SNOTEL,Hagans Meadow,38.8519,-119.9374,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6024,SNOTEL,Lakefork Basin,40.73785,-110.62121,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6025,SNOTEL,Harris Flat,37.48997,-112.57602,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6026,SNOTEL,Harts Pass,48.72047,-120.6586,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6027,SNOTEL,Hayden Fork,40.79669,-110.88472,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6028,SNOTEL,Heavenly Valley,38.92431,-119.91641,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6029,SNOTEL,Hewinta,40.95009,-110.48419,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6030,SNOTEL,Hickerson Park,40.90663,-109.96287,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6031,SNOTEL,High Ridge,45.69682,-118.10657,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6032,SNOTEL,Hilts Creek,44.01896,-113.47242,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6033,SNOTEL,Hole-in-Mountain,40.94168,-115.0954,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6034,SNOTEL,Hole-in-Rock,40.92167,-110.18623,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6035,SNOTEL,Holland Meadows,43.66917,-122.56877,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6036,SNOTEL,Hoosier Pass,39.36092,-106.05999,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6037,SNOTEL,Hopewell,36.71632,-106.2637,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6038,SNOTEL,Horse Ridge,41.31372,-111.44624,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6039,SNOTEL,Hyndman,43.71077,-114.15894,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6040,SNOTEL,Independence Camp,39.45269,-120.29367,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6041,SNOTEL,Independence Creek,39.49001,-120.28226,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6042,SNOTEL,Independence Lake,39.42752,-120.31342,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6043,SNOTEL,Wilbur Bench,39.89166,-110.74604,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6044,SNOTEL,Irish Taylor,43.80368,-121.94793,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6045,SNOTEL,Island Park,44.4203,-111.38512,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6046,SNOTEL,Jack Creek Upper,41.54675,-116.00517,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6047,SNOTEL,Jacks Peak,41.5136,-116.0117,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6048,SNOTEL,Jackson Peak,44.05092,-115.44322,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6049,SNOTEL,Kelley R.S.,42.26554,-110.80181,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6050,SNOTEL,Kiln,39.3172,-106.61501,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6051,SNOTEL,Kimberly Mine,38.48383,-112.39273,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6052,SNOTEL,Kings Cabin,40.71632,-109.54401,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6053,SNOTEL,Kolob,37.52664,-113.05386,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6054,SNOTEL,Lakefork #1,40.59709,-110.43316,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6055,SNOTEL,Lakeview Ridge,44.58907,-111.82498,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6056,SNOTEL,Lamance Creek,41.51542,-117.63197,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6057,SNOTEL,Lamoille #3,40.6448,-115.3812,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6058,SNOTEL,Laprele Creek,42.43566,-105.86051,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6059,SNOTEL,Lasal Mountain,38.48226,-109.27198,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6060,SNOTEL,Laurel Draw,41.77637,-116.02957,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6061,SNOTEL,Leavitt Lake,38.27594,-119.61281,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6062,SNOTEL,Leavitt Meadows,38.30367,-119.55111,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6063,SNOTEL,Lewis Lake Divide,44.20862,-110.66628,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6065,SNOTEL,Lily Lake,40.86493,-110.79813,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6066,SNOTEL,Lily Pond,37.38028,-106.54823,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6067,SNOTEL,Little Bear,41.40562,-111.82607,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6068,SNOTEL,Little Grassy,37.48631,-113.84582,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6069,SNOTEL,Lizard Head Pass,37.79895,-107.92475,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6070,SNOTEL,Lobdell Lake,38.43745,-119.36572,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6071,SNOTEL,Lone Cone,37.89169,-108.19636,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6072,SNOTEL,Long Flat,37.51255,-113.39661,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6073,SNOTEL,Long Valley Jct,37.48756,-112.51458,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6074,SNOTEL,Lookout,47.45749,-115.70457,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6075,SNOTEL,Lookout Peak,40.83731,-111.70965,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6076,SNOTEL,Lost Horse,46.35754,-121.0809,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6077,SNOTEL,Lynx Pass,40.07832,-106.67095,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6078,SNOTEL,Madison Butte,45.10513,-119.49585,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6079,SNOTEL,Magic Mountain,42.18071,-114.28665,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6080,SNOTEL,Mammoth-Cottonwood,39.68338,-111.31818,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6081,SNOTEL,Many Glacier,48.79698,-113.6705,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6082,SNOTEL,Marlette Lake,39.16395,-119.89672,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6083,SNOTEL,Merchant Valley,38.30285,-112.43637,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6084,SNOTEL,Mica Creek,47.15045,-116.26643,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6085,SNOTEL,Midway Valley,37.56933,-112.83849,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6086,SNOTEL,Mill-D North,40.65883,-111.63683,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6087,SNOTEL,Mining Fork,40.49384,-112.61141,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6088,SNOTEL,Monitor Pass,38.6683,-119.6087,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6089,SNOTEL,Monte Cristo,41.46547,-111.49688,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6090,SNOTEL,Mores Creek Summit,43.932,-115.66588,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6091,SNOTEL,Mormon Mountain,34.94141,-111.51864,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6092,SNOTEL,Mosby Mtn.,40.60798,-109.8881,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6093,SNOTEL,Moses Mtn,48.36166,-119.08158,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6094,SNOTEL,Mosquito Ridge,48.05726,-116.23055,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6095,SNOTEL,Moss Springs,45.27173,-117.68747,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6096,SNOTEL,Mount Lockhart,47.91727,-112.8238,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6097,SNOTEL,Mt Rose Ski Area,39.31573,-119.89473,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6098,SNOTEL,Mt. Howard,45.26514,-117.17377,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6099,SNOTEL,Mud Flat,42.6004,-116.55925,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6100,SNOTEL,New Fork Lake,43.11265,-109.94947,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6101,SNOTEL,North Fork,45.5505,-122.00283,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6102,SNOTEL,Ochoco Meadows,44.42917,-120.3311,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6103,SNOTEL,Paradise,46.78266,-121.74767,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6104,SNOTEL,Park Cone,38.81982,-106.58962,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6105,SNOTEL,Park Creek Ridge,48.44488,-120.91551,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6106,SNOTEL,Park Reservoir,39.04433,-107.87951,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6107,SNOTEL,Parleys Summit,40.76184,-111.62917,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6108,SNOTEL,Payson R.S.,39.92976,-111.63109,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6109,SNOTEL,Phantom Valley,40.39803,-105.84606,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6110,SNOTEL,Pickle Keg,39.01219,-111.58259,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6111,SNOTEL,Pine Creek,38.88185,-112.24915,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6112,SNOTEL,Poison Flat,38.50576,-119.62624,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6113,SNOTEL,Pole Creek R.S.,41.87255,-115.24713,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6114,SNOTEL,Porcupine,46.11192,-110.4696,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6115,SNOTEL,Porphyry Creek,38.48864,-106.33967,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6116,SNOTEL,Quartz Mountain,42.31923,-120.82533,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6117,SNOTEL,Quartz Peak,47.87927,-117.08938,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6118,SNOTEL,Quemazon,35.92195,-106.39179,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6119,SNOTEL,Rabbit Ears,40.36735,-106.74118,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6120,SNOTEL,Rainy Pass,48.51865,-120.7358,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6121,SNOTEL,Red Mountain Pass,37.89168,-107.71389,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6122,SNOTEL,Red Pine Ridge,39.45197,-111.27221,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6123,SNOTEL,Red River Pass #2,36.69935,-105.34145,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6124,SNOTEL,Roaring River,43.90098,-122.03063,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6125,SNOTEL,Rock Creek,40.54875,-110.69292,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6126,SNOTEL,Rock Springs,44.00883,-118.83842,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6127,SNOTEL,Rocky Basin-Settleme,40.44293,-112.22377,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6128,SNOTEL,Rubicon #2,38.99927,-120.13139,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6129,SNOTEL,Salmon Meadows,48.65518,-119.8383,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6130,SNOTEL,Salt Creek Falls,43.61193,-122.11758,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6131,SNOTEL,Salt River Summit,42.5075,-110.9099,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6132,SNOTEL,Sandstone RS,41.11179,-107.17043,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6133,SNOTEL,Sasse Ridge,47.38485,-121.06323,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6134,SNOTEL,Savage Pass,46.46633,-114.63333,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6135,SNOTEL,Schneider Meadows,45.00107,-117.16522,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6136,SNOTEL,Schofield Pass,39.01467,-107.04933,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6137,SNOTEL,Seeley Creek,39.31042,-111.43297,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6138,SNOTEL,Senorita Divide #2,36.00152,-106.83408,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6139,SNOTEL,Seventysix Creek,41.73732,-115.47215,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6140,SNOTEL,Shanghi Summit,46.56603,-115.74216,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6141,SNOTEL,Sheep Mtn.,43.2103,-111.68792,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6142,SNOTEL,Sheldon,41.90435,-119.44464,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6143,SNOTEL,Sherwin,46.95028,-116.33972,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6144,SNOTEL,Shower Falls,45.40125,-110.95758,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6145,SNOTEL,Silver Creek,42.95615,-121.18123,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6146,SNOTEL,Silvies,42.75333,-118.68785,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6147,SNOTEL,Slumgullion,37.99076,-107.20392,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6148,SNOTEL,Smith Morehouse,40.78931,-111.09192,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6149,SNOTEL,Snake River Station,44.13361,-110.66917,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6150,SNOTEL,Snowbird,40.56914,-111.65852,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6151,SNOTEL,Snow Mountain,43.94885,-119.54013,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6152,SNOTEL,Soldier R.S.,43.48407,-114.82692,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6153,SNOTEL,Somsen Ranch,42.95275,-111.35933,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6154,SNOTEL,Sonora Pass,38.31021,-119.6003,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6155,SNOTEL,South Brush Creek,41.3295,-106.5025,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6156,SNOTEL,South Mtn.,42.76476,-116.90029,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6157,SNOTEL,Spratt Creek,38.66627,-119.81741,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6158,SNOTEL,Spur Park,46.77962,-110.62165,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6159,SNOTEL,Sleeping Woman,47.17902,-114.33371,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6160,SNOTEL,Palisades Tahoe,39.18986,-120.26576,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6162,SNOTEL,Steel Creek Park,40.90862,-110.50462,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6163,SNOTEL,Stickney Mill,43.86117,-114.20902,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6164,SNOTEL,Stillwater Creek,40.22532,-105.9198,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6165,SNOTEL,Strawberry Divide,40.16483,-111.20665,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6166,SNOTEL,Sucker Creek,44.72279,-107.40035,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6167,SNOTEL,Summit Ranch,39.71803,-106.1577,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6168,SNOTEL,Sunset,47.55545,-115.82422,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6169,SNOTEL,Swede Peak,43.626,-113.96887,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6170,SNOTEL,Tahoe City Cross,39.17162,-120.15362,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6171,SNOTEL,Taylor Butte,42.69108,-121.42592,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6172,SNOTEL,Taylor Canyon,41.2287,-116.0293,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6173,SNOTEL,Thaynes Canyon,40.6235,-111.53322,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6174,SNOTEL,Thumb Divide,44.36917,-110.57717,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6175,SNOTEL,Tie Creek,44.81243,-107.41017,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6176,SNOTEL,Timpanogos Divide,40.42817,-111.61633,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6177,SNOTEL,Tipton,44.65567,-118.42617,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6178,SNOTEL,Togwotee Pass,43.74902,-110.0578,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6179,SNOTEL,Tony Grove Lake,41.89833,-111.62957,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6180,SNOTEL,Touchet,46.11868,-117.8505,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6181,SNOTEL,Townsend Creek,42.69525,-108.89572,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6182,SNOTEL,Trial Lake,40.678,-110.94873,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6183,SNOTEL,Triple Peak,42.76393,-110.5914,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6184,SNOTEL,Trough,47.23328,-120.29412,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6185,SNOTEL,Trout Creek,40.739,-109.6728,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6186,SNOTEL,Truckee #2,39.30087,-120.18407,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6187,SNOTEL,Twelvemile Creek,46.14287,-114.44755,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6188,SNOTEL,Twin Lakes,46.1438,-114.5056,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6189,SNOTEL,Two Ocean Plateau,44.15178,-110.22122,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6190,SNOTEL,Upper Rio Grande,37.72172,-107.25971,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6191,SNOTEL,Upper San Juan,37.48563,-106.83528,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6192,SNOTEL,Vernon Creek,39.93667,-112.41478,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6193,SNOTEL,Virginia Lakes Ridge,38.07298,-119.23433,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6194,SNOTEL,Ward Creek #3,39.13545,-120.21865,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6195,SNOTEL,Ward Mountain,39.13242,-114.95575,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6196,SNOTEL,Webster Flat,37.575,-112.90155,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6197,SNOTEL,Wesner Springs,35.77584,-105.54337,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6198,SNOTEL,Parleys Upper,40.70194,-111.60619,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6199,SNOTEL,Whiskey Ck,37.21423,-105.12262,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6200,SNOTEL,White Horse Lake,35.14189,-112.14966,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6201,SNOTEL,White Mill,45.04575,-109.90987,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6202,SNOTEL,White River #1,39.9645,-110.98845,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6203,SNOTEL,Widtsoe #3,37.83633,-111.88163,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6204,SNOTEL,Wildhorse Divide,42.75743,-112.47783,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6205,SNOTEL,Wilson Creek,42.01257,-115.00278,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6206,SNOTEL,Windy Peak,42.27991,-105.57782,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6207,SNOTEL,Wolf Creek Summit,37.47903,-106.80234,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6208,SNOTEL,Wood Creek,47.44847,-112.81428,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6209,SNOTEL,Chocolate Gulch,43.7685,-114.41812,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6210,SNOTEL,Hardscrabble,40.86833,-111.71865,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6211,SNOTEL,Meadows Pass,47.28312,-121.47197,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6212,SNOTEL,Nevada Ridge,46.84234,-112.50787,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6213,SNOTEL,Dry Fork,40.56533,-112.17343,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6214,SNOTEL,Agua Canyon,37.52217,-112.27118,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6215,SNOTEL,Medano Pass,37.85192,-105.43666,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6216,SNOTEL,Elk Cabin,35.7073,-105.80584,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6217,SNOTEL,Santa Fe,35.77154,-105.78487,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6218,SNOTEL,West Yellowstone,44.65866,-111.09199,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6219,SNOTEL,South Fork Bull Run,45.44575,-122.03125,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6220,SNOTEL,Smiley Mountain,43.72718,-113.83402,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6221,SNOTEL,Big Goose,44.57922,-107.20068,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6222,SNOTEL,Jackwhacker Gulch,39.57096,-105.80355,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6223,SNOTEL,Michigan Creek,39.43579,-105.91072,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6224,SNOTEL,Buckskin Joe,39.30378,-106.11316,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6225,SNOTEL,Rough And Tumble,39.02611,-106.08063,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6226,SNOTEL,Lost Dog,40.81557,-106.74833,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6227,SNOTEL,Burnt Mountain,47.0444,-121.94032,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6228,SNOTEL,Gunsight Pass,43.38332,-109.87815,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6243,SNOTEL,Happy Jack,34.74594,-111.41219,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6244,SNOTEL,Jones Pass,39.7645,-105.90655,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6245,SNOTEL,Parrish Creek,40.93417,-111.81372,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6246,SNOTEL,Louis Meadow,40.83033,-111.76457,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6248,SNOTEL,Waterhole,47.94485,-123.42594,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6249,SNOTEL,Bogus Basin,43.76377,-116.09685,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6250,SNOTEL,Van Wyck,44.37665,-116.3366,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6251,SNOTEL,Clayton Springs,37.9725,-111.83355,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6252,SNOTEL,Sourdough Gulch,46.23713,-117.39435,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6254,SNOTEL,Moscow Mountain,46.805,-116.8535,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6255,SNOTEL,Beaver Pass,48.8793,-121.2555,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6256,SNOTEL,Bear River RS,40.8852,-110.8277,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+6257,SNOTEL,Marten Ridge,48.76292,-121.69823,air temperature<br>snow depth<br>snow water equivalent<br>soil moisture<br>soil temperature<br>
+2467,SOILSCAPE,node101,36.0021,-98.63108333,soil moisture<br>
+2468,SOILSCAPE,node102,36.00205,-98.63016667,soil moisture<br>
+2469,SOILSCAPE,node103,36.0021,-98.6293,soil moisture<br>
+2470,SOILSCAPE,node104,36.00208333,-98.62843333,soil moisture<br>
+2471,SOILSCAPE,node105,36.00148333,-98.63108333,soil moisture<br>
+2472,SOILSCAPE,node106,36.00153333,-98.6302,soil moisture<br>
+2473,SOILSCAPE,node107,36.00153333,-98.62933333,soil moisture<br>
+2474,SOILSCAPE,node108,36.00148333,-98.62846667,soil moisture<br>
+2475,SOILSCAPE,node109,36.00095,-98.63113333,soil moisture<br>
+2476,SOILSCAPE,node110,36.00091667,-98.63023333,soil moisture<br>
+2477,SOILSCAPE,node111,36.0009,-98.62935,soil moisture<br>
+2478,SOILSCAPE,node112,36.00095,-98.6284833,soil moisture<br>
+2479,SOILSCAPE,node113,36.00096667,-98.62813333,soil moisture<br>
+2480,SOILSCAPE,node114,36.0008,-98.63225,soil moisture<br>
+2481,SOILSCAPE,node115,36.00051667,-98.63228333,soil moisture<br>
+2482,SOILSCAPE,node116,36.00036667,-98.6311,soil moisture<br>
+2483,SOILSCAPE,node117,36.00038333,-98.63026667,soil moisture<br>
+2484,SOILSCAPE,node118,36.00045,-98.62935,soil moisture<br>
+2485,SOILSCAPE,node119,36.00043333,-98.6284833,soil moisture<br>
+2486,SOILSCAPE,node120,36.00041667,-98.62813333,soil moisture<br>
+2487,SOILSCAPE,node121,36.00023333,-98.63236667,soil moisture<br>
+2519,SOILSCAPE,node501,38.149558,-120.788456,soil moisture<br>
+2520,SOILSCAPE,node502,38.148866,-120.787424,soil moisture<br>
+2521,SOILSCAPE,node503,38.148786,-120.786248,soil moisture<br>
+2522,SOILSCAPE,node504,38.149145,-120.785869,soil moisture<br>
+2501,SOILSCAPE,node403,38.43225,-120.965472,soil moisture<br>
+2523,SOILSCAPE,node505,38.149556,-120.78559,soil moisture<br>
+2524,SOILSCAPE,node506,38.15018001,-120.7854699,soil moisture<br>
+2525,SOILSCAPE,node507,38.148683,-120.788579,soil moisture<br>
+2526,SOILSCAPE,node508,38.148097,-120.78728,soil moisture<br>
+2527,SOILSCAPE,node509,38.147915,-120.785582,soil moisture<br>
+2528,SOILSCAPE,node510,38.148047,-120.785167,soil moisture<br>
+2529,SOILSCAPE,node511,38.148775,-120.787999,soil moisture<br>
+2530,SOILSCAPE,node512,38.148203,-120.786493,soil moisture<br>
+2531,SOILSCAPE,node513,38.148464,-120.785537,soil moisture<br>
+2532,SOILSCAPE,node514,38.148062,-120.789321,soil moisture<br>
+2534,SOILSCAPE,node516,38.145993,-120.78764,soil moisture<br>
+2535,SOILSCAPE,node517,38.147003,-120.788443,soil moisture<br>
+2536,SOILSCAPE,node518,38.145945,-120.786859,soil moisture<br>
+2561,SOILSCAPE,node701,38.17225498,-120.803655,soil moisture<br>
+2562,SOILSCAPE,node702,38.17338889,-120.8069444,soil moisture<br>
+2563,SOILSCAPE,node703,38.17352903,-120.806395,soil moisture<br>
+2564,SOILSCAPE,node704,38.17322401,-120.806562,soil moisture<br>
+2565,SOILSCAPE,node705,38.17279503,-120.80678,soil moisture<br>
+2566,SOILSCAPE,node706,38.17293299,-120.805035,soil moisture<br>
+2567,SOILSCAPE,node707,38.17231097,-120.806219,soil moisture<br>
+2568,SOILSCAPE,node708,38.17171502,-120.806172,soil moisture<br>
+2569,SOILSCAPE,node709,38.172157,-120.80663,soil moisture<br>
+2570,SOILSCAPE,node710,38.17187503,-120.804979,soil moisture<br>
+2571,SOILSCAPE,node711,38.17270199,-120.802811,soil moisture<br>
+2572,SOILSCAPE,node712,38.17260903,-120.804247,soil moisture<br>
+2573,SOILSCAPE,node713,38.17242597,-120.804749,soil moisture<br>
+2574,SOILSCAPE,node715,38.17243402,-120.802188,soil moisture<br>
+2576,SOILSCAPE,node801,38.506588,-120.797792,soil moisture<br>
+2577,SOILSCAPE,node802,38.50718703,-120.79735,soil moisture<br>
+2578,SOILSCAPE,node803,38.50724604,-120.798295,soil moisture<br>
+2579,SOILSCAPE,node804,38.50733204,-120.79675,soil moisture<br>
+2580,SOILSCAPE,node805,38.506893,-120.796521,soil moisture<br>
+2581,SOILSCAPE,node806,38.506556,-120.795105,soil moisture<br>
+2582,SOILSCAPE,node807,38.50717798,-120.794877,soil moisture<br>
+2583,SOILSCAPE,node808,38.50656903,-120.796836,soil moisture<br>
+2584,SOILSCAPE,node809,38.50622504,-120.796965,soil moisture<br>
+2585,SOILSCAPE,node810,38.50623099,-120.795572,soil moisture<br>
+2586,SOILSCAPE,node812,38.505712,-120.796599,soil moisture<br>
+2587,SOILSCAPE,node813,38.505613,-120.796076,soil moisture<br>
+2588,SOILSCAPE,node814,38.50544997,-120.796387,soil moisture<br>
+2507,SOILSCAPE,node410,38.43375,-120.966944,soil moisture<br>
+2508,SOILSCAPE,node411,38.430778,-120.966222,soil moisture<br>
+2509,SOILSCAPE,node412,38.430917,-120.966639,soil moisture<br>
+2510,SOILSCAPE,node413,38.430639,-120.967861,soil moisture<br>
+2512,SOILSCAPE,node415,38.430639,-120.966694,soil moisture<br>
+2514,SOILSCAPE,node417,38.430806,-120.967361,soil moisture<br>
+2515,SOILSCAPE,node418,38.430778,-120.968083,soil moisture<br>
+2516,SOILSCAPE,node419,38.430333,-120.967361,soil moisture<br>
+2517,SOILSCAPE,node420,38.430306,-120.967861,soil moisture<br>
+2505,SOILSCAPE,node408,38.432778,-120.966917,soil moisture<br>
+2506,SOILSCAPE,node409,38.433222,-120.966972,soil moisture<br>
+2589,SOILSCAPE,node815,38.50564803,-120.797554,soil moisture<br>
+2590,SOILSCAPE,node816,38.50514302,-120.797877,soil moisture<br>
+2591,SOILSCAPE,node817,38.50527998,-120.796787,soil moisture<br>
+2592,SOILSCAPE,node818,38.50477899,-120.797482,soil moisture<br>
+2593,SOILSCAPE,node819,38.50573403,-120.798124,soil moisture<br>
+2594,SOILSCAPE,node820,38.506534,-120.798971,soil moisture<br>
+2595,SOILSCAPE,node821,38.50567997,-120.799094,soil moisture<br>
+2596,SOILSCAPE,node822,38.50443902,-120.799132,soil moisture<br>
+2598,SOILSCAPE,node824,38.50477003,-120.798388,soil moisture<br>
+2599,SOILSCAPE,node825,38.50438002,-120.797979,soil moisture<br>
+2600,SOILSCAPE,node827,38.50798901,-120.794485,soil moisture<br>
+2601,SOILSCAPE,node828,38.506115,-120.794027,soil moisture<br>
+2602,SOILSCAPE,node900,38.393326,-120.905659,soil moisture<br>
+2603,SOILSCAPE,node901,38.393112,-120.906086,soil moisture<br>
+2604,SOILSCAPE,node902,38.393514,-120.905467,soil moisture<br>
+2605,SOILSCAPE,node903,38.393433,-120.904852,soil moisture<br>
+2606,SOILSCAPE,node904,38.393222,-120.905239,soil moisture<br>
+2607,SOILSCAPE,node905,38.393056,-120.90474,soil moisture<br>
+2608,SOILSCAPE,node906,38.392684,-120.906117,soil moisture<br>
+2609,SOILSCAPE,node907,38.392615,-120.905753,soil moisture<br>
+2610,SOILSCAPE,node908,38.39277,-120.905461,soil moisture<br>
+2611,SOILSCAPE,node909,38.392541,-120.904358,soil moisture<br>
+2612,SOILSCAPE,node910,38.392405,-120.905383,soil moisture<br>
+2613,SOILSCAPE,node911,38.392054,-120.905545,soil moisture<br>
+2614,SOILSCAPE,node912,38.392064,-120.904703,soil moisture<br>
+2615,SOILSCAPE,node914,38.391477,-120.905713,soil moisture<br>
+2616,SOILSCAPE,node915,38.391253,-120.906133,soil moisture<br>
+2617,SOILSCAPE,node916,38.39097,-120.905827,soil moisture<br>
+2618,SOILSCAPE,node1018,38.38896,-120.904767,soil moisture<br>
+2619,SOILSCAPE,node1020,38.38831,-120.905261,soil moisture<br>
+2620,SOILSCAPE,node1021,38.387989,-120.905752,soil moisture<br>
+2621,SOILSCAPE,node1023,38.387703,-120.906039,soil moisture<br>
+2622,SOILSCAPE,node1029,38.387082,-120.904569,soil moisture<br>
+2623,SOILSCAPE,node1027,38.387216,-120.904839,soil moisture<br>
+2624,SOILSCAPE,node1030,38.386735,-120.905266,soil moisture<br>
+2625,SOILSCAPE,node1031,38.386583,-120.904494,soil moisture<br>
+2808,SOILSCAPE,node811,38.50590804,-120.795591,soil moisture<br>
+2809,SOILSCAPE,node913,38.392255,-120.905362,soil moisture<br>
+2810,SOILSCAPE,node1017,38.388366,-120.905918,soil moisture<br>
+2811,SOILSCAPE,node1019,38.387187,-120.906527,soil moisture<br>
+2812,SOILSCAPE,node1022,38.387738,-120.905275,soil moisture<br>
+2813,SOILSCAPE,node1024,38.387526,-120.905556,soil moisture<br>
+2814,SOILSCAPE,node1025,38.38737,-120.905183,soil moisture<br>
+2852,SOILSCAPE,node1026,38.38674,-120.906359,soil moisture<br>
+2853,SOILSCAPE,node1028,38.387386,-120.904625,soil moisture<br>
+2854,SOILSCAPE,node515,38.147595,-120.787539,soil moisture<br>
+3230,SOILSCAPE,node1201,38.471267,-120.993334,soil moisture<br>
+3231,SOILSCAPE,node1202,38.471133,-120.994331,soil moisture<br>
+3232,SOILSCAPE,node1204,38.470807,-120.99437,soil moisture<br>
+3233,SOILSCAPE,node1205,38.471538,-120.993739,soil moisture<br>
+3234,SOILSCAPE,node1206,38.471697,-120.994196,soil moisture<br>
+3258,SOILSCAPE,node200,42.298958,-83.664326,soil moisture<br>
+3259,SOILSCAPE,node204,42.297707,-83.664592,soil moisture<br>
+3260,SOILSCAPE,node207,42.29875,-83.665455,soil moisture<br>
+3261,SOILSCAPE,node208,42.29796,-83.664236,soil moisture<br>
+3262,SOILSCAPE,node210,42.299004,-83.664259,soil moisture<br>
+3263,SOILSCAPE,node211,42.298339,-83.665245,soil moisture<br>
+3264,SOILSCAPE,node214,42.297826,-83.66586,soil moisture<br>
+3265,SOILSCAPE,node217,42.298253,-83.663802,soil moisture<br>
+3266,SOILSCAPE,node219,42.299148,-83.665371,soil moisture<br>
+3267,SOILSCAPE,node222,42.297341,-83.666996,soil moisture<br>
+3268,SOILSCAPE,node230,42.298,-83.663784,soil moisture<br>
+3269,SOILSCAPE,node1400,31.73648003,-109.941835,soil moisture<br>
+3270,SOILSCAPE,node1401,31.73710397,-109.943423,soil moisture<br>
+3271,SOILSCAPE,node1402,31.73686702,-109.942873,soil moisture<br>
+3272,SOILSCAPE,node1403,31.73666501,-109.942608,soil moisture<br>
+3273,SOILSCAPE,node1404,31.73586303,-109.941236,soil moisture<br>
+3274,SOILSCAPE,node1405,31.73550898,-109.940963,soil moisture<br>
+3275,SOILSCAPE,node1406,31.73680499,-109.944185,soil moisture<br>
+3276,SOILSCAPE,node1407,31.7367299,-109.946576,soil moisture<br>
+3277,SOILSCAPE,node1408,31.73711998,-109.946748,soil moisture<br>
+3278,SOILSCAPE,node1409,31.73791399,-109.946632,soil moisture<br>
+3279,SOILSCAPE,node1500,31.74397202,-110.051521,soil moisture<br>
+3280,SOILSCAPE,node1501,31.74245096,-110.052667,soil moisture<br>
+3281,SOILSCAPE,node1502,31.74272697,-110.05256,soil moisture<br>
+3282,SOILSCAPE,node1503,31.74302001,-110.052622,soil moisture<br>
+3283,SOILSCAPE,node1504,31.74268699,-110.052782,soil moisture<br>
+3284,SOILSCAPE,node1505,31.74446404,-110.05231,soil moisture<br>
+3285,SOILSCAPE,node1506,31.74405098,-110.052972,soil moisture<br>
+3286,SOILSCAPE,node1507,31.74298304,-110.053182,soil moisture<br>
+2503,SOILSCAPE,node405,38.432306,-120.964417,soil moisture<br>
+2504,SOILSCAPE,node406,38.432556,-120.964889,soil moisture<br>
+2851,SOILSCAPE,node1000,38.387138,-120.906032,soil moisture<br>
+2499,SOILSCAPE,node401,38.431917,-120.965417,soil moisture<br>soil temperature<br>
+2502,SOILSCAPE,node404,38.432278,-120.964861,soil moisture<br>
+2513,SOILSCAPE,node416,38.430583,-120.967,soil moisture<br>
+4902,SOILSCAPE,Kendall_1401,31.737106,-109.943415,air temperature<br>soil moisture<br>soil temperature<br>
+4903,SOILSCAPE,Kendall_1402,31.736849,-109.942883,air temperature<br>soil moisture<br>soil temperature<br>
+4904,SOILSCAPE,Kendall_1403,31.736675,-109.942644,air temperature<br>soil moisture<br>soil temperature<br>
+2511,SOILSCAPE,node414,38.430028,-120.9675,soil moisture<br>
+4906,SOILSCAPE,Kendall_1405,31.735482,-109.940961,air temperature<br>soil moisture<br>soil temperature<br>
+4907,SOILSCAPE,Kendall_1406,31.736777,-109.944198,air temperature<br>soil moisture<br>soil temperature<br>
+4908,SOILSCAPE,Kendall_1407,31.736703,-109.946587,air temperature<br>soil moisture<br>soil temperature<br>
+4909,SOILSCAPE,Kendall_1408,31.737123,-109.94676,air temperature<br>soil moisture<br>soil temperature<br>
+4910,SOILSCAPE,Kendall_1409,31.737899,-109.946627,air temperature<br>soil moisture<br>soil temperature<br>
+4912,SOILSCAPE,Lucky_Hills_1501,31.742458,-110.052658,air temperature<br>soil moisture<br>soil temperature<br>
+4913,SOILSCAPE,Lucky_Hills_1502,31.742734,-110.052571,air temperature<br>soil moisture<br>soil temperature<br>
+4914,SOILSCAPE,Lucky_Hills_1503,31.743024,-110.052633,air temperature<br>soil moisture<br>soil temperature<br>
+4915,SOILSCAPE,Lucky_Hills_1504,31.742705,-110.052804,air temperature<br>soil moisture<br>soil temperature<br>
+4916,SOILSCAPE,Lucky_Hills_1505,31.744471,-110.052344,air temperature<br>soil moisture<br>soil temperature<br>
+4917,SOILSCAPE,Lucky_Hills_1506,31.744044,-110.053008,air temperature<br>soil moisture<br>soil temperature<br>
+4918,SOILSCAPE,Lucky_Hills_1507,31.742983,-110.053209,air temperature<br>soil moisture<br>soil temperature<br>
+4932,SOILSCAPE,CO-Z1_2001,37.195363,-105.990602,air temperature<br>soil moisture<br>soil temperature<br>
+4933,SOILSCAPE,CO-Z1_2002,37.194044,-105.991974,air temperature<br>soil moisture<br>soil temperature<br>
+4934,SOILSCAPE,CO-Z1_2003,37.188806,-105.990331,air temperature<br>soil moisture<br>soil temperature<br>
+4935,SOILSCAPE,CO-Z1_2004,37.190274,-105.99657,air temperature<br>soil moisture<br>soil temperature<br>
+4936,SOILSCAPE,CO-Z4_2101,37.057137,-105.820744,air temperature<br>soil moisture<br>soil temperature<br>
+4937,SOILSCAPE,CO-Z4_2105,37.05512,-105.824245,air temperature<br>soil moisture<br>soil temperature<br>
+4938,SOILSCAPE,JR-1_2301,32.523121,-106.740669,air temperature<br>soil moisture<br>soil temperature<br>
+4939,SOILSCAPE,JR-1_2302,32.516008,-106.74061,air temperature<br>soil moisture<br>soil temperature<br>
+4940,SOILSCAPE,JR-1_2303,32.51924,-106.738928,air temperature<br>soil moisture<br>soil temperature<br>
+4905,SOILSCAPE,Kendall_1404,31.735862,-109.941257,air temperature<br>soil moisture<br>soil temperature<br>
+2500,SOILSCAPE,node402,38.431889,-120.964833,soil moisture<br>
+4952,SOILSCAPE,CO-Z4_2102,37.058369,-105.821532,air temperature<br>soil moisture<br>soil temperature<br>
+4953,SOILSCAPE,CO-Z4_2103,37.060323,-105.823289,air temperature<br>soil moisture<br>soil temperature<br>
+4954,SOILSCAPE,CO-Z4_2104,37.059311,-105.824036,air temperature<br>soil moisture<br>soil temperature<br>
+4941,SOILSCAPE,JR-1_2304,32.52001,-106.736287,air temperature<br>soil moisture<br>soil temperature<br>
+4942,SOILSCAPE,JR-2_2401,32.590471,-106.783315,air temperature<br>soil moisture<br>soil temperature<br>
+4943,SOILSCAPE,JR-2_2402,32.589169,-106.77826,air temperature<br>soil moisture<br>soil temperature<br>
+4944,SOILSCAPE,JR-2_2403,32.589969,-106.787914,air temperature<br>soil moisture<br>soil temperature<br>
+4945,SOILSCAPE,JR-2_2404,32.592444,-106.778549,air temperature<br>soil moisture<br>soil temperature<br>
+4946,SOILSCAPE,JR-2_2405,32.589779,-106.77801,air temperature<br>soil moisture<br>soil temperature<br>
+4947,SOILSCAPE,JR-3_2501,32.613553,-106.736954,air temperature<br>soil moisture<br>soil temperature<br>
+4948,SOILSCAPE,JR-3_2502,32.608798,-106.737161,air temperature<br>soil moisture<br>soil temperature<br>
+4949,SOILSCAPE,JR-3_2503,32.612268,-106.741205,air temperature<br>soil moisture<br>soil temperature<br>
+4950,SOILSCAPE,JR-3_2504,32.609989,-106.732697,air temperature<br>soil moisture<br>soil temperature<br>
+4739,TxSON,CR1000_1,30.4205,-98.8033,soil moisture<br>soil temperature<br>
+4711,TxSON,CR200_1,30.4376,-98.8059,soil moisture<br>soil temperature<br>
+4712,TxSON,CR200_2,30.2896,-98.745,soil moisture<br>soil temperature<br>
+4713,TxSON,CR200_3,30.4283,-98.8065,soil moisture<br>soil temperature<br>
+4714,TxSON,CR200_4,30.4298,-98.7792,soil moisture<br>soil temperature<br>
+4715,TxSON,CR200_5,30.2381,-98.7701,soil moisture<br>soil temperature<br>
+4716,TxSON,CR200_6,30.2383,-98.7037,soil moisture<br>soil temperature<br>
+4717,TxSON,CR200_7,30.2318,-98.7084,soil moisture<br>soil temperature<br>
+4718,TxSON,CR200_8,30.2834,-98.6864,soil moisture<br>soil temperature<br>
+4719,TxSON,CR200_9,30.4319,-98.8133,soil moisture<br>soil temperature<br>
+4720,TxSON,CR200_10,30.3072,-98.7703,soil moisture<br>soil temperature<br>
+4721,TxSON,CR200_11,30.2317,-98.7685,soil moisture<br>soil temperature<br>
+4722,TxSON,CR200_12,30.2108,-98.8331,soil moisture<br>soil temperature<br>
+4723,TxSON,CR200_13,30.4327,-98.8583,soil moisture<br>soil temperature<br>
+4724,TxSON,CR200_14,30.4151,-98.8025,soil moisture<br>soil temperature<br>
+4725,TxSON,CR200_15,30.2501,-98.7069,soil moisture<br>soil temperature<br>
+4726,TxSON,CR200_16,30.2836,-98.7417,soil moisture<br>soil temperature<br>
+4727,TxSON,CR200_17,30.2754,-98.7268,soil moisture<br>soil temperature<br>
+4728,TxSON,CR200_18,30.2456,-98.6988,soil moisture<br>soil temperature<br>
+4729,TxSON,CR200_19,30.4175,-98.8542,soil moisture<br>soil temperature<br>
+4731,TxSON,CR200_21,30.4218,-98.7839,soil moisture<br>soil temperature<br>
+4732,TxSON,CR200_22,30.4315,-98.8604,soil moisture<br>soil temperature<br>
+4733,TxSON,CR200_23,30.2022,-98.6543,soil moisture<br>soil temperature<br>
+4734,TxSON,CR200_24,30.2534,-98.699,soil moisture<br>soil temperature<br>
+4735,TxSON,CR200_25,30.2492,-98.6995,soil moisture<br>soil temperature<br>
+4736,TxSON,CR200_26,30.4193,-98.8046,soil moisture<br>soil temperature<br>
+4737,TxSON,CR200_28,30.4613,-98.8451,soil moisture<br>soil temperature<br>
+4738,TxSON,CR200_29,30.4487,-98.848,soil moisture<br>soil temperature<br>
+4740,TxSON,CR1000_2,30.2454,-98.7059,soil moisture<br>soil temperature<br>
+4741,TxSON,CR1000_3,30.2758,-98.7242,soil moisture<br>soil temperature<br>
+4742,TxSON,CR1000_4,30.46,-98.9407,soil moisture<br>soil temperature<br>
+4743,TxSON,CR1000_5,30.3989,-98.6105,soil moisture<br>soil temperature<br>
+4744,TxSON,CR1000_6,30.4421,-98.8427,soil moisture<br>soil temperature<br>
+4745,TxSON,LCRA_1,30.4306,-98.6136,soil moisture<br>soil temperature<br>
+4746,TxSON,LCRA_2,30.4206,-98.8518,soil moisture<br>soil temperature<br>
+4747,TxSON,LCRA_3,30.1713,-98.6136,soil moisture<br>soil temperature<br>
+4748,TxSON,LCRA_4,30.3423,-98.8679,soil moisture<br>soil temperature<br>
+4749,TxSON,LCRA_5,30.33,-98.6116,soil moisture<br>soil temperature<br>
+4750,TxSON,LCRA_6,30.2408,-98.6253,soil moisture<br>soil temperature<br>
+4751,TxSON,LCRA_7,30.1658,-98.9498,soil moisture<br>soil temperature<br>
+2002,USCRN,Fairhope_3_NE,30.5485,-87.8757,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2003,USCRN,Gadsden_19_N,34.2851,-85.9621,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2004,USCRN,Selma_13_WNW,32.4567,-87.2422,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2005,USCRN,Batesville_8_WNW,35.8201,-91.7812,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2006,USCRN,Elgin_5_S,31.5907,-110.5087,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2007,USCRN,Tucson_11_W,32.2395,-111.1696,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2008,USCRN,Williams_35_NNW,35.7552,-112.3374,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2009,USCRN,Yuma_27_ENE,32.835,-114.1884,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2010,USCRN,Bodega_6_WSW,38.3208,-123.0747,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2011,USCRN,Fallbrook_5_NE,33.4392,-117.1904,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2012,USCRN,Merced_23_WSW,37.2381,-120.8825,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2013,USCRN,Redding_12_WNW,40.6507,-122.6068,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2014,USCRN,Santa_Barbara_11_W,34.4141,-119.8796,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2015,USCRN,Stovepipe_Wells_1_SW,36.602,-117.1449,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2016,USCRN,Yosemite_Village_12_W,37.7592,-119.8208,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2017,USCRN,Boulder_14_W,40.0354,-105.5409,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2018,USCRN,Cortez_8_SE,37.2553,-108.5035,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2019,USCRN,Dinosaur_2_E,40.2446,-108.9677,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2020,USCRN,La_Junta_17_WSW,37.8639,-103.8224,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2021,USCRN,Montrose_11_ENE,38.544,-107.6928,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2022,USCRN,Nunn_7_NNE,40.8066,-104.7552,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2023,USCRN,Everglades_City_5_NE,25.8996,-81.3183,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2024,USCRN,Sebring_23_SSE,27.1526,-81.3689,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2025,USCRN,Titusville_7_E,28.6159,-80.6929,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2026,USCRN,Brunswick_23_S,30.8078,-81.4596,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2027,USCRN,Newton_11_SW,31.1923,-84.4465,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2028,USCRN,Newton_8_W,31.3127,-84.4706,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2029,USCRN,Watkinsville_5_SSE,33.7837,-83.3896,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2030,USCRN,Des_Moines_17_E,41.5562,-93.2855,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2031,USCRN,Arco_17_SW,43.4621,-113.556,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2032,USCRN,Murphy_10_W,43.2044,-116.7505,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2033,USCRN,Champaign_9_SW,40.0528,-88.3729,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2034,USCRN,Shabbona_5_NNE,41.843,-88.8513,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2035,USCRN,Bedford_5_WNW,38.8882,-86.5707,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2036,USCRN,Manhattan_6_SSW,39.1027,-96.6098,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2037,USCRN,Oakley_19_SSW,38.8701,-100.9627,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2038,USCRN,Bowling_Green_21_NNE,37.2504,-86.2325,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2039,USCRN,Versailles_3_NNW,38.0945,-84.7465,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2040,USCRN,Lafayette_13_SE,30.0918,-91.8731,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2041,USCRN,Monroe_26_N,32.8833,-92.1165,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2042,USCRN,Limestone_4_NNW,46.9601,-67.8833,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2043,USCRN,Old_Town_2_W,44.9281,-68.7006,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2044,USCRN,Chatham_1_SE,46.3345,-86.92,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2045,USCRN,Gaylord_9_SSW,44.908,-84.7203,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2046,USCRN,Goodridge_12_NNW,48.3055,-95.8744,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2047,USCRN,Sandstone_6_W,46.1135,-92.9936,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2048,USCRN,Chillicothe_22_ENE,39.8668,-93.147,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2049,USCRN,Joplin_24_N,37.4277,-94.5829,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2050,USCRN,Salem_10_W,37.6344,-91.7226,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2051,USCRN,Holly_Springs_4_N,34.8223,-89.4348,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2052,USCRN,Newton_5_ENE,32.3378,-89.0703,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2053,USCRN,Dillon_18_WSW,45.158,-113.0057,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2054,USCRN,Lewistown_42_WSW,46.8847,-110.2895,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2055,USCRN,St._Mary_1_SSW,48.7412,-113.433,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2056,USCRN,Wolf_Point_29_ENE,48.3082,-105.1018,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2057,USCRN,Wolf_Point_34_NE,48.4887,-105.2096,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2058,USCRN,Asheville_13_S,35.4185,-82.5567,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2059,USCRN,Asheville_8_SSW,35.4945,-82.6142,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2060,USCRN,Durham_11_W,35.9705,-79.0931,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2061,USCRN,Jamestown_38_WSW,46.7702,-99.4778,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2062,USCRN,Medora_7_E,46.8946,-103.3769,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2063,USCRN,Northgate_5_ESE,48.9676,-102.1702,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2064,USCRN,Harrison_20_SSE,42.4247,-103.7363,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2065,USCRN,Lincoln_11_SW,40.6954,-96.8541,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2066,USCRN,Lincoln_8_ENE,40.8484,-96.5651,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2067,USCRN,Whitman_5_ENE,42.068,-101.445,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2068,USCRN,Durham_2_N,43.1716,-70.9277,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2069,USCRN,Durham_2_SSW,43.1092,-70.9484,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2070,USCRN,Las_Cruces_20_N,32.6137,-106.7414,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2071,USCRN,Los_Alamos_13_W,35.8584,-106.5214,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2072,USCRN,Socorro_20_N,34.3557,-106.8859,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2073,USCRN,Baker_5_W,39.0118,-114.209,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2074,USCRN,Denio_52_WSW,41.8484,-119.6357,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2075,USCRN,Mercury_3_SSW,36.624,-116.0225,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2076,USCRN,Ithaca_13_E,42.4401,-76.2462,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2077,USCRN,Millbrook_3_W,41.7857,-73.7422,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2078,USCRN,Coshocton_8_NNE,40.3667,-81.7829,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2079,USCRN,Goodwell_2_E,36.5993,-101.595,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2080,USCRN,Goodwell_2_SE,36.5682,-101.6097,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2081,USCRN,Stillwater_2_W,36.1181,-97.0914,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2082,USCRN,Stillwater_5_WNW,36.1346,-97.1082,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2083,USCRN,Coos_Bay_8_SW,43.2718,-124.3186,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2084,USCRN,Corvallis_10_SSW,44.4185,-123.3257,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2085,USCRN,John_Day_35_WNW,44.556,-119.6459,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2086,USCRN,Riley_10_WSW,43.4711,-119.6917,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2087,USCRN,Avondale_2_N,39.8593,-75.7861,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2088,USCRN,Kingston_1_NW,41.4911,-71.5413,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2089,USCRN,Kingston_1_W,41.4782,-71.5417,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2090,USCRN,Blackville_3_W,33.355,-81.3279,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2091,USCRN,McClellanville_7_NE,33.1532,-79.3637,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2092,USCRN,Aberdeen_35_WNW,45.7115,-99.1296,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2093,USCRN,Buffalo_13_ESE,45.516,-103.3017,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2094,USCRN,Pierre_24_S,44.0194,-100.353,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2095,USCRN,Sioux_Falls_14_NNE,43.7346,-96.6222,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2096,USCRN,Crossville_7_NW,36.0138,-85.1345,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2097,USCRN,Austin_33_NW,30.6222,-98.0846,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2098,USCRN,Bronte_11_NNE,32.0408,-100.2495,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2099,USCRN,Edinburg_17_NNE,26.5258,-98.0633,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2100,USCRN,Monahans_6_ENE,31.6219,-102.8071,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2101,USCRN,Muleshoe_19_S,33.9557,-102.774,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2102,USCRN,Palestine_6_WNW,31.7796,-95.7232,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2103,USCRN,Panther_Junction_2_N,29.3483,-103.2093,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2104,USCRN,Port_Aransas_32_NNE,28.3045,-96.823,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2105,USCRN,Brigham_City_28_WNW,41.6163,-112.5437,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2106,USCRN,Cape_Charles_5_ENE,37.2907,-75.927,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2107,USCRN,Charlottesville_2_SSE,37.9975,-78.4656,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2108,USCRN,Darrington_21_NNE,48.5405,-121.446,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2109,USCRN,Quinault_4_NE,47.5139,-123.812,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2110,USCRN,Spokane_17_SSW,47.4174,-117.5264,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2111,USCRN,Necedah_5_WNW,44.0604,-90.1737,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2112,USCRN,Elkins_21_ENE,39.013,-79.4743,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2113,USCRN,Lander_11_SSE,42.6754,-108.6686,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2114,USCRN,Moose_1_NNE,43.6615,-110.712,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+2115,USCRN,Sundance_8_NNW,44.5169,-104.4363,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+6349,USCRN,Clanton_2_NE,32.8516,-86.6115,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6350,USCRN,Cullman_3_ENE,34.195392,-86.796355,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6351,USCRN,Courtland_2_WSW,34.660192,-87.346246,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6352,USCRN,Gainesville_2_NE,32.83688,-88.13745,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6353,USCRN,Greensboro_2_WNW,32.716969,-87.623072,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6355,USCRN,Muscle_Shoals_2_N,34.7728,-87.6399,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6356,USCRN,Northport_2_S,33.2125,-87.5914,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6357,USCRN,Russellville_4_SSE,34.4535,-87.71036,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6358,USCRN,Selma_6_SSE,32.33548,-86.97876,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6359,USCRN,Talladega_10_NNE,33.5721,-86.0573,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6360,USCRN,Thomasville_2_S,31.88138,-87.73674,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>
+6362,USCRN,Wooster_3_SSE,40.7584,-81.9062,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+6363,USCRN,Blue_Hill_0_W,42.21201,-71.11475,air temperature<br>precipitation<br>soil moisture<br>soil temperature<br>surface temperature<br>
+935,USDA-ARS,Little River,31.65,-83.61,soil moisture<br>soil temperature<br>
+933,USDA-ARS,Little Washita,34.9502,-98.1,soil moisture<br>soil temperature<br>
+936,USDA-ARS,Reynolds Creek,43.1501,-116.775,soil moisture<br>soil temperature<br>
+934,USDA-ARS,Walnut Gulch,31.7216,-110.0184,soil moisture<br>soil temperature<br>

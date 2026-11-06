@@ -43,11 +43,10 @@ MANIFEST
 !.pixi/config.toml
 
 notebooks/data/
-<<<<<<< Updated upstream
 output/
 .vscode/
-=======
-.vscode/
-
 test/
->>>>>>> Stashed changes
+.pytest_cache/
+
+# machine-specific paths (copy config/paths.example.yml)
+config/paths.yml

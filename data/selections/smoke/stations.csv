@@ -1,0 +1,3 @@
+station_id,network,station_name,latitude,longitude,available_variables
+1,SMOKE,Alpha Site,40.0,-100.0,soil moisture<br>soil temperature<br>
+2,SMOKE,Beta_Site,30.5,-90.25,soil moisture<br>

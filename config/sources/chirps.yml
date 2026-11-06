@@ -1,0 +1,44 @@
+# CHIRPS v2.0 daily precipitation (Earth Engine)
+#
+# Provider facts and provenance for `chirps` (no scientific choices: those are in
+# config/pipeline.yml). `request:` holds the provider wording and fixed facts that
+# are copied verbatim into locks/chirps.json by scripts/plan.py; the stations,
+# dates, bands and storage are added from the selection and pipeline.yml.
+# Full rights evidence: records/source_provenance.json (sources.chirps).
+provenance:
+  provider: UCSB Climate Hazards Center / USGS
+  product: CHIRPS v2.0 daily, native 0.05 degree cells
+  version: 2.0; Earth Engine UCSB-CHG/CHIRPS/DAILY
+  citation:
+    doi: 10.1038/sdata.2015.66
+    authors: Funk et al.
+    year: 2015
+  rights:
+    declaration: Public domain; provider waives copyright and related rights to the extent possible under
+      law
+    note: Provider wording is recorded without inventing a file-level SPDX identifier.
+collection_prefix: chirps_v2_ee
+asset_format: earth_engine_getRegion_json
+catalog_url: https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY
+getregion_columns: 5
+coverage:
+  latitude:
+  - -50
+  - 50
+  longitude:
+  - -180
+  - 180
+request:
+  boundary_rule: Half-open source affine pixel coordinates; floor selects the containing native pixel
+  dataset: chirps
+  extract_format: Float64 NPZ; JSON null and absent rows represented separately by masks and NaN; no filling
+  grid: Use each image native EPSG:4326 affine grid; require matching projections within each annual asset
+  processing: No added masks, quality filtering, gap filling, interpolation, or aggregation
+  product: CHIRPS v2.0 daily precipitation
+  raw_format: Decoded Earth Engine JSON; preserve service nulls, image IDs and timestamps
+  schema_version: 1
+  source_urls:
+  - https://developers.google.com/earth-engine/datasets/catalog/UCSB-CHG_CHIRPS_DAILY
+  - https://developers.google.com/earth-engine/apidocs/ee-imagecollection-getregion
+  strategy: earth_engine_getRegion
+  units: mm/day

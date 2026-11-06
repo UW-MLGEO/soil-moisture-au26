@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sm-drydown"
+version = "0.2.0"
+description = "Reproducible acquisition and homogenization of in situ soil moisture and ecohydrological features"
+requires-python = ">=3.14,<3.15"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sm_drydown"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]

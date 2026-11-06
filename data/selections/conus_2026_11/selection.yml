@@ -1,0 +1,38 @@
+# Written by scripts/select.py (legacy selection: scripts/migrate_config.py).
+# Do not edit; change config/pipeline.yml `selection:` and rerun select.py.
+files:
+  excluded_stations.csv: d2fefb38dd3de1be8e0bbda6812bc1aff84aa3b9de2c47c022710ea84501a9a5
+  modis_land_cover_granules.csv: ff9e9b4214401482f1df7832266c3deba75356f6663b3e880eb0f5804af6fe76
+  sm_sensors.csv: b168ed7105d53a144c4107170a1c21104443e2aab4fce43704cfad9a6af23cd0
+  stations.csv: 88194b825af445583a5010c7e085cf268ce73d36b5d40c4c9a293044a38517df
+inventory_date: '2026-11-01'
+ismn_collection_id: 2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature
+legacy_specification_sha256:
+  chirps: 04c7a2be4be68816185aa56be5b3f0c90b8988f5001a76a4fa1cfec7463fc6fc
+  gldas: a86757871df3bd6d8e016996f79c0e970a33d464a5953abc25907802f7676283
+  ismn: 15b45472f15f63fd45a565fd646fa7c464dcd4f7c46c36e5b01856ce2faac032
+  modis_lai: aed8aede1f6fc3bacbcc0f7ed7a06e41f9a3de99224b2a4c342f3eb7708e7d0d
+  modis_land_cover: 6b8ac875092e89a9e1e02d8eb17c38a400f719daea1cd38b8f3cb9d269f0290b
+  morgan_2025: 0b51fea6a95f26fd0ba55f896efa6fba985804cca770ee1802198dd692af712b
+provenance: Converted from the legacy specifications by scripts/migrate_config.py;
+  the original inventory snapshots are recorded under `sources`.
+selection_note: Same frozen SM stations, dates and sensor selection; add all available
+  provider soil-temperature series. Raw exports remain unfiltered.
+sources:
+  conus-states.zip:
+    response_bytes: 1120533
+    retrieved_at: '2026-11-01T20:00:54.429326+00:00'
+    sha256: 8a45692bc532dbd38938a1924f445850cef2682ea67d750d7fd2f19cfe836903
+    url: https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_state_5m.zip
+  ismn-stations.json:
+    response_bytes: 3956458
+    retrieved_at: '2026-11-01T20:00:54.037705+00:00'
+    sha256: 75c86bbe89cc1e42d2f6dafa605168685e36d661bdf6c26c9ef43c95e54a69e8
+    url: https://ismn.earth/static/dataviewer/network_station_details.json
+spatial_rule: 48 states + DC; Census NAD83 boundary buffered by 0.005 degrees; station
+  longitude/latitude treated as NAD83
+station_snapshot:
+  collection_id: 2002-07-04_2025-12-31_dd688518cd8a
+  sha256: 89924028c20fcdbc86ab07011fad7866619a3be6149d1f50db1ca62b950c8d90
+  source_file: config/ismn_conus.json
+supplements_collection: 2002-07-04_2025-12-31_dd688518cd8a

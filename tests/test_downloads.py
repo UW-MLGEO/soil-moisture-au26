@@ -20,12 +20,12 @@ import requests
 
 from fixtures import HTTPResponse, MemoryStore
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
-from sm_drydown.acquisition import published
-from sm_drydown.acquisition.ismn import Page, load_config, overlaps, request_payload
-from sm_drydown.acquisition.ismn_extract import extract_zip, expand_exports
-from sm_drydown.acquisition.ismn_workflow import make_plan, require_approval, row_key, submit_exports
+from sm_drydown.providers import published
+from sm_drydown.providers.ismn import Page, load_config, overlaps, request_payload
+from sm_drydown.providers.ismn_extract import extract_zip, expand_exports
+from sm_drydown.providers.ismn_workflow import make_plan, require_approval, row_key, submit_exports
 from sm_drydown.storage.files import ObjectStore, download, sha256, write_json
+from sm_drydown.storage.restore import restore_extracts, restore_ismn
 
 
 def selection():
@@ -84,7 +84,7 @@ class ISMNTests(unittest.TestCase):
             self.assertFalse(path.with_name(path.name+'.provenance.json').exists())
 
     def test_soil_temperature_is_added_without_provider_masking_or_gap_filling(self):
-        c = load_config('config/ismn_conus_sm_temperature.json')
+        c = load_config('locks/ismn.json')
         p = request_payload(c, 'ARM')
         self.assertEqual(p['variables'], 'Soil Moisture, Precipitation, Soil Temperature')
         self.assertFalse(p['fill_nan'])
@@ -171,7 +171,7 @@ class ISMNTests(unittest.TestCase):
         self.assertEqual(p.rows[1]['links'], ['/download/12.zip'])
 
     def test_standalone_config_preserves_unique_stations_and_sensor_depth(self):
-        s = load_config('config/ismn_conus_sm_temperature.json')
+        s = load_config('locks/ismn.json')
         self.assertEqual(len(s['stations']), 1388)
         ids = [x['station_id'] for x in s['stations']]
         self.assertEqual(len(ids), len(set(ids)))
@@ -191,28 +191,15 @@ class ISMNTests(unittest.TestCase):
         self.assertEqual(p['climates'], 'Cold')
         self.assertEqual(p['landcovers'], 'Crop land')
 
-    def test_plan_and_approval_are_independent_of_repo_and_credentials(self):
-        config = Path('config/ismn_conus_sm_temperature.json').resolve()
-        script = Path('scripts/pull_ismn.py').resolve()
-        with tempfile.TemporaryDirectory() as folder:
-            # Run from an empty directory: only the supplied JSON is available.
-            plan = subprocess.run([sys.executable, str(script), 'plan', '--config', str(config),
-                                   '--cache-dir', folder], cwd=folder, capture_output=True, text=True)
-            self.assertEqual(plan.returncode, 0, plan.stderr)
-            self.assertIn('no network requests made', plan.stdout)
-            for action in ('submit', 'collect'):
-                denied = subprocess.run([sys.executable, str(script), action, '--config', str(config),
-                                         '--credentials', 'does-not-exist'], cwd=folder,
-                                        capture_output=True, text=True)
-                self.assertEqual(denied.returncode, 2)
-                self.assertIn('Explicit approval is required', denied.stderr)
-        plan = make_plan(config)
+    def test_provider_approval_requires_the_exact_lock_hash(self):
+        """The provider workflow still checks the SHA-256 that scripts/acquire.py passes from the verified lock."""
+        plan = make_plan(Path('locks/ismn.json'))
         with self.assertRaises(ValueError):
             require_approval(plan, 'wrong-hash')
-        require_approval(plan, sha256(config))
+        require_approval(plan, sha256('locks/ismn.json'))
 
     def test_config_rejects_qc_gap_filling_and_accidental_depth_exclusion(self):
-        config = load_config('config/ismn_conus_sm_temperature.json')
+        config = load_config('locks/ismn.json')
         with tempfile.TemporaryDirectory() as folder:
             p = Path(folder) / 'config.json'
             for key in ('fill_nan', 'g_flag_only'):
@@ -321,6 +308,110 @@ class ISMNTests(unittest.TestCase):
                 extra = store.client.upload_file.call_args.kwargs['ExtraArgs']
                 self.assertEqual(extra['ContentType'], content_type)
                 self.assertEqual(extra['Metadata']['sha256'], sha256(path))
+
+
+class FakeS3:
+    """In-memory bucket carrying the SHA-256 metadata that ObjectStore.upload records."""
+    def __init__(self):
+        self.objects, self.downloads = {}, 0
+
+    def put(self, key, body, digest=None):
+        self.objects['scratch/test/' + key] = (body, digest or hashlib.sha256(body).hexdigest())
+
+    def head_object(self, Bucket, Key):
+        if Key not in self.objects:
+            raise ClientError({'Error': {'Code': '404'}}, 'HeadObject')
+        body, digest = self.objects[Key]
+        return {'ContentLength': len(body), 'Metadata': {'sha256': digest}}
+
+    def download_file(self, bucket, key, path):
+        self.downloads += 1
+        Path(path).write_bytes(self.objects[key][0])
+
+
+def fake_store():
+    store = ObjectStore.__new__(ObjectStore)
+    store.bucket, store.prefix, store.client = 'gaia', 'scratch/test', FakeS3()
+    return store
+
+
+class RestoreTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory(); self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        # One real ARM station keeps the selection valid without any download.
+        config = load_config('locks/ismn.json')
+        config['stations'] = [next(s for s in config['stations'] if s['network'] == 'ARM')]
+        config['networks'] = ['ARM']
+        self.config = self.root / 'selection.json'; write_json(self.config, config)
+        self.collection = config['collection_id']
+        body = io.BytesIO()
+        with zipfile.ZipFile(body, 'w') as z:
+            z.writestr('ARM/station/sm.stm', b'raw observation\r\n-9999 U\r\n')
+        self.body = body.getvalue()
+        # Produce the sidecar exactly as collect_exports() would on first retrieval.
+        session = MagicMock()
+        response = session.get.return_value.__enter__.return_value
+        response.headers, response.iter_content.return_value = {}, iter([self.body])
+        original = self.root / 'original' / 'ARM.zip'
+        meta = download(session, 'https://ismn.earth/export.zip', original, archive=True)
+        self.sidecar = original.with_name('ARM.zip.provenance.json').read_bytes()
+        prefix = 'ismn/' + self.collection
+        record = self.root / 'record.json'
+        write_json(record, {**meta, 'network': 'ARM', 'request_id': '1', 'request': {},
+                            'requested_at': meta['retrieved_at'], 'processing': 'unchanged',
+                            'selection_sha256': sha256(self.config),
+                            'archive_uri': f's3://gaia/scratch/test/{prefix}/raw/ARM.zip'})
+        self.store = fake_store()
+        self.store.client.put(f'{prefix}/raw/ARM.zip', self.body)
+        self.store.client.put(f'{prefix}/provenance/{sha256(self.config)}/ARM.json', record.read_bytes())
+        self.archive = self.root / 'cache' / self.collection / 'archives' / 'ARM.zip'
+
+    def test_restored_sidecar_is_byte_identical_and_verified_cache_is_reused(self):
+        restore_ismn(self.store, self.config, self.root / 'cache')
+        self.assertEqual(self.archive.read_bytes(), self.body)
+        self.assertEqual(self.archive.with_name('ARM.zip.provenance.json').read_bytes(), self.sidecar)
+        log = self.archive.parents[1] / 'restore.json'
+        first = log.read_text()
+        self.assertEqual(self.store.client.downloads, 2)
+        restore_ismn(self.store, self.config, self.root / 'cache')
+        self.assertEqual(self.store.client.downloads, 2)
+        self.assertEqual(log.read_text(), first)
+        # Same-size corruption must be detected by hash and repaired from Kopah.
+        self.archive.write_bytes(b'x' * len(self.body))
+        restore_ismn(self.store, self.config, self.root / 'cache')
+        self.assertEqual(self.store.client.downloads, 3)
+        self.assertEqual(self.archive.read_bytes(), self.body)
+
+    def test_corrupt_object_and_edited_selection_are_rejected_without_publishing(self):
+        prefix = 'ismn/' + self.collection
+        self.store.client.put(f'{prefix}/raw/ARM.zip', self.body, digest='0' * 64)
+        with self.assertRaisesRegex(ValueError, 'do not match recorded SHA-256'):
+            restore_ismn(self.store, self.config, self.root / 'cache')
+        self.assertFalse(self.archive.exists())
+        self.assertFalse(self.archive.with_name('ARM.zip.part').exists())
+        self.assertFalse(self.archive.with_name('ARM.zip.provenance.json').exists())
+        edited = json.loads(self.config.read_text()); edited['selection_note'] = 'edited'
+        write_json(self.config, edited)
+        with self.assertRaisesRegex(FileNotFoundError, 'Missing object'):
+            restore_ismn(self.store, self.config, self.root / 'cache')
+        with self.assertRaisesRegex(ValueError, 'Unknown network'):
+            restore_ismn(self.store, self.config, self.root / 'cache', ['SCAN'])
+
+    def test_extracts_restore_both_files_and_reject_npz_mismatching_its_sidecar(self):
+        config = self.root / 'chirps.json'
+        write_json(config, {'dataset': 'chirps', 'collection_id': 'c', 'assets': [{'asset_id': '2002'}]})
+        npz = b'station-cell arrays'
+        self.store.client.put('chirps/c/extracts/2002.npz', npz)
+        self.store.client.put('chirps/c/extracts/2002.json',
+                              json.dumps({'sha256': hashlib.sha256(npz).hexdigest()}).encode())
+        files = restore_extracts(self.store, config, self.root / 'ancillary')
+        self.assertEqual([Path(f['path']).name for f in files], ['2002.npz', '2002.json'])
+        self.assertEqual((self.root / 'ancillary/c/extracts/2002.npz').read_bytes(), npz)
+        self.assertTrue((self.root / 'ancillary/c/restore.json').exists())
+        self.store.client.put('chirps/c/extracts/2002.json', json.dumps({'sha256': '0' * 64}).encode())
+        with self.assertRaisesRegex(ValueError, 'does not match its metadata sidecar'):
+            restore_extracts(self.store, config, self.root / 'ancillary')
 
 
 class PublishedTests(unittest.TestCase):

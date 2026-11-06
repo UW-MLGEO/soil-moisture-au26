@@ -1,0 +1,61 @@
+# MODIS MCD12Q1 v6.1 land cover (NASA LP DAAC HDF4)
+#
+# Provider facts and provenance for `modis_land_cover` (no scientific choices: those are in
+# config/pipeline.yml). `request:` holds the provider wording and fixed facts that
+# are copied verbatim into locks/modis_land_cover.json by scripts/plan.py; the stations,
+# dates, bands and storage are added from the selection and pipeline.yml.
+# Full rights evidence: records/source_provenance.json (sources.modis_land_cover).
+provenance:
+  provider: NASA LP DAAC; NASA Terra/Aqua MODIS
+  product: MODIS/Terra+Aqua Land Cover Type Yearly L3 Global 500m SIN Grid V061
+  version: Collection 6.1 / 061
+  citation:
+    doi: 10.5067/modis/mcd12q1.061
+    authors:
+    - Friedl,  Mark
+    - Sulla-Menashe,  Damien
+    year: 2022
+  doi_metadata:
+    url: https://api.datacite.org/dois/10.5067/MODIS/MCD12Q1.061
+    retrieved_at: '2026-11-05T05:58:58.553548+00:00'
+    sha256: 0f588fb7c7a51d115e967d730cb05bfd0071e13a4d348c764583c14a3a12a6fa
+  rights:
+    declaration: NASA-led-mission default CC0 absent a product-specific restriction
+collection_prefix: modis_land_cover_061_lpdaac_hdf4
+coverage: null
+request:
+  approved_product_note: All 13 bands retained raw; daily analysis uses LC_Type1 IGBP, decoding fill values
+    and retaining QC
+  cadence: annual
+  cmr_size_note: size_estimate_bytes derives from historical CMR rounded MiB, not an exact byte count;
+    use HTTP Content-Length, recorded SHA-256 and HDF validation for integrity
+  dataset: modis_land_cover
+  inventory_retrieved_at: '2026-11-04T22:48:07.876776+00:00'
+  license: NASA MODIS data have no restrictions on use or redistribution; retain attribution
+  processing: No QC filtering, scaling, gap filling, interpolation, masking or daily expansion during
+    acquisition
+  product: MCD12Q1 v6.1 native 500m station pixels, all bands
+  representation: Unchanged LP DAAC HDF4 tiles and transfer provenance; separate native uint8 all-band
+    annual station extracts
+  schema_version: 1
+  source_grid: Global MODIS sinusoidal sphere R=6371007.181 m; 2400x2400 500 m tiles; containing native
+    station pixel, no resampling
+  source_projection:
+    crs: SR-ORG:6974
+    transform:
+    - 463.3127165279165
+    - 0
+    - -20015109.354
+    - 0
+    - -463.3127165279167
+    - 10007554.677003
+  source_urls:
+  - https://doi.org/10.5067/MODIS/MCD12Q1.061
+  - https://cmr.earthdata.nasa.gov/search/granules.json
+  - https://data.lpdaac.earthdatacloud.nasa.gov/
+  strategy: lpdaac_https_hdf4
+  supersedes:
+    collection_id: modis_land_cover_061_2002-07-04_2025-12-31_89924028c20f
+    reason: Earth Engine MODIS/061/MCD12Q1 2025 image held 176 of 315 tiles (no Western Hemisphere) as
+      of 2026-11-04
+    strategy: earth_engine_getRegion

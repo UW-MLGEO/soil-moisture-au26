@@ -1,0 +1,3 @@
+# Pilot on the ARM network only; selection and provider requests are the baseline's.
+subset:
+  networks: [ARM]

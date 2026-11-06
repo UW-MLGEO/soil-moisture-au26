@@ -1,0 +1,14 @@
+# Written by scripts/plan.py; commit to approve. Do not edit.
+source: morgan_2025
+request_sha256: 0b51fea6a95f26fd0ba55f896efa6fba985804cca770ee1802198dd692af712b
+selection: conus_2026_11
+pipeline_section_sha256: null
+planned_at: '2026-11-06T00:27:15.069749+00:00'
+stations: 0
+start: null
+end: null
+collection_id: ece5bbc5d741526e7440aef21a903d94d7ffc2e8
+files: 19
+rows: 228012
+approval: Review this summary and locks/morgan_2025.json, then commit both to approve
+  acquisition.

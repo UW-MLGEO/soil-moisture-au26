@@ -18,9 +18,8 @@ import numpy as np
 
 from fixtures import MemoryStore
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
-from sm_drydown.acquisition import chirps, modis
-from sm_drydown.homogenization.sources import ExtractCatalog
+from sm_drydown.providers import chirps, modis
+from sm_drydown.features.gridded import ExtractCatalog, chirps_source
 from sm_drydown.storage.files import sha256, write_json
 
 
@@ -141,14 +140,14 @@ class CHIRPSTests(unittest.TestCase):
     def test_null_zero_missing_day_and_absent_row(self):
         self.fetch()
         catalog = ExtractCatalog(self.path,self.cache)
-        series = catalog.chirps(1)
+        series = chirps_source(catalog, 1)
         self.assertEqual(len(series),2)
         self.assertEqual(series.value.iloc[0],0)
         self.assertTrue(np.isnan(series.value.iloc[1]))
         self.assertEqual(series.provider_null.sum(),1)
         self.assertEqual(catalog.assets[0][2]['missing_source_dates'],['2025-01-02'])
-        self.assertEqual(catalog.chirps(3).provider_absent_row.sum(),1)
-        second = catalog.chirps(2)
+        self.assertEqual(chirps_source(catalog, 3).provider_absent_row.sum(),1)
+        second = chirps_source(catalog, 2)
         np.testing.assert_array_equal(series.value.to_numpy(),second.value.to_numpy())
         run = self.cache / self.config['collection_id']
         raw = [json.loads(path.read_text()) for path in (run / 'raw/2025').glob('batch_*.json')
@@ -194,7 +193,7 @@ class CHIRPSTests(unittest.TestCase):
         self.client.describe = lambda *_: {'features': []}
         self.fetch()
         catalog = ExtractCatalog(self.path,self.cache)
-        series = catalog.chirps(1)
+        series = chirps_source(catalog, 1)
         self.assertTrue(series.empty)
         self.assertEqual(catalog.assets[0][2]['missing_source_dates'],
                          ['2025-01-01', '2025-01-02', '2025-01-03'])
@@ -223,9 +222,9 @@ def lai_metadata(c):
 
 class LAITests(unittest.TestCase):
     def test_configs_and_explicit_approval(self):
-        from sm_drydown.acquisition import lpdaac
-        for loader, path in [(modis.load_config, 'config/modis_lai_conus.json'),
-                             (lpdaac.load_config, 'config/modis_land_cover_conus.json')]:
+        from sm_drydown.providers import lpdaac
+        for loader, path in [(modis.load_config, 'locks/modis_lai.json'),
+                             (lpdaac.load_config, 'locks/modis_land_cover.json')]:
             c = loader(path)
             self.assertEqual(len(c['stations']), 1388)
             self.assertEqual(len(c['assets']), 24)
@@ -233,7 +232,7 @@ class LAITests(unittest.TestCase):
                 (modis.require_approval if loader is modis.load_config else lpdaac.require_approval)(path, 'not-approved')
         # The Earth Engine loader has no land-cover product.
         with self.assertRaisesRegex(ValueError, 'Unsupported'):
-            modis.load_config('config/modis_land_cover_conus.json')
+            modis.load_config('locks/modis_land_cover.json')
 
     def test_composite_year_end_intervals(self):
         self.assertEqual(modis.interval_end('2024-12-30', 4), '2025-01-01')

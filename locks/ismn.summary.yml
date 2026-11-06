@@ -1,0 +1,18 @@
+# Written by scripts/plan.py; commit to approve. Do not edit.
+source: ismn
+request_sha256: 15b45472f15f63fd45a565fd646fa7c464dcd4f7c46c36e5b01856ce2faac032
+selection: conus_2026_11
+pipeline_section_sha256: fb356b599866cbbfa4fef1bcecf717faf39b472ac40289ed132ff882a1677327
+planned_at: '2026-11-06T00:27:13.583775+00:00'
+stations: 1388
+start: '2002-07-04'
+end: '2025-12-31'
+collection_id: 2002-07-04_2025-12-31_dd688518cd8a_sm_soil_temperature
+networks: 14
+export_requests: 14
+sm_sensors: 10825
+variables:
+- soil_moisture
+- precipitation
+- soil_temperature
+approval: Review this summary and locks/ismn.json, then commit both to approve acquisition.

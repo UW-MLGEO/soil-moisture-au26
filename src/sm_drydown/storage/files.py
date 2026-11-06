@@ -1,4 +1,4 @@
-"""Atomic files, integrity-checked downloads, and private Kopah uploads."""
+"""Atomic files, integrity-checked downloads, and private Kopah uploads and restores."""
 
 import hashlib
 import json
@@ -134,3 +134,29 @@ class ObjectStore:
         if head['ContentLength'] != size or head['Metadata'].get('sha256') != digest:
             raise ValueError('Uploaded object size/checksum metadata mismatch')
         return f's3://{self.bucket}/{key}'
+
+    def download(self, key, path):
+        """Reuse a local file matching the object's recorded SHA-256; otherwise fetch atomically."""
+        path = Path(path)
+        key = '/'.join(x for x in (self.prefix, key) if x)
+        uri = f's3://{self.bucket}/{key}'
+        try:
+            head = self.client.head_object(Bucket=self.bucket, Key=key)
+        except ClientError as e:
+            if e.response['Error']['Code'] in ('404', 'NoSuchKey', 'NotFound'):
+                raise FileNotFoundError(f'Missing object: {uri}') from None
+            raise
+        expected, size = head.get('Metadata', {}).get('sha256'), head['ContentLength']
+        if not expected:
+            raise ValueError(f'Object has no recorded SHA-256: {uri}')
+        result = {'uri': uri, 'sha256': expected, 'bytes': size}
+        if path.is_file() and path.stat().st_size == size and sha256(path) == expected:
+            return {**result, 'downloaded': False}
+        path.parent.mkdir(parents=True, exist_ok=True)
+        temp = path.with_name(path.name + '.part')
+        self.client.download_file(self.bucket, key, str(temp))
+        if temp.stat().st_size != size or sha256(temp) != expected:
+            temp.unlink()
+            raise ValueError(f'Downloaded bytes do not match recorded SHA-256: {uri}')
+        os.replace(temp, path)
+        return {**result, 'downloaded': True}

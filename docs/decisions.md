@@ -1,0 +1,178 @@
+# Processing decisions
+
+Generated from [config/pipeline.yml](../config/pipeline.yml) by `scripts/document_config.py`; do not edit.
+Every value below is used as written; a run file in [config/runs/](../config/runs/) overrides only the keys
+it lists, and each run's resolved settings are saved in `output/runs/<run>/config.resolved.yml`.
+Units are in brackets; `[-]` is dimensionless.
+
+
+## `study`
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `start` | `"2002-07-04"` | [date] first UTC calendar day (inclusive) |
+| `end` | `"2025-12-31"` | [date] last UTC calendar day (inclusive); 8,582 days in total |
+| `day_definition` | `utc` | [-] daily values are UTC calendar days stored as timezone-naive midnights; options: utc |
+| `crs` | `EPSG:4326` | [-] coordinate reference system of every output latitude/longitude |
+
+## `selection`
+
+Which ISMN stations and sensors enter the study (scripts/select_stations.py writes data/selections/<name>/).
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `name` | `conus_2026_11` | [-] selection folder under data/selections/; change it whenever a rule below changes |
+| `inventory_url` | `https://ismn.earth/static/dataviewer/network_station_details.json` | [-] ISMN data-viewer station inventory |
+| `inventory_snapshot` | `null` | [sha256] pin a cached inventory snapshot; null = download and record a new one |
+| `region.kind` | `named_boundary` | [-] options: global / named_boundary / bbox / polygon_file |
+| `region.name` | `conus_48_plus_dc` | [-] named_boundary: a boundary defined in config/regions.yml |
+| `region.bbox` | `null` | [deg] bbox: [lon_min, lat_min, lon_max, lat_max] |
+| `region.polygon_file` | `null` | [-] polygon_file: path or URL of a GeoPackage/shapefile (cached and hashed) |
+| `region.buffer_deg` | `0.005` | [deg] widen the boundary so coastal/border stations cut by the generalized outline are kept |
+| `station_crs` | `EPSG:4269` | [-] CRS assumed for ISMN station lon/lat when clipping (NAD83 inside the US) |
+| `networks` | `all` | [-] options: all / list of ISMN network names |
+| `exclude_networks` | `[]` | [-] ISMN networks never selected |
+| `require_variable` | `soil_moisture` | [-] a station needs >= 1 sensor of this variable active in the study window |
+| `min_overlap_days` | `1` | [d] a sensor's active interval must overlap the study window by at least this many days |
+| `depth_range_m` | `[0.0, 2.55]` | [m] keep sensors with depth_from and depth_to inside [low, high] |
+
+## `subset`
+
+Pilot subsets for restore/homogenize/inspect only; never changes the selection or provider requests.
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `networks` | `all` | [-] options: all / list of ISMN network names |
+| `station_ids` | `all` | [-] options: all / list of ISMN station IDs |
+
+## `ismn`
+
+Provider export request (acquisition). ISMN applies no filtering before export. Daily features (homogenization).
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `request_variables` | `[soil_moisture, precipitation, soil_temperature]` | [-] variables requested in each network export |
+| `provider_options.format` | `own` | [-] native header+values files; options: own |
+| `provider_options.fill_nan` | `false` | [-] ISMN must not fill gaps |
+| `provider_options.g_flag_only` | `false` | [-] ISMN must not drop non-G records (we mask them ourselves, below) |
+| `provider_options.depth_range_cm` | `[0, 255]` | [cm] provider depth filter; must not exclude any selected sensor |
+| `provider_options.climates` | `[Tropical, Arid, Temperate, Cold, Water, Polar]` | [-] provider climate filter (all) |
+| `provider_options.landcovers` | `[Crop land, Tree cover, Grassland, Lichens and mosses, Sparse vegetation, Urban areas, Bare areas, Water bodies, Permanent snow and ice]` | [-] provider land-cover filter (all) |
+| `daily_variables` | `[soil_moisture, soil_temperature]` | [-] ISMN variables turned into daily features; ISMN precipitation is downloaded but not used |
+| `flags_kept` | `[G]` | [-] ISMN quality flags accepted for soil moisture; other flags are masked, not dropped |
+| `temperature_flags_kept` | `[G]` | [-] flags accepted for soil temperature (each sensor's own flags) |
+| `missing_codes` |  | [-] native numeric missing-value codes decoded to NaN, besides NaN itself |
+| `missing_codes.soil_moisture` | `[]` | [-] none documented by ISMN; do not invent sentinels |
+| `missing_codes.soil_temperature` | `[]` | [-] |
+| `daily_statistic` | `mean` | [-] statistic of accepted values within a UTC day; options: mean / median |
+| `min_obs_per_day` | `1` | [obs] a daily value needs at least this many accepted observations (1 = no minimum) |
+| `duplicate_timestamps` | `error` | [-] two records at one timestamp; options: error |
+| `sensor_day_span` | `observed` | [-] rows kept per sensor: observed = first to last day with any record; study_window = every study day |
+| `soil_moisture_units` | `m3/m3` | [m3 m-3] required source and output units for soil moisture |
+| `temperature_units` | `degC` | [degC] output units for soil temperature; K sources are converted (T - 273.15) |
+
+## `chirps`
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `collection` | `UCSB-CHG/CHIRPS/DAILY` | [-] Earth Engine collection (CHIRPS v2.0, 0.05 deg daily) |
+| `band` | `precipitation` | [mm d-1] band used |
+| `sampling` | `native_cell` | [-] value of the native pixel containing the station (half-open affine pixel, floor index); no resampling; options: native_cell |
+| `null_is_zero_rain` | `false` | [-] provider nulls stay missing (never zero rain) |
+| `absent_row_is_zero_rain` | `false` | [-] days with no provider row stay missing (never zero rain) |
+
+## `gldas`
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `sampling` | `native_cell` | [-] nearest 0.25 deg cell centre; options: native_cell |
+| `tie_break` | `greater_coordinate` | [-] station exactly between two centres takes the larger lat/lon; options: greater_coordinate |
+| `depth_assignment` | `top_layer_through_50cm` | [-] the single top-layer value is assigned to sensors to max_sensor_depth_m; options: top_layer_through_50cm |
+| `max_sensor_depth_m` | `0.5` | [m] deepest sensor the top-layer soil properties are considered to describe |
+| `default_fill` | `verified_only` | [-] NetCDF default fill decoded only when the file proves it is a NetCDF float default; options: verified_only |
+| `percent_to_fraction` | `true` | [-] sand/silt/clay in % are divided by 100 |
+| `fraction_bounds` | `[0.0, 1.0]` | [-] decoded fractions and porosity must lie inside these bounds |
+| `out_of_bounds` | `error` | [-] what happens outside fraction_bounds; options: error |
+| `texture_snap_tolerance` | `1.0e-4` | [-] float32 texture codes within this of an integer are snapped to that FAO class; further is an error |
+
+## `modis_lai`
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `collection` | `MODIS/061/MCD15A3H` | [-] 4-day Terra+Aqua LAI (Earth Engine has no 8-day MCD15A2H) |
+| `cadence_days` | `4` | [d] composite length |
+| `cut_composites_at_year_end` | `true` | [-] a composite never extends past 1 January |
+| `bands` | `[Fpar, Lai, FparLai_QC, FparExtra_QC, FparStdDev, LaiStdDev]` | [-] bands acquired (all kept raw) |
+| `sampling` | `native_cell` | [-] containing 500 m sinusoidal pixel; options: native_cell |
+| `band` | `Lai` | [m2 m-2] band used as the LAI feature (provider scale_factor applied) |
+| `qc_bands` | `[FparLai_QC, FparExtra_QC]` | [-] QC words carried into the qc_audit table |
+| `mask_fill_before_scale` | `true` | [-] fill and out-of-valid-range codes are masked before scale_factor |
+| `qc_mode` | `bit_rules` | [-] options: bit_rules / retain_flagged |
+| `qc_rules` |  | [-] all rules must pass for a composite to be accepted |
+| `qc_rules[0].column` | `qc_FparLai_QC` | SCF_QC = bits 5-7 of FparLai_QC |
+| `qc_rules[0].offset` | `5` | [bit] |
+| `qc_rules[0].mask` | `7` | [-] 3-bit field |
+| `qc_rules[0].allowed` | `[0, 1]` | [-] 0 = main algorithm, 1 = main algorithm with saturation |
+| `missing_qc_is_good` | `false` | [-] a composite with missing QC is rejected |
+| `max_carry_days` | `0` | [d] no value is carried beyond its own composite interval |
+
+## `modis_land_cover`
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `collection` | `MCD12Q1.061` | [-] annual 500 m land cover, LP DAAC HDF4 tiles |
+| `bands` | `[LC_Type1, LC_Type2, LC_Type3, LC_Type4, LC_Type5, LC_Prop1_Assessment, LC_Prop2_Assessment, LC_Prop3_Assessment, LC_Prop1, LC_Prop2, LC_Prop3, QC, LW]` | [-] bands acquired (all kept raw) |
+| `sampling` | `native_cell` | [-] containing 500 m sinusoidal pixel; options: native_cell |
+| `scheme` | `LC_Type1` | [-] IGBP classification band used as the land-cover feature |
+| `qc_bands` | `[QC, LW]` | [-] QC words carried into the qc_audit table |
+| `qc_mode` | `retain_flagged` | [-] QC is recorded but does not mask values; options: retain_flagged |
+
+## `features`
+
+Daily features in the assembled sensor_day table, in column order. Each name must have a builder in sm_drydown.features and a schema in sm_drydown.schemas.
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `[0]` | `theta_m3m3` | ISMN soil moisture [m3 m-3], per sensor |
+| `[1]` | `soil_temp_degc` | ISMN soil temperature [degC], per temperature sensor (separate table; not joined) |
+| `[2]` | `precip_chirps_mm_day` | CHIRPS precipitation [mm d-1] |
+| `[3]` | `gldas_texture_class` | GLDAS FAO 16-class texture [-], static |
+| `[4]` | `gldas_sand_frac` | [-], static |
+| `[5]` | `gldas_silt_frac` | [-], static |
+| `[6]` | `gldas_clay_frac` | [-], static |
+| `[7]` | `gldas_porosity` | [-], static |
+| `[8]` | `igbp_class` | MODIS IGBP land cover [-], annual |
+| `[9]` | `lai_m2m2` | MODIS LAI [m2 m-2], 4-day composites |
+
+## `inspection`
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `flatline_min_days` | `3` | [d] runs of exactly equal daily soil moisture on at least this many consecutive days are flagged |
+| `chirps_extreme_quantile` | `0.999` | [-] a rain day strictly above this quantile of the station's positive days is flagged |
+| `gldas_fraction_sum_tolerance` | `0.01` | [-] /sand + silt + clay - 1/ above this is flagged |
+| `gldas_texture_codes` | `[1, 16]` | [-] valid FAO texture classes |
+| `summary_quantiles` | `[0.01, 0.25, 0.5, 0.75, 0.99]` | [-] quantiles reported in summary.json |
+| `seasons` |  | [month] meteorological seasons; a season crossing 1 January (DJF) is labelled by its last month's year |
+| `seasons.DJF` | `[12, 1, 2]` | [month] |
+| `seasons.MAM` | `[3, 4, 5]` | [month] |
+| `seasons.JJA` | `[6, 7, 8]` | [month] |
+| `seasons.SON` | `[9, 10, 11]` | [month] |
+| `histogram_bins` | `100` | [-] bins in the distribution figures |
+
+## `export_drydown_q`
+
+Write drydown-q's `sensors` and `station_day` tables from our features.
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `ai_window_days` | `60` | [d] trailing window for precip_60d_mm / pet_60d_mm (drydown-q covariates.ai_window_days) |
+| `ai_window_min_valid_days` | `60` | [d] valid days needed in the window, else NaN (60 = all) |
+| `max_sensor_depth_m` | `null` | [m] if set, export only sensors with depth_to <= this |
+| `earth_radius_km` | `6371.0088` | [km] IUGG mean Earth radius, for station-to-cell distances (drydown-q's value) |
+
+## `runtime`
+
+| Setting | Value | Meaning |
+| --- | --- | --- |
+| `log_level` | `INFO` | [-] options: DEBUG / INFO / WARNING |

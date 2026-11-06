@@ -1,0 +1,13 @@
+# Written by scripts/plan.py; commit to approve. Do not edit.
+source: modis_lai
+request_sha256: aed8aede1f6fc3bacbcc0f7ed7a06e41f9a3de99224b2a4c342f3eb7708e7d0d
+selection: conus_2026_11
+pipeline_section_sha256: 185f6870f9276671fdfd5e244ef7f42fd9dac22e937b1174d2ef53ca3d11c6e0
+planned_at: '2026-11-06T00:27:14.877690+00:00'
+stations: 1388
+start: '2002-07-04'
+end: '2025-12-31'
+collection_id: modis_lai_061_2002-07-04_2025-12-31_89924028c20f
+assets: 24
+approval: Review this summary and locks/modis_lai.json, then commit both to approve
+  acquisition.

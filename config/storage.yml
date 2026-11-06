@@ -1,0 +1,20 @@
+# Object storage and provider-transfer settings (no scientific choices).
+# Kopah is UW's S3-compatible store; set up the `kopah` AWS profile per
+# https://github.com/gaia-hazlab/skypilot-hyak/blob/main/docs/kopah.md
+kopah:
+  endpoint: https://s3.kopah.uw.edu
+  profile: kopah
+  scratch: s3://gaia/scratch/ml4geo_sm_drydown/   # raw acquisitions and station extracts (immutable, private)
+  processed: s3://gaia/ml4geo_sm_drydown/         # published tables, manifests and published labels
+  processed_layout: v2                            # processed tables go to <processed>/v2/<stage>/<key>/
+earth_engine:
+  project: soil-moisture-drydown-au26   # Google Cloud project with Earth Engine enabled
+  max_values_per_request: 900000        # getRegion request bound (provider limit below)
+  provider_value_limit: 1048576
+  concurrent_requests: 1
+ismn:
+  credentials: ~/.config/ismn/credentials.toml   # TOML with username/password, chmod 600
+earthdata:
+  credentials: ~/.earthdata/config               # USER=/PASS= lines, chmod 600
+transfer:
+  upload_workers: 4                              # concurrent verified uploads (1-16)

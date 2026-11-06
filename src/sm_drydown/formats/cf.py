@@ -29,9 +29,9 @@ def verified_default_fill(attributes, creation):
     if creation.get('fill_time') not in ('allocation', 'if_set'):
         return None
     dtype = np.dtype(creation['dtype'])
-    if dtype.kind != 'f' or dtype.itemsize not in (4, 8):
+    if dtype.kind != 'f' or dtype.itemsize not in (4, 8):  # not-science: NetCDF float32/64 default fill (NC_FILL_FLOAT/DOUBLE)
         return None
-    expected = np.asarray(9.9692099683868690e36, dtype=dtype).item()
+    expected = np.asarray(9.9692099683868690e36, dtype=dtype).item()  # not-science: NetCDF float32/64 default fill (NC_FILL_FLOAT/DOUBLE)
     observed = np.asarray(creation.get('fill_value'))
     if observed.size != 1 or float(observed.item()) != expected:
         return None

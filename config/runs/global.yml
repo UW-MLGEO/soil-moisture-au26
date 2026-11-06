@@ -1,0 +1,7 @@
+# All ISMN stations worldwide. Run scripts/select_stations.py, then plan each source; sources whose
+# coverage excludes a station mark it `outside_source_coverage` (e.g. CHIRPS 50S-50N).
+selection:
+  name: global
+  region:
+    kind: global
+  station_crs: EPSG:4326

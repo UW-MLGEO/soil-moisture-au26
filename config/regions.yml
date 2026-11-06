@@ -1,0 +1,8 @@
+# Named boundaries for selection.region.kind = named_boundary.
+conus_48_plus_dc:
+  description: 48 contiguous US states plus the District of Columbia
+  url: https://www2.census.gov/geo/tiger/GENZ2025/shp/cb_2025_us_state_5m.zip   # US Census Bureau cartographic boundary, 1:5,000,000, NAD83
+  crs: EPSG:4269
+  attribute: STUSPS                  # feature attribute used to choose polygons
+  exclude: [AK, HI, PR, VI, GU, MP, AS]   # dropped features: Alaska, Hawaii and territories
+  spatial_rule: 48 states + DC; Census NAD83 boundary buffered by 0.005 degrees; station longitude/latitude treated as NAD83

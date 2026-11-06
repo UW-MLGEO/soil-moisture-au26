@@ -1,0 +1,2 @@
+station_id,network,station_name,available_variables,reason
+3,SMOKE,Gamma,,No soil-moisture time series in the provider inventory

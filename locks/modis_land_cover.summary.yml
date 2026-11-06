@@ -1,0 +1,15 @@
+# Written by scripts/plan.py; commit to approve. Do not edit.
+source: modis_land_cover
+request_sha256: 6b8ac875092e89a9e1e02d8eb17c38a400f719daea1cd38b8f3cb9d269f0290b
+selection: conus_2026_11
+pipeline_section_sha256: 5190c3006709c9aec87cd259b580e5eb4b5d90814a807594f70bca1b7e1036d9
+planned_at: '2026-11-06T00:27:15.066354+00:00'
+stations: 1388
+start: '2002-07-04'
+end: '2025-12-31'
+collection_id: modis_land_cover_061_lpdaac_hdf4_2002-07-04_2025-12-31_89924028c20f
+annual_assets: 24
+granules: 312
+estimated_bytes: 2857495177
+approval: Review this summary and locks/modis_land_cover.json, then commit both to
+  approve acquisition.

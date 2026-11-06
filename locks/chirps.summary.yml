@@ -1,0 +1,12 @@
+# Written by scripts/plan.py; commit to approve. Do not edit.
+source: chirps
+request_sha256: 04c7a2be4be68816185aa56be5b3f0c90b8988f5001a76a4fa1cfec7463fc6fc
+selection: conus_2026_11
+pipeline_section_sha256: 8c9d9fb8f1615a0054e8ec93d2685e243ab4c74c039b05a371f918e29fa1fc47
+planned_at: '2026-11-06T00:27:13.723664+00:00'
+stations: 1388
+start: '2002-07-04'
+end: '2025-12-31'
+collection_id: chirps_v2_ee_2002-07-04_2025-12-31_89924028c20f
+assets: 24
+approval: Review this summary and locks/chirps.json, then commit both to approve acquisition.

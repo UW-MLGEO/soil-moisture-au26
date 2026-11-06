@@ -1,0 +1,82 @@
+# MODIS MCD15A3H v6.1 leaf area index (Earth Engine)
+#
+# Provider facts and provenance for `modis_lai` (no scientific choices: those are in
+# config/pipeline.yml). `request:` holds the provider wording and fixed facts that
+# are copied verbatim into locks/modis_lai.json by scripts/plan.py; the stations,
+# dates, bands and storage are added from the selection and pipeline.yml.
+# Full rights evidence: records/source_provenance.json (sources.modis_lai).
+provenance:
+  provider: NASA LP DAAC; NASA Terra/Aqua MODIS
+  product: MODIS/Terra+Aqua Leaf Area Index/FPAR 4-Day L4 Global 500m SIN Grid V061
+  version: Collection 6.1 / 061
+  citation:
+    doi: 10.5067/modis/mcd15a3h.061
+    authors:
+    - Myneni,  Ranga
+    - Knyazikhin,  Yuri
+    - Park,  Taejin
+    year: 2021
+  doi_metadata:
+    url: https://api.datacite.org/dois/10.5067/MODIS/MCD15A3H.061
+    retrieved_at: '2026-11-05T05:58:58.738504+00:00'
+    sha256: c125991fe43dc325b15e43169d897abfa63bb87e9b8b5a7e5468b3497cb48dd0
+  rights:
+    declaration: NASA-led-mission default CC0 absent a product-specific restriction
+collection_prefix: modis_lai_061
+coverage: null
+request:
+  approved_product_note: MCD15A3H four-day Terra+Aqua selected explicitly instead of unavailable Earth
+    Engine MCD15A2H eight-day collection
+  dataset: modis_lai
+  license: NASA MODIS data have no restrictions on use or redistribution; retain attribution
+  processing: No QC filtering, scaling, gap filling, interpolation, masking or daily expansion during
+    acquisition
+  product: MCD15A3H v6.1 native 500m station pixels, all bands
+  representation: Raw decoded Earth Engine metadata/getRegion JSON, including nulls; separate all-band
+    NPZ station extracts; no provider-original HDF claims
+  schema_version: 1
+  source_attributes:
+    Fpar:
+      _FillValue: 255
+      add_offset: 0
+      scale_factor: 0.01
+      units: '1'
+      valid_max: 100
+      valid_min: 0
+    FparExtra_QC:
+      _FillValue: 255
+      add_offset: 0
+      scale_factor: 1
+      units: bitmask
+    FparLai_QC:
+      _FillValue: 255
+      add_offset: 0
+      scale_factor: 1
+      units: bitmask
+    FparStdDev:
+      _FillValue: 255
+      add_offset: 0
+      scale_factor: 0.01
+      units: '1'
+      valid_max: 100
+      valid_min: 0
+    Lai:
+      _FillValue: 255
+      add_offset: 0
+      scale_factor: 0.1
+      units: m2/m2
+      valid_max: 100
+      valid_min: 0
+    LaiStdDev:
+      _FillValue: 255
+      add_offset: 0
+      scale_factor: 0.1
+      units: m2/m2
+      valid_max: 100
+      valid_min: 0
+  source_grid: MODIS sinusoidal sphere R=6371007.181 m, SR-ORG:6974; source affine transform retained
+    per annual metadata
+  source_urls:
+  - https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MCD15A3H
+  - https://doi.org/10.5067/MODIS/MCD15A3H.061
+  strategy: earth_engine_getRegion

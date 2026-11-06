@@ -1,0 +1,3 @@
+year,tile,filename,url,size_estimate_bytes,cmr_granule_id,cmr_collection_id,cmr_updated
+2024,h09v05,MCD12Q1.A2024001.h09v05.061.2025001000000.hdf,https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2024001.h09v05.061.2025001000000/MCD12Q1.A2024001.h09v05.061.2025001000000.hdf,1000,G-h09v05,C-SMOKE,2025-01-01T00:00:00Z
+2024,h10v05,MCD12Q1.A2024001.h10v05.061.2025001000000.hdf,https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/MCD12Q1.061/MCD12Q1.A2024001.h10v05.061.2025001000000/MCD12Q1.A2024001.h10v05.061.2025001000000.hdf,1000,G-h10v05,C-SMOKE,2025-01-01T00:00:00Z

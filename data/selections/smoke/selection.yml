@@ -1,0 +1,16 @@
+# Written by scripts/select_stations.py (legacy selection: scripts/migrate_config.py).
+# Do not edit; change config/pipeline.yml `selection:` and rerun scripts/select_stations.py.
+files:
+  excluded_stations.csv: bf7c93fcbe85c11789d13aef4f7760fd737067e809d4bdb7ce6f67bfe5929689
+  modis_land_cover_granules.csv: f11a39c376ed5d4d2d36b102852ae3efc9b272d94b447784affca690815ce99d
+  sm_sensors.csv: 0e8988eee4961475e28655ff13de393c7f9c3e267d90738eca6b33c59a1fc144
+  stations.csv: baadac7278215244f098d717eec4bfc078fab23144b0aef36bee823c94f92281
+inventory_date: '2024-01-01'
+ismn_collection_id: smoke_ismn
+selection_note: Synthetic smoke-test selection
+sources: {}
+spatial_rule: synthetic
+station_snapshot:
+  collection_id: smoke_ismn
+  sha256: '0000000000000000000000000000000000000000000000000000000000000000'
+  source_file: tests/make_smoke_data.py

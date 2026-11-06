@@ -1,14 +1,14 @@
 # AI-ready data report
 
-[data catalog](../config/ai_ready_dataset.json)
+[data catalog](../records/ai_ready_dataset.json)
 
 ## Data Sources
 
-Daily CONUS data covers 2002-07-04 to 2025-12-31; the [source registry](../config/source_provenance.json) records versions, retrievals, citations, hashes and rights evidence, including the [14-network reference index](../config/ismn_network_provenance.json) and [bibliography](../config/ismn_network_references.bib).
+Daily CONUS data covers 2002-07-04 to 2025-12-31; the [source registry](../records/source_provenance.json) records versions, retrievals, citations, hashes and rights evidence, including the [14-network reference index](../records/ismn_network_provenance.json) and [bibliography](../records/ismn_network_references.bib).
 
 | Source/citation | Product/use | Rights/declaration status |
 | --- | --- | --- |
-| ISMN networks; [Dorigo et al. (2021)](https://doi.org/10.5194/hess-25-5749-2021) | SM (m³/m³), soil temperature (°C); daily means use observations flagged “good” (`G`) by ISMN, with no minimum count. | [ISMN terms](https://ismn.earth/terms-and-conditions): registered-user/associated-organisation scientific use; original-data onward transfer prohibited; cite ISMN and every contributing network ([references](../config/ismn_network_provenance.json)). |
+| ISMN networks; [Dorigo et al. (2021)](https://doi.org/10.5194/hess-25-5749-2021) | SM (m³/m³), soil temperature (°C); daily means use observations flagged “good” (`G`) by ISMN, with no minimum count. | [ISMN terms](https://ismn.earth/terms-and-conditions): registered-user/associated-organisation scientific use; original-data onward transfer prohibited; cite ISMN and every contributing network ([references](../records/ismn_network_provenance.json)). |
 | CHC/USGS; [Funk et al. (2015)](https://doi.org/10.1038/sdata.2015.66) | CHIRPS v2, daily 0.05°, mm/day, native Earth Engine cells. | [Provider public-domain waiver](https://www.chc.ucsb.edu/data/chirps); product/version and extract dates are recorded in the source registry. |
 | NASA GSFC; [Rodell et al. (2004)](https://doi.org/10.1175/BAMS-85-3-381), [soil-map lineage](https://ldas.gsfc.nasa.gov/gldas/soils) | Native 0.25° p4/p5 static texture, sand/silt/clay fractions and porosity; file histories and Reynolds/STATSGO/FAO/Catchment ancestry recorded. | [NASA science-data policy](https://science.data.nasa.gov/about/license): no separate license in the parameter files; upstream rights remain relevant and the mission-data CC0 default is not assigned to these non-mission maps. |
 | NASA LP DAAC; [Friedl and Sulla-Menashe (2022)](https://doi.org/10.5067/MODIS/MCD12Q1.061) | Annual 500 m MCD12Q1 v6.1 IGBP `LC_Type1`; fill/range decoding, QC retained. | [NASA-led-mission CC0 default](https://science.data.nasa.gov/about/license), absent a restrictive notice; no additional restriction found in checked CMR metadata. |
@@ -20,7 +20,7 @@ Daily CONUS data covers 2002-07-04 to 2025-12-31; the [source registry](../confi
 The intended dimensionality is six variables per drydown event: daily sensor SM plus precipitation, PET (acquisition deferred), soil texture, land cover and LAI.
 
 The parameter *q* is the exponent describing how soil-moisture loss varies with soil moisture.
-Labels are event-level fitted *q* values supplied either by [Morgan et al.'s published dataset](../config/published_drydowns_morgan_2025.json) or fitted ourselves against our daily station SM.
+Labels are event-level fitted *q* values supplied either by [Morgan et al.'s published dataset](../locks/morgan_2025.json) or fitted ourselves against our daily station SM.
 
 ## Preprocessing and inspection by dataset
 
@@ -47,7 +47,7 @@ Annual IGBP land cover and quality-screened four-day LAI are decoded/scaled and 
 
 The proposed split reserves southern CONUS (latitude <35.25°N) for final evaluation and divides the remainder into four spatial folds balanced by station ID: northwest (F1), southwest (F2), northeast (F3) and southeast (F4). Each cross-validation round trains on three folds and tests on the fourth, keeping all sensors, depths and dates from each station together; no separation buffer has been applied.
 
-Station counts represent unique ISMN station IDs, with each ID weighted equally in split assignment; [config/spatial_partitions.json](../config/spatial_partitions.json) lists every region's station IDs and geographic boundaries.
+Station counts represent unique ISMN station IDs, with each ID weighted equally in split assignment; [records/spatial_partitions.json](../records/spatial_partitions.json) lists every region's station IDs and geographic boundaries.
 
 | Region | Stations |
 | --- | ---: |
@@ -104,4 +104,4 @@ For B2, water is the rarest observed land-cover class: **0.036% of station-years
 For B4, artificial training masks model observation outages while preserving the physical series and original missingness; precipitation/SM shuffling changes the forcing-response pairing and is therefore invalid.
 
 For B7, existing decoding, provider-QC masks and per-day averaging are fixed/per-record operations, with no learned cross-station preprocessing statistics; inspection percentiles only flag diagnostics and do not alter measurements.
-The proposed spatial split is reproducible locally, but the [published catalog](../config/ai_ready_dataset.json) currently contains no partition index.
+The proposed spatial split is reproducible locally, but the [published catalog](../records/ai_ready_dataset.json) currently contains no partition index.

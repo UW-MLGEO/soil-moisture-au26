@@ -19,13 +19,18 @@ import requests
 
 from fixtures import HTTPResponse, MemoryStore
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
-from sm_drydown.acquisition import lpdaac
-from sm_drydown.acquisition.gldas import fetch_and_stage
-from sm_drydown.acquisition.grid import extract_native_cells, native_indices
+from sm_drydown.providers import lpdaac
+from sm_drydown.providers.gldas import fetch_and_stage
+from sm_drydown.providers.grid import extract_native_cells, native_indices
 from sm_drydown.formats.cf import decode_cf_values
-from sm_drydown.formats.soil import texture_class
-from sm_drydown.homogenization.sources import ExtractCatalog
+from sm_drydown.config import load_config
+from sm_drydown.features.gridded import ExtractCatalog, gldas_static, modis_intervals, snap_texture
+
+GLDAS = load_config('baseline').gldas
+
+
+def texture_class(value):
+    return snap_texture(value, GLDAS.texture_snap_tolerance)
 from sm_drydown.storage.files import sha256, write_json
 
 
@@ -250,10 +255,10 @@ class GLDASAcquisitionTests(unittest.TestCase):
             self.assertEqual(store.objects, objects)
             with np.load(folder/'cache/test/extracts/2025.npz') as raw:
                 self.assertEqual(raw['values'][0,0], np.float32(2.9999998))
-            values, audit = ExtractCatalog(path, folder/'cache').gldas(4)
-            self.assertEqual(values['soil_texture_class'], 3)
-            self.assertIsInstance(values['soil_texture_class'], int)
-            self.assertTrue(audit['soil_texture_class']['float_noise_removed'])
+            row = gldas_static(ExtractCatalog(path, folder/'cache'), 4, GLDAS)
+            self.assertEqual(row['gldas_texture_class'], 3)
+            self.assertIsInstance(row['gldas_texture_class'], int)
+            self.assertTrue(row['gldas_texture_float_noise_removed'])
             raw = folder / 'cache/test/raw/2025/2025.nc'
             raw.write_bytes(b'corrupt')
             fetch_and_stage(path, folder / 'cache', session, store, sha256(path))
@@ -379,7 +384,7 @@ class LPDAACTests(unittest.TestCase):
         self.assertEqual(first,second)
         self.assertEqual(second['assets'][0]['primary_valid_stations'],2)
         catalog=ExtractCatalog(self.path,cache)
-        frame,_=catalog.modis(3,'LC_Type1',['QC'])
+        frame=modis_intervals(catalog,3,'LC_Type1',['QC'])
         self.assertTrue(np.isnan(frame['value'].iloc[0]));self.assertEqual(frame['qc_QC'].iloc[0],7)
         raw=cache/'fixture'/'raw'/'2025'/self.g['filename'];raw.write_bytes(b'corrupt')
         lpdaac.fetch_and_stage(self.path,cache,client,store,sha256(self.path))
